@@ -29,76 +29,66 @@
 
 <div class="h-full">
   <header
-  class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
->
-  <div class="flex-none xl:hidden">
-    <a href="#n" class="flex w-10 items-center p-2"
-      ><span class="material-symbols-outlined"> menu </span></a
-    >
-    <!-- <a href="#n" class="flex w-10 items-center p-2"
-      ><span class="material-symbols-outlined"> close </span></a
-    > -->
-  </div>
+    class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+  >
+    <div class="flex-none xl:hidden">
+      <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> menu </span></a
+      >
+      <!-- <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> close </span></a
+      > -->
+    </div>
 
-  <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
-    <a href="index.html" class="flex w-28 p-2 md:w-32">
-      <img src="images/dist/logo/logo.svg" alt="" />
-    </a>
-  </div>
-  <div class="ml-6 hidden gap-3 sm:flex sm:items-center">
-    <a
-      href="index.html"
-      class="rounded-full bg-secondary-500 px-3 py-1 text-sm font-medium text-white transition hover:bg-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
-      >Opportunities</a
-    >
-    <a
-      href="quotes.html"
-      class="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-700 transition hover:text-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
-      >Quotes</a
-    >
-  </div>
-  <div class="relative w-10 flex-none sm:ml-auto">
-    <a
-      href="#n"
-      class="dropdown_filter"
-      id="dropdown-button"
-      aria-expanded="true"
-      aria-haspopup="true"
-    >
-      <span class="material-symbols-outlined"> account_circle </span>
-    </a>
+    <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+      <a href="index.html" class="flex w-28 p-2 md:w-32">
+        <img src="images/dist/logo/logo.svg" alt="" />
+      </a>
+    </div>
 
-    <div
-      class="dropdown_container"
-      role="menu"
-      aria-labelledby="dropdown-button"
-      tabindex="-1"
-    >
-      <div class="py-1" role="none">
-        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-        <a
-          href="#"
-          class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-          role="menuitem"
-          tabindex="-1"
-          id="menu-item-0"
-          ><span class="material-symbols-outlined mr-2 text-base">
-            settings_account_box </span
-          >My account</a
-        >
-        <a
-          href="#"
-          class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-          role="menuitem"
-          tabindex="-1"
-          id="menu-item-1"
-          ><span class="material-symbols-outlined mr-2 text-base"> logout </span
-          >Sign out</a
-        >
+    <div class="relative w-10 flex-none sm:ml-auto">
+      <a
+        href="#n"
+        class="dropdown_filter"
+        id="dropdown-button"
+        aria-expanded="true"
+        aria-haspopup="true"
+      >
+        <span class="material-symbols-outlined"> account_circle </span>
+      </a>
+
+      <div
+        class="dropdown_container"
+        role="menu"
+        aria-labelledby="dropdown-button"
+        tabindex="-1"
+      >
+        <div class="py-1" role="none">
+          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+          <a
+            href="#"
+            class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+            role="menuitem"
+            tabindex="-1"
+            id="menu-item-0"
+            ><span class="material-symbols-outlined mr-2 text-base">
+              settings_account_box </span
+            >My account</a
+          >
+          <a
+            href="#"
+            class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+            role="menuitem"
+            tabindex="-1"
+            id="menu-item-1"
+            ><span class="material-symbols-outlined mr-2 text-base">
+              logout </span
+            >Sign out</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <div class="h-full pt-14 md:pt-16">
     <aside class="fixed z-10 hidden h-full w-64 border-r bg-white p-6 xl:block">
@@ -134,26 +124,6 @@
   </ul>
 </aside>
 
-    <div class="sm:hidden">
-      <ul
-        class="flex flex-row border-b bg-white text-center shadow-[0_10px_15px_-10px_rgba(0,0,0,0.05)]"
-      >
-        <li class="basis-1/2">
-          <a
-            href="opportunities_new.html"
-            class="relative flex justify-center py-3 text-sm font-bold text-secondary-500 after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-secondary-500"
-            >Opportunities</a
-          >
-        </li>
-        <li class="basis-1/2">
-          <a
-            href="quotes.html"
-            class="flex justify-center py-3 text-sm font-bold text-gray-600"
-            >Quotes</a
-          >
-        </li>
-      </ul>
-    </div>
     <div class="h-full xl:ml-64">
       <!-- 페이지 타이틀 -->
       <div
@@ -166,39 +136,62 @@
             arrow_back_ios_new
           </span>
         </a>
-        <h2 class="text-xl xl:text-2xl">Quoting</h2>
+        <div class="item-center flex">
+          <h2 class="text-xl xl:text-2xl">Quoting</h2>
+          <span
+            class="ml-2 self-center rounded-full bg-gray-700 px-2 text-sm text-white"
+            >#123456</span
+          >
+        </div>
       </div>
-      <!-- 제품 설명 -->
 
       <div
-        class="border-b bg-white px-4 py-6 xl:flex xl:flex-row xl:items-center xl:px-6"
+        class="border-b bg-white py-6 pl-4 xl:flex xl:flex-row xl:items-center xl:px-6"
       >
         <div class="flex flex-col">
           <div class="mb-3 flex items-center">
-            <h3>Samsung Electronic</h3>
-            <span class="ml-2 rounded-full bg-gray-700 px-2 text-sm text-white"
-              >#123456</span
-            >
+            <h3>Supplier</h3>
           </div>
-          <div class="flex flex-col md:flex-row md:gap-14">
-            <dl class="mb-1 grid grid-cols-productInfo gap-y-1 text-sm">
-              <dt class="mr-2 text-slate-400">Requested on</dt>
-              <dd class="font-semibold">Sep 13, 2022</dd>
-              <dt class="mr-2 text-slate-400">Request ID</dt>
-              <dd class="font-semibold">#123456</dd>
-            </dl>
-            <dl class="grid grid-cols-productInfo gap-y-1 text-sm">
-              <dt class="mr-2 text-slate-400">Shipping</dt>
-              <dd class="font-semibold">
-                712, 30, Digital-ro 32-gil Guro-gu, Seoul
-              </dd>
-              <dt class="mr-2 text-slate-400">Expiration</dt>
-              <dt class="font-semibold">2022-09-20</dt>
-            </dl>
+          <div class="flex overflow-x-auto pr-4 pb-4">
+            <ul class="flex flex-nowrap gap-3">
+              <li class="rounded-md border p-3 text-center">
+                <div class="mb-2 w-24">
+                  <img src="images/dist/supplier01.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">Samsung</p>
+              </li>
+              <li class="rounded-md border p-3 text-center">
+                <div class="mb-2 w-24">
+                  <img src="images/dist/supplier02.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">NVIDIA</p>
+              </li>
+              <li class="rounded-md border p-3 text-center">
+                <div class="mb-2 w-24">
+                  <img src="images/dist/supplier03.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">AMAZON</p>
+              </li>
+              <li class="rounded-md border p-3 text-center">
+                <div class="mb-2 w-24">
+                  <img src="images/dist/supplier01.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">Samsung</p>
+              </li>
+              <li class="rounded-md border p-3 text-center">
+                <div class="mb-2 w-24">
+                  <img src="images/dist/supplier02.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">NVIDIA</p>
+              </li>
+              <li class="rounded-md border p-3 text-center">
+                <div class="mb-2 w-24">
+                  <img src="images/dist/supplier03.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">AMAZON</p>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="ml-auto hidden w-32 xl:flex">
-          <img src="images/dist/samsung.png" class="w-full" alt="" />
         </div>
       </div>
 
@@ -731,22 +724,22 @@
         >
           <!-- 조건 안내문 (PC) -->
           <!-- <p class="hidden md:flex">
-            There are
-            <span class="px-1 font-bold text-secondary-500">2</span> items that
-            have not been quoted.
-          </p> -->
+              There are
+              <span class="px-1 font-bold text-secondary-500">2</span> items that
+              have not been quoted.
+            </p> -->
           <!-- save 버튼 비활성화 -->
           <!-- <a
-            href="#n"
-            class="hidden w-full items-center justify-center bg-slate-400 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:flex md:w-auto md:rounded-full md:py-2 md:px-10"
-            >Save</a
-          > -->
+              href="#n"
+              class="hidden w-full items-center justify-center bg-slate-400 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:flex md:w-auto md:rounded-full md:py-2 md:px-10"
+              >Save</a
+            > -->
           <!-- save 버튼 비활성화 (mobile)-->
           <!-- <a
-            href="#n"
-            class="flex w-full items-center justify-center bg-slate-400 p-4 text-sm text-white focus:bg-primary-600 md:ml-auto md:hidden md:w-auto md:rounded-full md:py-2 md:px-10"
-            >There are 2 items that have not been quoted.</a
-          > -->
+              href="#n"
+              class="flex w-full items-center justify-center bg-slate-400 p-4 text-sm text-white focus:bg-primary-600 md:ml-auto md:hidden md:w-auto md:rounded-full md:py-2 md:px-10"
+              >There are 2 items that have not been quoted.</a
+            > -->
           <!-- save 버튼 활성화 -->
           <a
             href="opportunities_new2.html"
@@ -758,256 +751,7 @@
     </div>
   </div>
 </div>
-<!-- 상세값 설정 (Mobile) -->
-<div
-  class="fixed top-0 right-0 z-10 flex hidden h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
->
-  <div class="flex w-11/12 overflow-y-auto bg-white md:max-w-lg">
-    <div class="w-full bg-white p-3">
-      <div class="flex items-center border-b pb-3">
-        <h3>#BT220729001</h3>
-        <a href="#n" class="ml-auto flex"
-          ><span class="material-symbols-outlined"> close </span></a
-        >
-      </div>
-      <ul class="mb-4 flex flex-row border-b">
-        <li class="tab_item active basis-1/2">
-          <a
-            href="#n"
-            class="relative flex justify-center p-3 text-sm font-semibold"
-            >Specifications</a
-          >
-        </li>
-        <li class="tab_item basis-1/2">
-          <a
-            href="#n"
-            class="relative flex justify-center p-3 text-sm font-semibold"
-            >Quote</a
-          >
-        </li>
-      </ul>
-      <div class="tab_inner active">
-        <div class="mb-3 w-full">
-          <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
-        </div>
-        <div class="grid grid-cols-2 gap-2 p-3 2xl:grid-cols-3">
-          <dl>
-            <dt class="text-xs text-slate-400">Item ID</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Category</dt>
-            <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Style</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Size</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Material</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Colors</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Coating</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Finish</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Comments</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">What do you pack</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-          <dl>
-            <dt class="text-xs text-slate-400">Nickname</dt>
-            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
-          </dl>
-        </div>
-      </div>
-      <div class="tab_inner">
-        <div class="mb-4">
-          <h5 class="border-b border-gray-900 pb-2 text-sm">Pricing</h5>
-          <div class="flex flex-col">
-            <div class="p-3 first:border-b">
-              <div class="item-center mb-2 flex">
-                <h6 class="text-xs font-semibold">Default</h6>
-              </div>
-              <ul class="flex gap-2">
-                <li>
-                  <label
-                    for=""
-                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
-                    >quantity</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition"
-                    placeholder="placeholder"
-                  />
-                </li>
-                <li>
-                  <label
-                    for=""
-                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
-                    >Unit price ($)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition"
-                    placeholder="placeholder"
-                  />
-                </li>
-                <li>
-                  <label for="" class="mb-1 block text-sm text-slate-400"
-                    >Total ($)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition disabled:border-slate-200 disabled:bg-slate-50 disabled:text-slate-500 disabled:shadow-none"
-                    placeholder="placeholder"
-                    disabled
-                  />
-                </li>
-              </ul>
-            </div>
-            <div class="p-3">
-              <div class="item-center mb-2 flex">
-                <h6 class="text-xs font-semibold">Secondary</h6>
-                <a
-                  href="#n"
-                  class="inlin-flex ml-auto rounded-sm text-xs text-red-500 hover:text-red-700"
-                  >삭제</a
-                >
-              </div>
-              <ul class="flex gap-2">
-                <li>
-                  <label
-                    for=""
-                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
-                    >quantity</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition"
-                  />
-                </li>
-                <li>
-                  <label
-                    for=""
-                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
-                    >Unit price ($)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition"
-                    placeholder="placeholder"
-                  />
-                </li>
-                <li>
-                  <label for="" class="mb-1 block text-sm text-slate-400"
-                    >Total ($)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition disabled:border-slate-200 disabled:bg-slate-50 disabled:text-slate-500 disabled:shadow-none"
-                    placeholder="placeholder"
-                    disabled
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <h5 class="border-b border-gray-900 pb-2 text-sm">Tooling</h5>
-          <div class="flex flex-col">
-            <div class="p-3 first:border-b">
-              <div class="item-center mb-2 flex">
-                <h6 class="text-xs font-semibold">Default</h6>
-              </div>
-              <ul class="flex gap-2">
-                <li class="basis-1/2">
-                  <label
-                    for=""
-                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
-                    >Type</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition"
-                    placeholder="placeholder"
-                  />
-                </li>
-                <li class="basis-1/2">
-                  <label
-                    for=""
-                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
-                    >Cost ($)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-input px-2 py-1.5 font-semibold transition"
-                    placeholder="placeholder"
-                  />
-                </li>
-              </ul>
-            </div>
 
-            <div class="flex justify-center">
-              <a href="#n" class="flex p-2 text-slate-400 hover:text-slate-500"
-                ><span class="material-symbols-outlined"> add_circle </span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <h5 class="border-b border-gray-900 pb-2 text-sm">Notes</h5>
-          <div class="mt-3">
-            <textarea
-              name=""
-              id=""
-              class="form-textarea h-28 resize-none transition"
-              placeholder="placeholder"
-            ></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  const tabItem = document.querySelectorAll(".tab_item");
-  const tabInner = document.querySelectorAll(".tab_inner");
-
-  tabItem.forEach((tab, idx) => {
-    tab.addEventListener("click", function () {
-      tabInner.forEach((inner) => {
-        inner.classList.remove("active");
-      });
-
-      tabItem.forEach((item) => {
-        item.classList.remove("active");
-      });
-
-      tabItem[idx].classList.add("active");
-      tabInner[idx].classList.add("active");
-    });
-  });
-</script>
 	<script src="js/app.min.js"></script>
 
 	<script>
