@@ -27,7 +27,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['"Open Sans"'],
+        sans: ['"Open Sans"', "Roboto", "-apple-system"],
       },
       width: {
         100: "25rem",
