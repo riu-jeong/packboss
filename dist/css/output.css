@@ -1452,6 +1452,10 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 1.5rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1677,6 +1681,11 @@ html,body{
   height: 2rem;
 }
 
+.after\:h-6::after {
+  content: var(--tw-content);
+  height: 1.5rem;
+}
+
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
@@ -1685,6 +1694,16 @@ html,body{
 .after\:w-100::after {
   content: var(--tw-content);
   width: 25rem;
+}
+
+.after\:w-\[full\]::after {
+  content: var(--tw-content);
+  width: full;
+}
+
+.after\:w-\[90\%\]::after {
+  content: var(--tw-content);
+  width: 90%;
 }
 
 .after\:border-b-2::after {
