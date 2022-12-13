@@ -1060,6 +1060,10 @@ h1, h2, h3, h4, h5 {
   width: 16rem;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .flex-none {
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -1609,6 +1613,13 @@ h1, h2, h3, h4, h5 {
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0_-10px_15px_-10px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
+  --tw-shadow: 0 -10px 15px -10px rgba(0,0,0,0.1);
+  --tw-shadow-colored: 0 -10px 15px -10px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition {
   -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
@@ -2068,6 +2079,13 @@ html,body{
 
   .md\:shadow-\[0_-10px_15px_-10px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
     --tw-shadow: 0 -10px 15px -10px rgba(0,0,0,0.1);
+    --tw-shadow-colored: 0 -10px 15px -10px var(--tw-shadow-color);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:shadow-\[0_-10px_15px_-10px_rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
+    --tw-shadow: 0 -10px 15px -10px rgba(0,0,0,0.3);
     --tw-shadow-colored: 0 -10px 15px -10px var(--tw-shadow-color);
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
