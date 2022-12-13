@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    h1, h2, h3, h4, h5{
+        @apply font-bold;
+    }
+}
+@layer components {
+    /* tab menu */
+    .tab_item.active a{
+        @apply text-secondary-500 after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-secondary-500;
+    }
+    .tab_inner{
+        @apply hidden;
+    }
+    .tab_inner.active {
+        @apply block;
+    }
+    /* end tab menu */
+
+    /* accordion */
+    .accordion.active .accordion-icon{
+        @apply rotate-180;
+    }
+    /* end accordion */
+
+    /* dropdown */
+    .dropdown_filter{
+        @apply inline-flex items-center rounded-full p-2;
+    }
+    .dropdown_filter.active{
+        @apply bg-slate-100;
+    }
+    .dropdown_container{
+        @apply absolute right-0 z-10 mt-2 hidden w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
+    }
+    .dropdown_container.active{
+        @apply block;
+    }
+    /* end dropdown */
+
+    /* input styling */
+    .form-input, .form-textarea{
+        @apply w-full rounded-sm shadow-sm border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 text-sm placeholder:text-slate-300 placeholder:font-normal placeholder:italic;
+    }
+    /* end input styling */
+
+}
+
+html,body{
+    height: 100%;
+
+}

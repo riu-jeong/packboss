@@ -1,0 +1,30 @@
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const dropdownBtn = document.querySelector(".dropdown_filter");
+		const dropdownContain = document.querySelector(".dropdown_container");
+	  
+		function handleFilter(event) {
+		  event.preventDefault();
+		  const isOnPage = dropdownContain.classList.contains("is-on-page");
+	  
+		  if (isOnPage) {
+			this.classList.remove("active");
+			dropdownContain.classList.remove("active");
+			setTimeout(() => {
+			  dropdownContain.classList.remove("is-on-page");
+			}, 100);
+		  } else {
+			this.classList.add("active");
+			dropdownContain.classList.add("is-on-page");
+			setTimeout(() => {
+			  dropdownContain.classList.add("active");
+			}, 1);
+		  }
+		}
+	  
+		dropdownBtn.addEventListener("click", handleFilter, false);
+	  </script>
+	  
+</body>
+</html>

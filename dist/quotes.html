@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>packposs</title>
+    <meta name="description" content="packposs" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-700"></body>
+</html>
+
+
+<div class="h-full">
+  <header
+  class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+>
+  <div class="flex-none xl:hidden">
+    <a href="#n" class="flex w-10 items-center p-2"
+      ><span class="material-symbols-outlined"> menu </span></a
+    >
+    <!-- <a href="#n" class="flex w-10 items-center p-2"
+      ><span class="material-symbols-outlined"> close </span></a
+    > -->
+  </div>
+
+  <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+    <a href="index.html" class="flex w-28 p-2 md:w-32">
+      <img src="images/dist/logo/logo.svg" alt="" />
+    </a>
+  </div>
+  <div class="ml-6 hidden gap-3 sm:flex sm:items-center">
+    <a
+      href="index.html"
+      class="rounded-full bg-secondary-500 px-3 py-1 text-sm font-medium text-white transition hover:bg-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
+      >Opportunities</a
+    >
+    <a
+      href="quotes.html"
+      class="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-700 transition hover:text-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
+      >Quotes</a
+    >
+  </div>
+  <div class="relative w-10 flex-none sm:ml-auto">
+    <a
+      href="#n"
+      class="dropdown_filter"
+      id="dropdown-button"
+      aria-expanded="true"
+      aria-haspopup="true"
+    >
+      <span class="material-symbols-outlined"> account_circle </span>
+    </a>
+
+    <div
+      class="dropdown_container"
+      role="menu"
+      aria-labelledby="dropdown-button"
+      tabindex="-1"
+    >
+      <div class="py-1" role="none">
+        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+        <a
+          href="#"
+          class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+          role="menuitem"
+          tabindex="-1"
+          id="menu-item-0"
+          ><span class="material-symbols-outlined mr-2 text-base">
+            settings_account_box </span
+          >My account</a
+        >
+        <a
+          href="#"
+          class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+          role="menuitem"
+          tabindex="-1"
+          id="menu-item-1"
+          ><span class="material-symbols-outlined mr-2 text-base"> logout </span
+          >Sign out</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+
+  <div class="h-full pt-14 md:pt-16">
+    <aside class="fixed z-10 hidden h-full w-64 border-r bg-white p-6 xl:block">
+  <h3 class="font-bold">Opportunities</h3>
+  <ul class="py-4">
+    <li>
+      <a
+        href="index.html"
+        class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+          />
+        </svg>
+        <p class="ml-1.5">New</p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#n"
+        class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
+          />
+        </svg>
+        <p class="ml-1.5">Opened</p>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+    <div class="sm:hidden">
+      <ul
+        class="flex flex-row border-b bg-white text-center shadow-[0_10px_15px_-10px_rgba(0,0,0,0.05)]"
+      >
+        <li class="basis-1/2">
+          <a
+            href="opportunities_new.html"
+            class="flex justify-center py-3 text-sm font-bold text-gray-600"
+            >Opportunities</a
+          >
+        </li>
+        <li class="basis-1/2">
+          <a
+            href="quotes.html"
+            class="relative flex justify-center py-3 text-sm font-bold text-secondary-500 after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-secondary-500"
+            >Quotes</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="p-4 lg:p-6 xl:ml-64 xl:p-8">
+      <div class="my-4">
+        <h2 class="text-xl">In progress</h2>
+      </div>
+      <div class="accordions_wrapper flex flex-col gap-4">
+        <div class="accordion rounded-lg bg-white shadow">
+          <div
+            class="accordion_header flex cursor-pointer items-center px-6 py-4"
+          >
+            <h4>#123456</h4>
+            <span
+              class="ml-3 rounded-full bg-gray-500 py-0.5 px-2 text-sm font-semibold text-gray-100"
+              >Quoting</span
+            >
+            <div class="accordion-icon ml-auto flex transition-all">
+              <span class="material-symbols-outlined text-2xl text-slate-500">
+                expand_more
+              </span>
+            </div>
+          </div>
+          <div class="accordion_body max-h-0 overflow-hidden transition-all">
+            <div class="accordion_content border-t p-6">
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 last-of-type:border-b-0 last-of-type:pb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="flex justify-center p-6 pt-0">
+              <a
+                href="#n"
+                class="flex items-center rounded-full bg-primary-500 p-2 px-4 text-sm text-white transition hover:bg-primary-600"
+                >View details
+                <span class="material-symbols-outlined ml-4 text-sm">
+                  arrow_forward_ios
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion rounded-lg bg-white shadow">
+          <div
+            class="accordion_header flex cursor-pointer items-center px-6 py-4"
+          >
+            <h4>#123456</h4>
+            <span
+              class="ml-3 rounded-full bg-lime-500 py-0.5 px-2 text-sm font-semibold text-lime-100"
+              >Submitted</span
+            >
+            <div class="accordion-icon ml-auto flex transition-all">
+              <span class="material-symbols-outlined text-2xl text-slate-500">
+                expand_more
+              </span>
+            </div>
+          </div>
+          <div class="accordion_body max-h-0 overflow-hidden transition-all">
+            <div class="accordion_content border-t p-6">
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 last-of-type:border-b-0 last-of-type:pb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="flex justify-center p-6 pt-0">
+              <a
+                href="#n"
+                class="flex items-center rounded-full bg-primary-500 p-2 px-4 text-sm text-white transition hover:bg-primary-600"
+                >View details
+                <span class="material-symbols-outlined ml-4 text-sm">
+                  arrow_forward_ios
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion rounded-lg bg-white shadow">
+          <div
+            class="accordion_header flex cursor-pointer items-center px-6 py-4"
+          >
+            <h4>#123456</h4>
+            <span
+              class="ml-3 rounded-full bg-cyan-500 py-0.5 px-2 text-sm font-semibold text-cyan-100"
+              >Ordered</span
+            >
+            <div class="accordion-icon ml-auto flex transition-all">
+              <span class="material-symbols-outlined text-2xl text-slate-500">
+                expand_more
+              </span>
+            </div>
+          </div>
+          <div class="accordion_body max-h-0 overflow-hidden transition-all">
+            <div class="accordion_content border-t p-6">
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 last-of-type:border-b-0 last-of-type:pb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="flex justify-center p-6 pt-0">
+              <a
+                href="#n"
+                class="flex items-center rounded-full bg-primary-500 p-2 px-4 text-sm text-white transition hover:bg-primary-600"
+                >View details
+                <span class="material-symbols-outlined ml-4 text-sm">
+                  arrow_forward_ios
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion rounded-lg bg-white shadow">
+          <div
+            class="accordion_header flex cursor-pointer items-center px-6 py-4"
+          >
+            <h4>#123456</h4>
+            <span
+              class="ml-3 rounded-full bg-rose-500 py-0.5 px-2 text-sm font-semibold text-rose-100"
+              >Declined</span
+            >
+            <div class="accordion-icon ml-auto flex transition-all">
+              <span class="material-symbols-outlined text-2xl text-slate-500">
+                expand_more
+              </span>
+            </div>
+          </div>
+          <div class="accordion_body max-h-0 overflow-hidden transition-all">
+            <div class="accordion_content border-t p-6">
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 last-of-type:border-b-0 last-of-type:pb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+              <div
+                class="mb-4 grid grid-cols-2 gap-3 border-b border-dashed pb-4 last-of-type:mb-0 md:grid-cols-3 lg:grid-cols-5"
+              >
+                <dl>
+                  <dt class="text-xs text-slate-400">Item</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    #BT220729001
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Hotdog(Tray)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Requested</dt>
+                  <dd class="break-words text-sm font-semibold">
+                    Sep 13, 2022
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Quotes</dt>
+                  <dd class="break-words text-sm font-semibold">-</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="flex justify-center p-6 pt-0">
+              <a
+                href="#n"
+                class="flex items-center rounded-full bg-primary-500 p-2 px-4 text-sm text-white transition hover:bg-primary-600"
+                >View details
+                <span class="material-symbols-outlined ml-4 text-sm">
+                  arrow_forward_ios
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 상세값 설정 (Mobile) -->
+<div
+  class="fixed top-0 right-0 z-10 flex hidden h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
+>
+  <div class="flex w-11/12 overflow-y-auto bg-white md:max-w-lg">
+    <div class="w-full bg-white p-3">
+      <div class="flex items-center border-b pb-3">
+        <h3>#BT220729001</h3>
+        <a href="#n" class="ml-auto flex"
+          ><span class="material-symbols-outlined"> close </span></a
+        >
+      </div>
+      <ul class="mb-4 flex flex-row border-b">
+        <li class="tab_item active basis-1/2">
+          <a
+            href="#n"
+            class="relative flex justify-center p-3 text-sm font-semibold"
+            >Specifications</a
+          >
+        </li>
+        <li class="tab_item basis-1/2">
+          <a
+            href="#n"
+            class="relative flex justify-center p-3 text-sm font-semibold"
+            >Quote</a
+          >
+        </li>
+      </ul>
+      <div class="tab_inner active">
+        <div class="mb-3 w-full">
+          <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
+        </div>
+        <div class="grid grid-cols-2 gap-2 p-3 2xl:grid-cols-3">
+          <dl>
+            <dt class="text-xs text-slate-400">Item ID</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Category</dt>
+            <dd class="break-words text-sm font-semibold">Box(Tray)</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Style</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Size</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Material</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Colors</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Coating</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Finish</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Comments</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">What do you pack</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+          <dl>
+            <dt class="text-xs text-slate-400">Nickname</dt>
+            <dd class="break-words text-sm font-semibold">#BT220729001</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="tab_inner">
+        <div class="mb-4">
+          <h5 class="border-b border-gray-900 pb-2 text-sm">Pricing</h5>
+          <div class="flex flex-col">
+            <div class="p-3 first:border-b">
+              <div class="item-center mb-2 flex">
+                <h6 class="text-xs font-semibold">Default</h6>
+              </div>
+              <ul class="flex gap-2">
+                <li>
+                  <label
+                    for=""
+                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
+                    >quantity</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                    placeholder="placeholder"
+                  />
+                </li>
+                <li>
+                  <label
+                    for=""
+                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
+                    >Unit price ($)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                    placeholder="placeholder"
+                  />
+                </li>
+                <li>
+                  <label for="" class="mb-1 block text-sm text-slate-400"
+                    >Total ($)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition disabled:border-slate-200 disabled:bg-slate-50 disabled:text-slate-500 disabled:shadow-none"
+                    placeholder="placeholder"
+                    disabled
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="p-3">
+              <div class="item-center mb-2 flex">
+                <h6 class="text-xs font-semibold">Secondary</h6>
+                <a
+                  href="#n"
+                  class="inlin-flex ml-auto rounded-sm text-xs text-red-500 hover:text-red-700"
+                  >삭제</a
+                >
+              </div>
+              <ul class="flex gap-2">
+                <li>
+                  <label
+                    for=""
+                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
+                    >quantity</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                    placeholder="placeholder"
+                  />
+                </li>
+                <li>
+                  <label
+                    for=""
+                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
+                    >Unit price ($)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                    placeholder="placeholder"
+                  />
+                </li>
+                <li>
+                  <label for="" class="mb-1 block text-sm text-slate-400"
+                    >Total ($)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition disabled:border-slate-200 disabled:bg-slate-50 disabled:text-slate-500 disabled:shadow-none"
+                    placeholder="placeholder"
+                    disabled
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h5 class="border-b border-gray-900 pb-2 text-sm">Tooling</h5>
+          <div class="flex flex-col">
+            <div class="p-3 first:border-b">
+              <div class="item-center mb-2 flex">
+                <h6 class="text-xs font-semibold">Default</h6>
+              </div>
+              <ul class="flex gap-2">
+                <li class="basis-1/2">
+                  <label
+                    for=""
+                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
+                    >Type</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                    placeholder="placeholder"
+                  />
+                </li>
+                <li class="basis-1/2">
+                  <label
+                    for=""
+                    class="mb-1 block text-sm text-slate-400 after:ml-0.5 after:text-red-500 after:content-['*']"
+                    >Cost ($)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                    placeholder="placeholder"
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex justify-center">
+              <a href="#n" class="flex p-2 text-slate-400 hover:text-slate-500"
+                ><span class="material-symbols-outlined"> add_circle </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h5 class="border-b border-gray-900 pb-2 text-sm">Notes</h5>
+          <div class="mt-3">
+            <textarea
+              name=""
+              id=""
+              class="form-textarea h-28 resize-none transition"
+              placeholder="placeholder"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordionHeaders = document.querySelectorAll(".accordion_header");
+
+  //ActivatingFirstAccordion();
+
+  //function ActivatingFirstAccordion() {
+  //  accordionHeaders[0].parentElement.classList.add("active");
+  //  accordionHeaders[0].nextElementSibling.style.maxHeight =
+  //    accordionHeaders[0].nextElementSibling.scrollHeight + "px";
+  //}
+
+  function toggleActiveAccordion(e, header) {
+    const activeAccordion = document.querySelector(".accordion.active");
+    const clickedAccordion = header.parentElement;
+    const accordionBody = header.nextElementSibling;
+
+    if (activeAccordion && activeAccordion != clickedAccordion) {
+      activeAccordion.querySelector(".accordion_body").style.maxHeight = 0;
+      activeAccordion.classList.remove("active");
+    }
+
+    clickedAccordion.classList.toggle("active");
+
+    if (clickedAccordion.classList.contains("active")) {
+      accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+    } else {
+      accordionBody.style.maxHeight = 0;
+    }
+  }
+
+  accordionHeaders.forEach(function (header) {
+    header.addEventListener("click", function (event) {
+      toggleActiveAccordion(event, header);
+    });
+  });
+
+  function resizeActiveAccordionBody() {
+    const activeAccordionBody = document.querySelector(
+      ".accordion.active .accordion_body"
+    );
+    if (activeAccordionBody)
+      activeAccordionBody.style.maxHeight =
+        activeAccordionBody.scrollHeight + "px";
+  }
+
+  window.addEventListener("resize", function () {
+    resizeActiveAccordionBody();
+  });
+</script>
+
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const dropdownBtn = document.querySelector(".dropdown_filter");
+		const dropdownContain = document.querySelector(".dropdown_container");
+	  
+		function handleFilter(event) {
+		  event.preventDefault();
+		  const isOnPage = dropdownContain.classList.contains("is-on-page");
+	  
+		  if (isOnPage) {
+			this.classList.remove("active");
+			dropdownContain.classList.remove("active");
+			setTimeout(() => {
+			  dropdownContain.classList.remove("is-on-page");
+			}, 100);
+		  } else {
+			this.classList.add("active");
+			dropdownContain.classList.add("is-on-page");
+			setTimeout(() => {
+			  dropdownContain.classList.add("active");
+			}, 1);
+		  }
+		}
+	  
+		dropdownBtn.addEventListener("click", handleFilter, false);
+	  </script>
+	  
+</body>
+</html>

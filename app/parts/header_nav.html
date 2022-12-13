@@ -1,0 +1,71 @@
+<header
+  class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+>
+  <div class="flex-none xl:hidden">
+    <a href="#n" class="flex w-10 items-center p-2"
+      ><span class="material-symbols-outlined"> menu </span></a
+    >
+    <!-- <a href="#n" class="flex w-10 items-center p-2"
+      ><span class="material-symbols-outlined"> close </span></a
+    > -->
+  </div>
+
+  <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+    <a href="index.html" class="flex w-28 p-2 md:w-32">
+      <img src="images/dist/logo/logo.svg" alt="" />
+    </a>
+  </div>
+  <div class="ml-6 hidden gap-3 sm:flex sm:items-center">
+    <a
+      href="index.html"
+      class="rounded-full bg-secondary-500 px-3 py-1 text-sm font-medium text-white transition hover:bg-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
+      >Opportunities</a
+    >
+    <a
+      href="quotes.html"
+      class="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-700 transition hover:text-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
+      >Quotes</a
+    >
+  </div>
+  <div class="relative w-10 flex-none sm:ml-auto">
+    <a
+      href="#n"
+      class="dropdown_filter"
+      id="dropdown-button"
+      aria-expanded="true"
+      aria-haspopup="true"
+    >
+      <span class="material-symbols-outlined"> account_circle </span>
+    </a>
+
+    <div
+      class="dropdown_container"
+      role="menu"
+      aria-labelledby="dropdown-button"
+      tabindex="-1"
+    >
+      <div class="py-1" role="none">
+        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+        <a
+          href="#"
+          class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+          role="menuitem"
+          tabindex="-1"
+          id="menu-item-0"
+          ><span class="material-symbols-outlined mr-2 text-base">
+            settings_account_box </span
+          >My account</a
+        >
+        <a
+          href="#"
+          class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+          role="menuitem"
+          tabindex="-1"
+          id="menu-item-1"
+          ><span class="material-symbols-outlined mr-2 text-base"> logout </span
+          >Sign out</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
