@@ -1239,6 +1239,16 @@ h1, h2, h3, h4, h5 {
   border-color: rgb(24 43 80 / var(--tw-border-opacity));
 }
 
+.border-secondary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 131 0 / var(--tw-border-opacity));
+}
+
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1432,6 +1442,14 @@ h1, h2, h3, h4, h5 {
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -1642,9 +1660,31 @@ html,body{
   margin-left: 0px;
 }
 
+.after\:flex::after {
+  content: var(--tw-content);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.after\:h-16::after {
+  content: var(--tw-content);
+  height: 4rem;
+}
+
+.after\:h-8::after {
+  content: var(--tw-content);
+  height: 2rem;
+}
+
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
+}
+
+.after\:w-100::after {
+  content: var(--tw-content);
+  width: 25rem;
 }
 
 .after\:border-b-2::after {
@@ -1658,6 +1698,39 @@ html,body{
   border-color: rgb(255 131 0 / var(--tw-border-opacity));
 }
 
+.after\:bg-gradient-to-b::after {
+  content: var(--tw-content);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));
+  background-image: -o-linear-gradient(top, var(--tw-gradient-stops));
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.after\:from-cyan-500::after {
+  content: var(--tw-content);
+  --tw-gradient-from: #06b6d4;
+  --tw-gradient-to: rgb(6 182 212 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:from-gray-500::after {
+  content: var(--tw-content);
+  --tw-gradient-from: #6b7280;
+  --tw-gradient-to: rgb(107 114 128 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:from-gray-50::after {
+  content: var(--tw-content);
+  --tw-gradient-from: #f9fafb;
+  --tw-gradient-to: rgb(249 250 251 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:to-blue-500::after {
+  content: var(--tw-content);
+  --tw-gradient-to: #3b82f6;
+}
+
 .after\:text-red-500::after {
   content: var(--tw-content);
   --tw-text-opacity: 1;
@@ -1666,6 +1739,16 @@ html,body{
 
 .after\:content-\[\'\*\'\]::after {
   --tw-content: '*';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\]::after {
+  --tw-content: ;
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\'\]::after {
+  --tw-content: '';
   content: var(--tw-content);
 }
 
