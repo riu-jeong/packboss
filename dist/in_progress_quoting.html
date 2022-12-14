@@ -1,0 +1,740 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>packposs</title>
+    <meta name="description" content="packposs" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-700"></body>
+</html>
+
+
+<div class="h-full">
+  <header
+    class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+  >
+    <div class="flex-none xl:hidden">
+      <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> menu </span></a
+      >
+      <!-- <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> close </span></a
+      > -->
+    </div>
+
+    <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+      <a href="index.html" class="flex w-28 p-2 md:w-32">
+        <img src="images/dist/logo/logo.svg" alt="" />
+      </a>
+    </div>
+
+    <div class="relative w-10 flex-none sm:ml-auto">
+      <a
+        href="#n"
+        class="dropdown_filter"
+        id="dropdown-button"
+        aria-expanded="true"
+        aria-haspopup="true"
+      >
+        <span class="material-symbols-outlined"> account_circle </span>
+      </a>
+
+      <div
+        class="dropdown_container"
+        role="menu"
+        aria-labelledby="dropdown-button"
+        tabindex="-1"
+      >
+        <div class="py-1" role="none">
+          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+          <a
+            href="#"
+            class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+            role="menuitem"
+            tabindex="-1"
+            id="menu-item-0"
+            ><span class="material-symbols-outlined mr-2 text-base">
+              settings_account_box </span
+            >My account</a
+          >
+          <a
+            href="#"
+            class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+            role="menuitem"
+            tabindex="-1"
+            id="menu-item-1"
+            ><span class="material-symbols-outlined mr-2 text-base">
+              logout </span
+            >Sign out</a
+          >
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pt-14 md:pt-16">
+    <aside class="fixed z-10 hidden h-full w-64 border-r bg-white p-6 xl:block">
+  <h3 class="font-bold">Opportunities</h3>
+  <ul class="py-4">
+    <li>
+      <a
+        href="index.html"
+        class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
+      >
+        <span class="material-symbols-outlined text-[20px]"> bookmarks </span>
+        <p class="ml-1.5">New</p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#n"
+        class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
+      >
+        <span class="material-symbols-outlined text-[20px]"> credit_card </span>
+        <p class="ml-1.5">Opened</p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="quotes.html"
+        class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
+      >
+        <span class="material-symbols-outlined text-[20px]"> autorenew </span>
+        <p class="ml-1.5">In progress</p>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+    <div class="h-full xl:ml-64">
+      <!-- 페이지 타이틀 -->
+      <div
+        class="relative flex items-center justify-center border-b bg-white p-4 xl:p-6"
+      >
+        <a
+          href="index.html"
+          class="absolute top-1/2 left-4 -ml-3 flex translate-y-[-50%] justify-center bg-white p-2 xl:-ml-1"
+          ><span class="material-symbols-outlined text-2xl text-slate-500">
+            arrow_back_ios_new
+          </span>
+        </a>
+        <div class="item-center flex">
+          <h2 class="text-xl xl:text-2xl">Quoting</h2>
+          <span
+            class="ml-2 self-center rounded-full bg-gray-700 px-2 text-sm text-white"
+            >#123456</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="lg:flex lg:w-full lg:gap-10 lg:p-6 xl:mx-auto xl:max-w-[1400px]"
+      >
+        <!-- supplier -->
+        <div
+          class="sticky top-14 z-10 bg-gray-50 pt-4 pl-4 after:absolute after:flex after:h-4 after:w-[90%] after:bg-gradient-to-b after:from-gray-50 after:content-[''] md:top-16 lg:relative lg:top-0 lg:z-0 lg:border-r lg:p-0 lg:pr-10 lg:after:hidden"
+        >
+          <div class="mb-3 lg:my-4">
+            <h3>Supplier</h3>
+          </div>
+          <div
+            class="flex overflow-x-auto pr-4 pb-6 lg:h-full lg:overflow-x-visible lg:p-0"
+          >
+            <ul class="flex flex-nowrap gap-3 lg:flex-col">
+              <li
+                class="sticky top-20 rounded-md border border-slate-500 bg-white p-3 text-center shadow-lg hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <img src="images/dist/supplier01.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">Samsung</p>
+              </li>
+              <li
+                class="rounded-md bg-white p-3 text-center shadow hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <img src="images/dist/supplier02.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">NVIDIA</p>
+              </li>
+              <li
+                class="rounded-md bg-white p-3 text-center shadow hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <img src="images/dist/supplier03.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">AMAZON</p>
+              </li>
+              <li
+                class="rounded-md bg-white p-3 text-center shadow hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <div class="rounded-full bg-gray-100 p-3">
+                    <span
+                      class="material-symbols-outlined flex text-[28px] text-gray-400"
+                    >
+                      image_not_supported
+                    </span>
+                  </div>
+                </div>
+
+                <p class="text-sm font-semibold">Supplier</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- card list -->
+        <div
+          class="relative flex w-full flex-col p-4 pb-16 lg:sticky lg:top-20 lg:self-start lg:p-0"
+        >
+          <div class="md: my-4 justify-between md:flex md:items-center">
+            <h4 class="mb-1 md:m-0">Quote(6)</h4>
+            <p class="text-sm text-gray-500">
+              Submitted Sep 13, 2022 at 00:00 AM
+            </p>
+          </div>
+          <!-- 카드 리스트 -->
+          <div
+            class="flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 xl:mx-auto xl:w-full xl:gap-6 2xl:grid-cols-3"
+          >
+            <div
+              class="rounded-lg bg-white p-3 shadow transition hover:shadow-lg"
+            >
+              <div class="mb-3 flex flex-col">
+                <div class="mb-3 flex items-center">
+                  <h4>#BT220729001</h4>
+                </div>
+                <div class="flex">
+                  <div class="w-32 flex-none sm:w-36">
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full rounded-md"
+                      alt=""
+                    />
+                  </div>
+                  <dl class="ml-4 grow text-sm">
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Hotdog tray</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb-3 flex flex-col gap-3">
+                <div class="rounded-md border bg-gray-50 p-3">
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold text-slate-500">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-gray-400 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-slate-500"
+                      >3,200,000</em
+                    >
+                  </div>
+                </div>
+                <div
+                  class="rounded-md border border-primary-500 bg-gray-50 p-3"
+                >
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-primary-500 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-primary-500"
+                      >3,000,000</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white p-3 shadow transition hover:shadow-lg"
+            >
+              <div class="mb-3 flex flex-col">
+                <div class="mb-3 flex items-center">
+                  <h4>#BT220729001</h4>
+                </div>
+                <div class="flex">
+                  <div class="w-32 flex-none sm:w-36">
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full rounded-md"
+                      alt=""
+                    />
+                  </div>
+                  <dl class="ml-4 grow text-sm">
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Hotdog tray</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb-3 flex flex-col gap-3">
+                <div
+                  class="rounded-md border border-primary-500 bg-gray-50 p-3"
+                >
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-primary-500 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-primary-500"
+                      >3,000,000</em
+                    >
+                  </div>
+                </div>
+                <div class="rounded-md border bg-gray-50 p-3">
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold text-slate-500">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-gray-400 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-slate-500"
+                      >3,200,000</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white p-3 shadow transition hover:shadow-lg"
+            >
+              <div class="mb-3 flex flex-col">
+                <div class="mb-3 flex items-center">
+                  <h4>#BT220729001</h4>
+                </div>
+                <div class="flex">
+                  <div class="w-32 flex-none sm:w-36">
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full rounded-md"
+                      alt=""
+                    />
+                  </div>
+                  <dl class="ml-4 grow text-sm">
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Hotdog tray</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb-3 flex flex-col gap-3">
+                <div
+                  class="rounded-md border border-primary-500 bg-gray-50 p-3"
+                >
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-primary-500 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-primary-500"
+                      >3,000,000</em
+                    >
+                  </div>
+                </div>
+                <div class="rounded-md border bg-gray-50 p-3">
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold text-slate-500">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-gray-400 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-slate-500"
+                      >3,200,000</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white p-3 shadow transition hover:shadow-lg"
+            >
+              <div class="mb-3 flex flex-col">
+                <div class="mb-3 flex items-center">
+                  <h4>#BT220729001</h4>
+                </div>
+                <div class="flex">
+                  <div class="w-32 flex-none sm:w-36">
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full rounded-md"
+                      alt=""
+                    />
+                  </div>
+                  <dl class="ml-4 grow text-sm">
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Hotdog tray</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb-3 flex flex-col gap-3">
+                <div class="rounded-md border bg-gray-50 p-3">
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold text-slate-500">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-gray-400 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-slate-500"
+                      >3,200,000</em
+                    >
+                  </div>
+                </div>
+                <div
+                  class="rounded-md border border-primary-500 bg-gray-50 p-3"
+                >
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-primary-500 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-primary-500"
+                      >3,000,000</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white p-3 shadow transition hover:shadow-lg"
+            >
+              <div class="mb-3 flex flex-col">
+                <div class="mb-3 flex items-center">
+                  <h4>#BT220729001</h4>
+                </div>
+                <div class="flex">
+                  <div class="w-32 flex-none sm:w-36">
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full rounded-md"
+                      alt=""
+                    />
+                  </div>
+                  <dl class="ml-4 grow text-sm">
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Hotdog tray</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb-3 flex flex-col gap-3">
+                <div
+                  class="rounded-md border border-primary-500 bg-gray-50 p-3"
+                >
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-primary-500 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-primary-500"
+                      >3,000,000</em
+                    >
+                  </div>
+                </div>
+                <div class="rounded-md border bg-gray-50 p-3">
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold text-slate-500">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-gray-400 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-slate-500"
+                      >3,200,000</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg bg-white p-3 shadow transition hover:shadow-lg"
+            >
+              <div class="mb-3 flex flex-col">
+                <div class="mb-3 flex items-center">
+                  <h4>#BT220729001</h4>
+                </div>
+                <div class="flex">
+                  <div class="w-32 flex-none sm:w-36">
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full rounded-md"
+                      alt=""
+                    />
+                  </div>
+                  <dl class="ml-4 grow text-sm">
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Hotdog tray</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb-3 flex flex-col gap-3">
+                <div
+                  class="rounded-md border border-primary-500 bg-gray-50 p-3"
+                >
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold">$0.4</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-primary-500 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-primary-500"
+                      >3,000,000</em
+                    >
+                  </div>
+                </div>
+                <div class="rounded-md border bg-gray-50 p-3">
+                  <div class="mb-3 flex w-full flex-row border-b pb-3">
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Quantities</dt>
+                      <dd class="font-semibold text-slate-500">3,000</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Unit price</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                    <dl class="basis-1/3 text-center">
+                      <dt class="text-xs text-slate-400">Tolling</dt>
+                      <dd class="font-semibold text-slate-500">$0.5</dd>
+                    </dl>
+                  </div>
+                  <div class="flex items-center px-3">
+                    <span
+                      class="rounded-full bg-gray-400 px-2 py-0.5 text-xs text-white"
+                      >Total</span
+                    >
+                    <em class="ml-auto font-bold not-italic text-slate-500"
+                      >3,200,000</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- subtotal -->
+      <div class="sticky bottom-0 mt-10 text-center">
+        <div
+          class="flex bg-white shadow-[0_-10px_15px_-10px_rgba(0,0,0,0.1)] md:items-center md:p-4 xl:px-6"
+        >
+          <!-- save 버튼 활성화 -->
+          <div
+            class="flex w-full flex-col items-center justify-center px-3 py-2 md:py-0"
+          >
+            <p class="text-sm text-slate-400">SubTotal</p>
+            <em class="font-bold not-italic text-primary-500 md:text-lg"
+              >$ 6,5000.000</em
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const dropdownBtn = document.querySelector(".dropdown_filter");
+		const dropdownContain = document.querySelector(".dropdown_container");
+	  
+		function handleFilter(event) {
+		  event.preventDefault();
+		  const isOnPage = dropdownContain.classList.contains("is-on-page");
+	  
+		  if (isOnPage) {
+			this.classList.remove("active");
+			dropdownContain.classList.remove("active");
+			setTimeout(() => {
+			  dropdownContain.classList.remove("is-on-page");
+			}, 100);
+		  } else {
+			this.classList.add("active");
+			dropdownContain.classList.add("is-on-page");
+			setTimeout(() => {
+			  dropdownContain.classList.add("active");
+			}, 1);
+		  }
+		}
+	  
+		dropdownBtn.addEventListener("click", handleFilter, false);
+	  </script>
+	  
+</body>
+</html>

@@ -36,8 +36,8 @@
         ><span class="material-symbols-outlined"> menu </span></a
       >
       <!-- <a href="#n" class="flex w-10 items-center p-2"
-        ><span class="material-symbols-outlined"> close </span></a
-      > -->
+          ><span class="material-symbols-outlined"> close </span></a
+        > -->
     </div>
 
     <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
@@ -114,7 +114,7 @@
     </li>
     <li>
       <a
-        href="in_progress.html"
+        href="quotes.html"
         class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
       >
         <span class="material-symbols-outlined text-[20px]"> autorenew </span>
@@ -145,62 +145,67 @@
         </div>
       </div>
 
-      <div class="lg:flex lg:w-full lg:gap-10 lg:p-6">
+      <div
+        class="lg:flex lg:w-full lg:gap-10 lg:p-6 xl:mx-auto xl:max-w-[1400px]"
+      >
         <!-- supplier -->
         <div
           class="sticky top-14 z-10 bg-gray-50 pt-4 pl-4 after:absolute after:flex after:h-4 after:w-[90%] after:bg-gradient-to-b after:from-gray-50 after:content-[''] md:top-16 lg:relative lg:top-0 lg:z-0 lg:border-r lg:p-0 lg:pr-10 lg:after:hidden"
         >
-          <div class="flex flex-col">
-            <div class="mb-3 lg:my-4">
-              <h3>Supplier</h3>
-            </div>
-            <div class="flex overflow-x-auto pr-4 pb-6 lg:p-0">
-              <ul class="flex flex-nowrap gap-3 lg:flex-col lg:flex-wrap">
-                <li
-                  class="rounded-md border border-slate-500 bg-white p-3 text-center shadow"
-                >
-                  <div class="mb-2 w-24">
-                    <img src="images/dist/supplier01.png" alt="" />
+          <div class="mb-3 lg:my-4">
+            <h3>Supplier</h3>
+          </div>
+          <div
+            class="flex overflow-x-auto pr-4 pb-6 lg:h-full lg:overflow-x-visible lg:p-0"
+          >
+            <ul class="flex flex-nowrap gap-3 lg:flex-col">
+              <li
+                class="sticky top-20 rounded-md border border-slate-500 bg-white p-3 text-center shadow-lg hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <img src="images/dist/supplier01.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">Samsung</p>
+              </li>
+              <li
+                class="rounded-md bg-white p-3 text-center shadow hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <img src="images/dist/supplier02.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">NVIDIA</p>
+              </li>
+              <li
+                class="rounded-md bg-white p-3 text-center shadow hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <img src="images/dist/supplier03.png" alt="" />
+                </div>
+                <p class="text-sm font-semibold">AMAZON</p>
+              </li>
+              <li
+                class="rounded-md bg-white p-3 text-center shadow hover:shadow-lg"
+              >
+                <div class="mb-2 flex w-24 items-center justify-center">
+                  <div class="rounded-full bg-gray-100 p-3">
+                    <span
+                      class="material-symbols-outlined flex text-[28px] text-gray-400"
+                    >
+                      image_not_supported
+                    </span>
                   </div>
-                  <p class="text-sm font-semibold">Samsung</p>
-                </li>
-                <li class="rounded-md bg-white p-3 text-center shadow">
-                  <div class="mb-2 w-24">
-                    <img src="images/dist/supplier02.png" alt="" />
-                  </div>
-                  <p class="text-sm font-semibold">NVIDIA</p>
-                </li>
-                <li class="rounded-md bg-white p-3 text-center shadow">
-                  <div class="mb-2 w-24">
-                    <img src="images/dist/supplier03.png" alt="" />
-                  </div>
-                  <p class="text-sm font-semibold">AMAZON</p>
-                </li>
-                <li class="rounded-md bg-white p-3 text-center shadow">
-                  <div class="mb-2 w-24">
-                    <img src="images/dist/supplier01.png" alt="" />
-                  </div>
-                  <p class="text-sm font-semibold">Samsung</p>
-                </li>
-                <li class="rounded-md bg-white p-3 text-center shadow">
-                  <div class="mb-2 w-24">
-                    <img src="images/dist/supplier02.png" alt="" />
-                  </div>
-                  <p class="text-sm font-semibold">NVIDIA</p>
-                </li>
-                <li class="rounded-md bg-white p-3 text-center shadow">
-                  <div class="mb-2 w-24">
-                    <img src="images/dist/supplier03.png" alt="" />
-                  </div>
-                  <p class="text-sm font-semibold">AMAZON</p>
-                </li>
-              </ul>
-            </div>
+                </div>
+
+                <p class="text-sm font-semibold">Supplier</p>
+              </li>
+            </ul>
           </div>
         </div>
 
         <!-- card list -->
-        <div class="relative flex w-full flex-col p-4 pb-16 lg:p-0">
+        <div
+          class="relative flex w-full flex-col p-4 pb-16 lg:sticky lg:top-20 lg:self-start lg:p-0"
+        >
           <div class="md: my-4 justify-between md:flex md:items-center">
             <h4 class="mb-1 md:m-0">Quote(6)</h4>
             <p class="text-sm text-gray-500">
@@ -684,17 +689,26 @@
       </div>
 
       <!-- subtotal -->
-      <div class="sticky bottom-0 mt-auto text-center">
+      <div class="sticky bottom-0 mt-10 text-center">
         <div
           class="flex bg-white shadow-[0_-10px_15px_-10px_rgba(0,0,0,0.1)] md:items-center md:p-4 xl:px-6"
         >
-          <!-- save 버튼 활성화 -->
           <div
-            class="flex w-full flex-col items-center justify-center px-3 py-2 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+            class="flex w-full flex-col items-center justify-center px-3 py-2 md:py-0"
           >
             <p class="text-sm text-slate-400">SubTotal</p>
-            <em class="font-bold not-italic text-primary-500">$ 6,5000.000</em>
+            <em class="font-bold not-italic text-primary-500 md:text-lg"
+              >$ 6,5000.000</em
+            >
           </div>
+          <a
+            href="#n"
+            class="flex w-full items-center justify-center bg-primary-500 px-3 py-2 text-white md:w-auto md:whitespace-nowrap md:rounded-full md:px-6"
+            >Submit order
+            <span class="material-symbols-outlined ml-3 text-base">
+              arrow_forward_ios
+            </span>
+          </a>
         </div>
       </div>
     </div>
