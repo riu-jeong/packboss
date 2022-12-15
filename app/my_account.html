@@ -1,0 +1,114 @@
+<!--#set var="title" value="packposs" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="h-full">
+  <header
+    class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+  >
+    <div class="flex-none xl:hidden">
+      <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> menu </span></a
+      >
+      <!-- <a href="#n" class="flex w-10 items-center p-2"
+            ><span class="material-symbols-outlined"> close </span></a
+          > -->
+    </div>
+
+    <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+      <a href="index.html" class="flex w-28 p-2 md:w-32">
+        <img src="images/dist/logo/logo.svg" alt="" />
+      </a>
+    </div>
+
+    <div class="relative w-10 flex-none sm:ml-auto">
+      <a
+        href="#n"
+        class="dropdown_filter"
+        id="dropdown-button"
+        aria-expanded="true"
+        aria-haspopup="true"
+      >
+        <span class="material-symbols-outlined"> account_circle </span>
+      </a>
+
+      <div
+        class="dropdown_container"
+        role="menu"
+        aria-labelledby="dropdown-button"
+        tabindex="-1"
+      >
+        <div class="py-1" role="none">
+          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+          <a
+            href="my_account.html"
+            class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+            role="menuitem"
+            tabindex="-1"
+            id="menu-item-0"
+            ><span class="material-symbols-outlined mr-2 text-base">
+              settings_account_box </span
+            >My account</a
+          >
+          <a
+            href="#"
+            class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+            role="menuitem"
+            tabindex="-1"
+            id="menu-item-1"
+            ><span class="material-symbols-outlined mr-2 text-base">
+              logout </span
+            >Sign out</a
+          >
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pt-14 md:pt-16">
+    <aside class="fixed z-10 hidden h-full w-64 border-r bg-white p-6 xl:block">
+      <h3 class="font-bold">My account</h3>
+      <ul class="py-4">
+        <li>
+          <a
+            href="index.html"
+            class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
+          >
+            <span class="material-symbols-outlined text-[20px]">
+              bookmarks
+            </span>
+            <p class="ml-1.5">My account</p>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="p-4 lg:p-6 xl:ml-64 xl:p-8">
+      <div class="max-w-2xl">
+        <div class="my-4 border-b border-slate-900 pb-3">
+          <h2 class="text-xl">My account</h2>
+        </div>
+        <div class="py-3">
+          <div class="flex justify-between">
+            <h3 class="font-bold">Account info</h3>
+            <a href="#n">
+              <span class="material-symbols-outlined"> edit_square </span>
+            </a>
+          </div>
+          <div class="rounded bg-white p-3 shadow">
+            <ul>
+              <li>
+                <label for="">Email</label>
+                <div class="flex">
+                  <input type="email" class="form-input" />
+                  <button type="button" class="">Edit</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

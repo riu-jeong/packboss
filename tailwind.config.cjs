@@ -43,10 +43,8 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms")({
-      strategy: "base", // only generate global styles
-      strategy: "class", // only generate classes
+      strategy: "base",
     }),
-    require("@tailwindcss/line-clamp"),
-    require("@tailwindcss/aspect-ratio"),
+    require("flowbite/plugin"),
   ],
 };

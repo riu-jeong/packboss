@@ -42,7 +42,10 @@
 
     /* input styling */
     .form-input, .form-textarea{
-        @apply w-full rounded-sm shadow-sm border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 text-sm placeholder:text-slate-300 placeholder:font-normal placeholder:italic;
+        @apply w-full rounded-sm shadow-sm border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 text-sm placeholder:text-slate-300 placeholder:font-normal placeholder:italic transition px-2 py-1.5;
+    }
+    .form-input.form-input-sm{
+        
     }
     /* end input styling */
 
