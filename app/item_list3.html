@@ -1,0 +1,460 @@
+<!--#set var="title" value="packposs" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="h-full">
+  <!--#include virtual="/parts/header_nav.html" -->
+  <div class="h-full pt-14 md:pt-16">
+    <!--#include virtual="/parts/aside.html" -->
+
+    <div class="flex h-full flex-col xl:ml-64">
+      <div class="p-4 lg:p-6 xl:p-8">
+        <!-- 페이지 타이틀 -->
+        <div class="relative mb-6 flex items-center justify-center xl:mb-8">
+          <h2 class="text-xl xl:text-2xl">Items</h2>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6 2xl:grid-cols-5"
+        >
+          <div
+            class="flex flex-col overflow-hidden rounded-lg bg-white shadow ring ring-primary-500 transition hover:shadow-lg"
+          >
+            <div class="relative w-full">
+              <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
+              <div
+                class="absolute top-2 left-2 flex rounded-full border-2 border-white bg-primary-500 p-0.5 text-white"
+              >
+                <span class="material-symbols-outlined text-[20px]">
+                  check
+                </span>
+              </div>
+            </div>
+            <div class="p-2 md:p-3">
+              <h4 class="mb-3 text-sm">Samsung Electronic</h4>
+              <div class="mb-4 flex flex-col gap-2">
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="text-sm font-semibold">Nickname</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Size</dt>
+                  <dd class="text-sm font-semibold">20 x 10 x 5</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+              </div>
+              <div class="flex justify-center">
+                <a
+                  href="#n"
+                  class="flex items-center rounded-full bg-primary-500 p-1.5 px-4 text-sm text-white transition hover:bg-primary-600"
+                  >View details
+                  <span class="material-symbols-outlined ml-2 text-sm">
+                    arrow_forward_ios
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col overflow-hidden rounded-lg bg-white shadow transition hover:shadow-lg"
+          >
+            <div class="w-full">
+              <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
+            </div>
+            <div class="p-2 md:p-3">
+              <h4 class="mb-3 text-sm">Samsung Electronic</h4>
+              <div class="mb-4 flex flex-col gap-2">
+                <dl>
+                  <dt class="text-xs text-slate-400">Nickname</dt>
+                  <dd class="text-sm font-semibold">Nickname</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Size</dt>
+                  <dd class="text-sm font-semibold">20 x 10 x 5</dd>
+                </dl>
+                <dl>
+                  <dt class="text-xs text-slate-400">Category(Style)</dt>
+                  <dd class="text-sm font-semibold">Box(Tray)</dd>
+                </dl>
+              </div>
+              <div class="flex justify-center">
+                <a
+                  href="#n"
+                  class="flex items-center rounded-full bg-primary-500 p-1.5 px-4 text-sm text-white transition hover:bg-primary-600"
+                  >View details
+                  <span class="material-symbols-outlined ml-2 text-sm">
+                    arrow_forward_ios
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky bottom-0 mt-auto text-center">
+        <div
+          class="flex bg-white md:items-center md:p-4 md:shadow-[0_-10px_15px_-10px_rgba(0,0,0,0.1)] xl:px-6"
+        >
+          <a
+            href="#n"
+            class="pointer-events-none flex w-full items-center justify-center bg-slate-400 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+            >Request Quotes<span class="material-symbols-outlined ml-2 text-sm">
+              arrow_forward_ios
+            </span></a
+          >
+
+          <!-- <a
+                href="#n"
+                class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+                >Request Quotes<span class="material-symbols-outlined ml-2 text-sm">
+                  arrow_forward_ios
+                </span></a
+              > -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- View Details -->
+<div
+  class="fixed top-0 right-0 z-10 flex h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
+>
+  <a href="#n" class="mt-1 flex self-start p-2 text-white"
+    ><span class="material-symbols-outlined"> close </span></a
+  >
+  <div
+    class="flex w-11/12 overflow-y-auto bg-white md:max-w-[70%] lg:max-w-screen-md"
+  >
+    <div class="w-full bg-white p-3">
+      <div class="mb-6 flex items-center border-b pb-3">
+        <h3>Edit specification</h3>
+      </div>
+      <div class="flex flex-col pb-16 lg:px-6">
+        <div class="flex flex-col gap-4 border-b py-6 pt-0">
+          <h4>Size</h4>
+          <div class="mb-3 w-full self-start overflow-hidden rounded-lg">
+            <img
+              src="images/dist/package.png"
+              class="mx-auto w-full max-w-[300px]"
+              alt=""
+            />
+          </div>
+          <div class="mx-auto flex flex-col">
+            <div class="mb-3 flex gap-3">
+              <a
+                href="#n"
+                class="flex w-full justify-center rounded bg-secondary-500 px-3 py-1.5 text-sm text-white"
+                >Inches</a
+              >
+              <a
+                href="#n"
+                class="flex w-full justify-center rounded bg-gray-100 px-3 py-1.5 text-sm"
+                >Cm</a
+              >
+            </div>
+            <div class="flex">
+              <div class="flex w-full flex-col">
+                <input
+                  type="text"
+                  class="form-input text-center font-bold text-secondary-500"
+                  value="a"
+                />
+                <span class="mt-1 text-xs text-slate-500">Length</span>
+              </div>
+              <span class="px-1.5 leading-[34px]">x</span>
+              <div class="flex w-full flex-col">
+                <input
+                  type="text"
+                  class="form-input text-center font-bold text-secondary-500"
+                  value="a"
+                />
+                <span class="mt-1 text-xs text-slate-500">Width</span>
+              </div>
+              <span class="px-1.5 leading-[34px]">x</span>
+              <div class="flex w-full flex-col">
+                <input
+                  type="text"
+                  class="form-input text-center font-bold text-secondary-500"
+                  value="a"
+                />
+                <span class="mt-1 text-xs text-slate-500">Height (Upper)</span>
+              </div>
+              <span class="px-1.5 leading-[34px]">x</span>
+              <div class="flex w-full flex-col">
+                <input
+                  type="text"
+                  class="form-input text-center font-bold text-secondary-500"
+                  value="a"
+                />
+                <span class="mt-1 text-xs text-slate-500">Height (Bottom)</span>
+              </div>
+              <span class="px-1.5 leading-[34px]">x</span>
+              <div class="flex w-full flex-col">
+                <input
+                  type="text"
+                  class="form-input text-center font-bold text-secondary-500"
+                  value="a"
+                />
+                <span class="mt-1 text-xs text-slate-500">Height (Mid)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>Material</h4>
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
+              >SC</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >IV</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >RIV</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >CCP</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >FBB-Aliking</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >FBB-Aliking</a
+            >
+          </div>
+          <div class="flex flex-col">
+            <h5 class="mb-2 text-sm font-semibold text-gray-600">Grammage</h5>
+            <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
+              <a
+                href="#n"
+                class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+                >300g</a
+              >
+              <a
+                href="#n"
+                class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+                >350g</a
+              >
+              <a
+                href="#n"
+                class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+                >400g</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="material-symbols-outlined mr-1 self-start text-[20px]">
+              report
+            </span>
+            <p class="flex text-sm">
+              White on the front, gray on the back, single-sided printing
+              available, affordable
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>Color</h4>
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
+              >1Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >2Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >3Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >4Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >5Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >6Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >7Color</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >None</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>Coating</h4>
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
+              >Varnish</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Lamination</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Matte</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Glossy</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Satin</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Soft touch</a
+            >
+          </div>
+          <div class="flex items-center">
+            <span class="material-symbols-outlined mr-1 self-start text-[20px]">
+              report
+            </span>
+            <p class="flex text-sm">
+              White on the front, gray on the back, single-sided printing
+              available, affordable
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>Coating</h4>
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
+              >Spot Uv</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Spot silk
+            </a>
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Etching</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Embossing</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Debossing</a
+            >
+            <a
+              href="#n"
+              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
+              >Foil stamping</a
+            >
+          </div>
+          <div class="flex items-center">
+            <span class="material-symbols-outlined mr-1 self-start text-[20px]">
+              report
+            </span>
+            <p class="flex text-sm">
+              White on the front, gray on the back, single-sided printing
+              available, affordable
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>Notes</h4>
+          <textarea
+            name=""
+            id=""
+            class="form-textarea h-28 resize-none transition"
+            placeholder="placeholder"
+          ></textarea>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>Documents</h4>
+          <form>
+            <label class="mb-1 block text-sm text-slate-400" for=""
+              >Upload file</label
+            >
+            <input
+              class="block w-full cursor-pointer rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder-gray-400"
+              aria-describedby="user_avatar_help"
+              id=""
+              type="file"
+            />
+          </form>
+        </div>
+        <div class="flex flex-col gap-4 border-b py-6">
+          <h4>What do you pack?</h4>
+          <input
+            type="text"
+            class="form-input px-2 py-1.5 font-semibold transition"
+            placeholder="placeholder"
+          />
+        </div>
+        <div class="flex flex-col gap-4 py-6">
+          <h4>Nickname</h4>
+          <input
+            type="text"
+            class="form-input px-2 py-1.5 font-semibold transition"
+            placeholder="placeholder"
+          />
+        </div>
+      </div>
+      <div
+        class="sticky bottom-0 mt-auto flex justify-between bg-white py-3 shadow-[0_-10px_15px_-10px_rgba(0,0,0,0.1)]"
+      >
+        <a
+          href="#n"
+          class="rounded-full border bg-white py-1.5 px-3 text-sm font-semibold text-gray-500"
+          >Cancel</a
+        >
+        <a
+          href="#n"
+          class="rounded-full bg-primary-500 py-1.5 px-3 text-sm font-semibold text-white"
+          >Update</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
