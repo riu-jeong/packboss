@@ -281,16 +281,38 @@
           </div>
           <div class="mx-auto flex flex-col">
             <div class="mb-3 flex gap-3">
-              <a
-                href="#n"
-                class="flex w-full justify-center rounded bg-secondary-500 px-3 py-1.5 text-sm text-white"
-                >Inches</a
-              >
-              <a
-                href="#n"
-                class="flex w-full justify-center rounded bg-gray-100 px-3 py-1.5 text-sm"
-                >Cm</a
-              >
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="size-inches"
+                  name="sp-size"
+                  value="size-inches"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="size-inches"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                >
+                  Inches
+                </label>
+              </div>
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="size-cm"
+                  name="sp-size"
+                  value="size-cm"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="size-cm"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                >
+                  Cm
+                </label>
+              </div>
             </div>
             <div class="flex">
               <div class="flex w-full flex-col">
@@ -343,55 +365,138 @@
         <div class="flex flex-col gap-4 border-b py-6">
           <h4>Material</h4>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
-              >SC</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >IV</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >RIV</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >CCP</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >FBB-Aliking</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >FBB-Aliking</a
-            >
+            <div class="w-full">
+              <input
+                type="radio"
+                id="material-sc"
+                name="sp-material"
+                value="material-sc"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="material-sc"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                SC
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="material-iv"
+                name="sp-material"
+                value="material-iv"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="material-iv"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                IV
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="material-riv"
+                name="sp-material"
+                value="material-riv"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="material-riv"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                RIV
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="material-ccp"
+                name="sp-material"
+                value="material-ccp"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="material-ccp"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                CCP
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="material-fbb-aliking"
+                name="sp-material"
+                value="material-fbb-aliking"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="material-fbb-aliking"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                FBB-Aliking
+              </label>
+            </div>
           </div>
           <div class="flex flex-col">
             <h5 class="mb-2 text-sm font-semibold text-gray-600">Grammage</h5>
             <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-              <a
-                href="#n"
-                class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-                >300g</a
-              >
-              <a
-                href="#n"
-                class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-                >350g</a
-              >
-              <a
-                href="#n"
-                class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-                >400g</a
-              >
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="material-300g"
+                  name="sp-material-grammage"
+                  value="material-300g"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="material-300g"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                >
+                  300g
+                </label>
+              </div>
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="material-350g"
+                  name="sp-material-grammage"
+                  value="material-350g"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="material-350g"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                >
+                  350g
+                </label>
+              </div>
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="material-400g"
+                  name="sp-material-grammage"
+                  value="material-400g"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="material-400g"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                >
+                  350g
+                </label>
+              </div>
             </div>
           </div>
           <div class="flex items-center">
@@ -407,81 +512,234 @@
         <div class="flex flex-col gap-4 border-b py-6">
           <h4>Color</h4>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
-              >1Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >2Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >3Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >4Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >5Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >6Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >7Color</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >None</a
-            >
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-1Color"
+                name="sp-color"
+                value="color-1Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-1Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                1Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-2Color"
+                name="sp-color"
+                value="color-2Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-2Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                2Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-3Color"
+                name="sp-color"
+                value="color-3Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-3Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                3Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-4Color"
+                name="sp-color"
+                value="color-4Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-4Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                4Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-5Color"
+                name="sp-color"
+                value="color-5Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-5Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                5Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-6Color"
+                name="sp-color"
+                value="color-6Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-6Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                6Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-7Color"
+                name="sp-color"
+                value="color-7Color"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-7Color"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                7Color
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="color-none"
+                name="sp-color"
+                value="color-none"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="color-none"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                None
+              </label>
+            </div>
           </div>
         </div>
         <div class="flex flex-col gap-4 border-b py-6">
-          <h4>Coating</h4>
+          <div class="flex items-center">
+            <h4>Coating</h4>
+            <span class="ml-2 text-sm text-slate-400"
+              >(Duplicate selection available)</span
+            >
+          </div>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
-              >Varnish</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Lamination</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Matte</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Glossy</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Satin</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Soft touch</a
-            >
+            <div class="relative w-full">
+              <input
+                type="checkbox"
+                id="coating-varnish"
+                value="coating-varnish"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                required
+              />
+              <label
+                for="coating-varnish"
+                class="relative inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Varnish
+              </label>
+            </div>
+            <div class="relative w-full">
+              <input
+                type="checkbox"
+                id="coating-lamination"
+                value="coating-lamination"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                required
+              />
+              <label
+                for="coating-lamination"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Lamination
+              </label>
+            </div>
+            <div class="relative w-full">
+              <input
+                type="checkbox"
+                id="coating-matte"
+                value="coating-matte"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                required
+              />
+              <label
+                for="coating-matte"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Matte
+              </label>
+            </div>
+            <div class="relative w-full">
+              <input
+                type="checkbox"
+                id="coating-glossy"
+                value="coating-glossy"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                required
+              />
+              <label
+                for="coating-glossy"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Glossy
+              </label>
+            </div>
+            <div class="relative w-full">
+              <input
+                type="checkbox"
+                id="coating-satin"
+                value="coating-satin"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                required
+              />
+              <label
+                for="coating-satin"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Satin
+              </label>
+            </div>
+            <div class="relative w-full">
+              <input
+                type="checkbox"
+                id="coating-soft-touch"
+                value="coating-soft-touch"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                required
+              />
+              <label
+                for="coating-soft-touch"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Soft touch
+              </label>
+            </div>
           </div>
           <div class="flex items-center">
             <span class="material-symbols-outlined mr-1 self-start text-[20px]">
@@ -494,38 +752,104 @@
           </div>
         </div>
         <div class="flex flex-col gap-4 border-b py-6">
-          <h4>Coating</h4>
+          <h4>Finish</h4>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-secondary-500 px-3 py-1.5 text-center text-sm text-white"
-              >Spot Uv</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Spot silk
-            </a>
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Etching</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Embossing</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Debossing</a
-            >
-            <a
-              href="#n"
-              class="flex w-full items-center justify-center rounded bg-gray-100 px-3 py-1.5 text-center text-sm"
-              >Foil stamping</a
-            >
+            <div class="w-full">
+              <input
+                type="radio"
+                id="finish-spot-uv"
+                name="sp-finish"
+                value="finish-spot-uv"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="finish-spot-uv"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Spot Uv
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="finish-spot-silk"
+                name="sp-finish"
+                value="finish-spot-silk"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="finish-spot-silk"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Spot silk
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="finish-etching"
+                name="sp-finish"
+                value="finish-etching"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="finish-etching"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Etching
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="finish-embossing"
+                name="sp-finish"
+                value="finish-embossing"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="finish-embossing"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Embossing
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="finish-debossing"
+                name="sp-finish"
+                value="finish-debossing"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="finish-debossing"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Debossing
+              </label>
+            </div>
+            <div class="w-full">
+              <input
+                type="radio"
+                id="finish-foil-stamping"
+                name="sp-finish"
+                value="finish-foil-stamping"
+                class="peer hidden"
+                required
+              />
+              <label
+                for="finish-foil-stamping"
+                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+              >
+                Foil stamping
+              </label>
+            </div>
           </div>
           <div class="flex items-center">
             <span class="material-symbols-outlined mr-1 self-start text-[20px]">
