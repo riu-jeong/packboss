@@ -735,15 +735,78 @@
         <div class="flex flex-col gap-4 border-b py-6">
           <h4>Documents</h4>
           <form>
-            <label class="mb-1 block text-sm text-slate-400" for=""
-              >Upload file</label
+            <label
+              class="relative mb-3 inline-flex cursor-pointer rounded-md bg-blue-500 px-3 py-2 text-sm text-white"
+              for="att-file"
+              ><span class="material-symbols-outlined mr-1 text-[20px]">
+                upload
+              </span>
+              Upload file
+              <input class="sr-only" id="att-file" type="file" />
+            </label>
+            <div
+              class="flex flex-wrap gap-2 rounded-lg border-2 border-dashed border-slate-200 bg-white p-2 md:gap-3 md:p-3"
             >
-            <input
-              class="block w-full cursor-pointer rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder-gray-400"
-              aria-describedby="user_avatar_help"
-              id=""
-              type="file"
-            />
+              <div
+                class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+              >
+                <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                  >file_description01.xml</span
+                >
+                <button type="button" class="">
+                  <span
+                    class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                  >
+                    close
+                  </span>
+                </button>
+              </div>
+              <div
+                class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+              >
+                <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                  >file_description01.xml</span
+                >
+                <button type="button" class="">
+                  <span
+                    class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                  >
+                    close
+                  </span>
+                </button>
+              </div>
+              <div
+                class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+              >
+                <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                  >file_description01.xml</span
+                >
+                <button type="button" class="">
+                  <span
+                    class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                  >
+                    close
+                  </span>
+                </button>
+              </div>
+              <div
+                class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+              >
+                <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                  >file_description01.xml</span
+                >
+                <button type="button" class="">
+                  <span
+                    class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                  >
+                    close
+                  </span>
+                </button>
+              </div>
+              <p class="block w-full p-3 text-center text-sm text-slate-300">
+                There is no attached file.
+              </p>
+            </div>
           </form>
         </div>
         <div class="flex flex-col gap-4 border-b py-6">
