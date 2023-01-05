@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>packposs</title>
+    <meta name="description" content="packposs" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-700"></body>
+</html>
+
+
+<div class="bg-white">
+  <header
+    class="fixed z-20 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+  >
+    <div class="flex-none xl:hidden">
+      <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> menu </span></a
+      >
+      <!-- <a href="#n" class="flex w-10 items-center p-2"
+        ><span class="material-symbols-outlined"> close </span></a
+      > -->
+    </div>
+
+    <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+      <a href="index.html" class="flex w-28 p-2 md:w-32">
+        <img src="images/dist/logo/logo.svg" alt="" />
+      </a>
+    </div>
+
+    <div class="ml-auto flex">
+      <div class="flex hidden items-center gap-1">
+        <a
+          href="sign_in.html"
+          class="item-center flex rounded-full px-3 py-1.5 text-sm font-semibold text-gray-400 transition hover:text-gray-700"
+          >Sign In</a
+        >
+        <a
+          href="#n"
+          class="item-center flex rounded-full border border-gray-300 px-3 py-1.5 text-sm font-semibold text-gray-500 transition hover:border-gray-700 hover:text-gray-700"
+          ><span
+            class="material-symbols-outlined mr-1 flex items-center text-[16px]"
+          >
+            person_add </span
+          >Sign Up</a
+        >
+      </div>
+      <div class="relative w-10 flex-none sm:ml-auto">
+        <a
+          href="sign_up.html"
+          class="dropdown_filter"
+          id="dropdown-button"
+          aria-expanded="true"
+          aria-haspopup="true"
+        >
+          <span class="material-symbols-outlined"> account_circle </span>
+        </a>
+
+        <div
+          class="dropdown_container"
+          role="menu"
+          aria-labelledby="dropdown-button"
+          tabindex="-1"
+        >
+          <div class="py-1" role="none">
+            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+            <a
+              href="my_account.html"
+              class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-0"
+              ><span class="material-symbols-outlined mr-2 text-base">
+                settings_account_box </span
+              >My account</a
+            >
+            <a
+              href="#"
+              class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-1"
+              ><span class="material-symbols-outlined mr-2 text-base">
+                logout </span
+              >Sign out</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- section01 -->
+  <div
+    class="relative flex h-full flex-col items-center justify-center overflow-hidden bg-[url('/images/dist/front_bg.jpg')] bg-cover bg-no-repeat pt-24 after:absolute after:bottom-0 after:h-24 after:w-full after:bg-gradient-to-t after:from-white after:content-['']"
+  >
+    <div class="mb-6 flex flex-col justify-center gap-4 p-4 text-center">
+      <h2
+        class="text-[28px] font-extrabold sm:max-w-lg sm:text-[32px] lg:max-w-4xl lg:text-[52px]"
+        data-aos="fade-up"
+      >
+        Innovative packaging manufacturing platform
+      </h2>
+      <p class="text-lg lg:text-2xl" data-aos="fade-up" data-aos-delay="50">
+        for collaboration between Buyers and Suppliers
+      </p>
+      <a
+        href="#n"
+        class="mx-auto flex rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-6 text-xl font-semibold text-white shadow-xl"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        >Get Started</a
+      >
+    </div>
+    <div class="relative z-10 flex justify-center">
+      <img
+        src="images/dist/phone_img02.png"
+        class="-mr-16"
+        alt=""
+        data-aos="fade-right"
+      />
+      <img src="images/dist/phone_img01.png" alt="" data-aos="zoom-in" />
+      <img
+        src="images/dist/phone_img03.png"
+        class="-ml-16"
+        alt=""
+        data-aos="fade-left"
+      />
+    </div>
+  </div>
+  <!-- section02 -->
+  <div
+    class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
+  >
+    <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl" data-aos="fade-up">
+      <h3 class="text-2xl lg:text-3xl">
+        More than 500 buyers and Supplier that Packposs has collaborated with
+      </h3>
+    </div>
+    <ul
+      class="grid grid-cols-3 border-t border-l sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <li class="border-r border-b">
+        <img src="images/dist/partner/netflix.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/disney.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/hbomax.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/samsung.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/adobe.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/google.jpg" alt="" />
+      </li>
+
+      <li class="border-r border-b">
+        <img src="images/dist/partner/evernote.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/framer.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/github.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/amazon.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/atlassian.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/twitch.jpg" alt="" />
+      </li>
+
+      <li class="border-r border-b">
+        <img src="images/dist/partner/airbnb.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/paypal.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/pendo.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/pipedrive.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/afterpay.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/outreach.jpg" alt="" />
+      </li>
+
+      <li class="border-r border-b">
+        <img src="images/dist/partner/airtable.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/airtasker.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/airwallex.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/razorpay.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/asana.jpg" alt="" />
+      </li>
+      <li class="border-r border-b">
+        <img src="images/dist/partner/gumroad.jpg" alt="" />
+      </li>
+    </ul>
+  </div>
+  <!-- section03 -->
+  <div
+    class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
+  >
+    <div class="flex flex-col lg:flex-row lg:gap-20">
+      <div
+        class="mb-12 flex flex-col lg:mb-0 lg:items-center"
+        data-aos="flip-left"
+      >
+        <div class="mb-4 overflow-hidden rounded">
+          <img src="images/dist/front/buyer.jpg" alt="" />
+        </div>
+        <div
+          class="relative z-[2] rounded bg-white lg:mx-6 lg:-mt-16 lg:max-w-xl lg:p-4"
+        >
+          <h3
+            class="mb-3 text-xl lg:text-2xl"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            Buyer
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="100">
+            <strong class="block"
+              >Start a new project with the world's leading
+              manufacturer.</strong
+            >
+            You can compare the prices of different manufacturers and make the
+            custom packaging reasonably.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col lg:items-center"
+        data-aos="flip-left"
+        data-aos-delay="300"
+      >
+        <div class="mb-4 overflow-hidden rounded">
+          <img src="images/dist/front/supplier.jpg" alt="" />
+        </div>
+        <div
+          class="relative z-[2] rounded bg-white lg:mx-6 lg:-mt-16 lg:max-w-xl lg:p-4"
+        >
+          <h3
+            class="mb-3 text-xl lg:text-2xl"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            Supplier
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="100">
+            <strong class="block"
+              >Expand your business world wide with Packposs.</strong
+            >
+            You can compare the prices of different anufacturers and make the
+            custom packaging reasonably.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section04 -->
+  <div
+    class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
+  >
+    <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl">
+      <h3 class="mb-3 text-2xl lg:text-3xl" data-aos="fade-up">
+        The Best Partner for Your Custom Packaging
+      </h3>
+      <p data-aos="fade-up" data-aos-delay="100">
+        PACKAGING POSS is a custom packaging platform with professional ream and
+        South Korea packaging suppliers. Bring your ideas and create your custom
+        packaging with us!
+      </p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:gap-10">
+      <div
+        class="p-3 text-center lg:p-0"
+        data-aos="flip-up"
+        data-aos-delay="100"
+      >
+        <div
+          class="mx-auto mb-4 flex h-36 w-36 overflow-hidden rounded-full lg:h-auto lg:w-full"
+        >
+          <img
+            src="images/dist/front/pp_img01.jpg"
+            class="object-cover"
+            alt=""
+          />
+        </div>
+
+        <h5 class="mb-2 lg:text-xl">Compare Free Quotes</h5>
+        <p class="text-sm lg:text-base">
+          Just start with inquire for a quote you can compare quotes from 200
+          suppliers for free.
+        </p>
+      </div>
+      <div
+        class="p-3 text-center lg:p-0"
+        data-aos="flip-up"
+        data-aos-delay="200"
+      >
+        <div
+          class="mx-auto mb-4 flex h-36 w-36 overflow-hidden rounded-full lg:h-auto lg:w-full"
+        >
+          <img
+            src="images/dist/front/pp_img01.jpg"
+            class="object-cover"
+            alt=""
+          />
+        </div>
+
+        <h4 class="mb-2 lg:text-xl">Quick Turn-Around</h4>
+        <p class="text-sm lg:text-base">
+          We delivers quick turn-around for all custom packaging needs from
+          design to shipment
+        </p>
+      </div>
+      <div
+        class="p-3 text-center lg:p-0"
+        data-aos="flip-up"
+        data-aos-delay="300"
+      >
+        <div
+          class="mx-auto mb-4 flex h-36 w-36 overflow-hidden rounded-full lg:h-auto lg:w-full"
+        >
+          <img
+            src="images/dist/front/pp_img01.jpg"
+            class="object-cover"
+            alt=""
+          />
+        </div>
+
+        <h4 class="mb-2 lg:text-xl">High-Quality</h4>
+        <p class="text-sm lg:text-base">
+          We offer High-Quality packaging with verified suppliers and experts.
+        </p>
+      </div>
+      <div
+        class="p-3 text-center lg:p-0"
+        data-aos="flip-up"
+        data-aos-delay="400"
+      >
+        <div
+          class="mx-auto mb-4 flex h-36 w-36 overflow-hidden rounded-full lg:h-auto lg:w-full"
+        >
+          <img
+            src="images/dist/front/pp_img01.jpg"
+            class="object-cover"
+            alt=""
+          />
+        </div>
+
+        <h4 class="mb-2 lg:text-xl">Global Shipping</h4>
+        <p class="text-sm lg:text-base">
+          The products can be shipped anywhere in the world with door to door
+          service.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- section05 -->
+  <div
+    class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
+  >
+    <h3 class="mb-6 text-2xl lg:text-3xl" data-aos="fade-up">
+      How to proceed a new project?
+    </h3>
+    <div
+      class="mb-4 overflow-hidden overflow-x-auto border-t border-b border-t-black lg:mb-8"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <ul class="flex flex-row">
+        <li class="tab_item active flex">
+          <a href="#n" class="relative whitespace-nowrap p-3 font-semibold"
+            >Create a item</a
+          >
+        </li>
+        <li class="tab_item flex">
+          <a href="#n" class="relative whitespace-nowrap p-3 font-semibold"
+            >Request quote</a
+          >
+        </li>
+        <li class="tab_item flex">
+          <a href="#n" class="relative whitespace-nowrap p-3 font-semibold"
+            >Submit order</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="tab_inner active" data-aos="fade-up" data-aos-delay="200">
+      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
+        <div class="lg:basis-3/12">
+          <h4 class="text-xl lg:text-2xl">Create a item</h4>
+        </div>
+        <div class="lg:basis-9/12">
+          <p class="text-sm lg:text-base">
+            Consider the various categories and specifications and build up with
+            your own custom packaging.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg bg-gray-100 p-6">
+        <img src="images/dist/front/flow_create.png" alt="" />
+      </div>
+    </div>
+    <div class="tab_inner">
+      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
+        <div class="lg:basis-3/12">
+          <h4 class="text-xl lg:text-2xl">Request quote</h4>
+        </div>
+        <div class="lg:basis-9/12">
+          <p class="text-sm lg:text-base">
+            Select an item with sufficient specifications and request a quote
+            with quantity, delivery.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg bg-gray-100 p-6">
+        <img src="images/dist/front/flow_create.png" alt="" />
+      </div>
+    </div>
+    <div class="tab_inner">
+      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
+        <div class="lg:basis-3/12">
+          <h4 class="text-xl lg:text-2xl">Submit order</h4>
+        </div>
+        <div class="lg:basis-9/12">
+          <p class="text-sm lg:text-base">
+            Take opportunities of new and diverse project by registering for a
+            quote.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg bg-gray-100 p-6">
+        <img src="images/dist/front/flow_create.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- section06 -->
+  <div class="mx-auto border-t py-16 lg:border-t-0 lg:py-24">
+    <div class="mx-auto max-w-[1400px] px-4">
+      <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl">
+        <h3 class="mb-3 text-2xl lg:text-3xl" data-aos="fade-up">
+          Customized Folding carton box
+        </h3>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Compare quotes from different manufacturers and start the project with
+          a matched partner.
+        </p>
+      </div>
+    </div>
+    <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="200">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_folding_01.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_folding_02.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_folding_03.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_folding_04.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_folding_05.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section07 -->
+  <div class="mx-auto border-t py-16 lg:border-t-0 lg:py-24">
+    <div class="mx-auto max-w-[1400px] px-4">
+      <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl">
+        <h3 class="mb-3 text-2xl lg:text-3xl" data-aos="fade-up">
+          Customized Flexible pouches
+        </h3>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Compare quotes from different manufacturers and start the project with
+          a matched partner.
+        </p>
+      </div>
+    </div>
+    <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="200">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_flexible_01.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_flexible_02.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_flexible_03.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_flexible_04.jpg" alt="" />
+        </div>
+        <div class="swiper-slide overflow-hidden rounded-lg">
+          <img src="images/dist/front/slider_flexible_05.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section08 -->
+  <div
+    class="bg-[url('/images/dist/front/footer_bg.jpg')] bg-cover bg-no-repeat"
+  >
+    <div class="mx-auto max-w-[1400px] px-4 pb-12">
+      <div class="py-16 text-center text-white lg:py-28">
+        <h2 class="mb-4 text-2xl lg:text-5xl" data-aos="fade-up">
+          Try Packposs now
+        </h2>
+        <p class="mb-6 lg:text-3xl" data-aos="fade-up" data-aos-delay="100">
+          Create a new item and Get reasonable quotes.
+        </p>
+        <a
+          href="#n"
+          class="inline-flex rounded-full border-2 border-white px-6 py-2 hover:border-white/70 hover:text-white/70 lg:px-8 lg:py-2.5 lg:text-2xl"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          >Get Started</a
+        >
+      </div>
+      <div class="border-t border-t-white/10 py-4">
+        <p class="text-white/70">2022 &copy; pojangposs</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Initialize Swiper -->
+<script></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    centeredSlides: true,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      280: {
+        spaceBetween: 12,
+        slidesPerView: 2,
+      },
+      640: {
+        spaceBetween: 16,
+        slidesPerView: 4,
+      },
+      768: {
+        spaceBetween: 30,
+        slidesPerView: 4,
+      },
+      1024: {
+        spaceBetween: 40,
+        slidesPerView: 4,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  const tabItem = document.querySelectorAll(".tab_item");
+  const tabInner = document.querySelectorAll(".tab_inner");
+
+  tabItem.forEach((tab, idx) => {
+    tab.addEventListener("click", function () {
+      tabInner.forEach((inner) => {
+        inner.classList.remove("active");
+      });
+
+      tabItem.forEach((item) => {
+        item.classList.remove("active");
+      });
+
+      tabItem[idx].classList.add("active");
+      tabInner[idx].classList.add("active");
+    });
+  });
+
+  AOS.init({
+    once: true,
+  });
+</script>
+
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const dropdownBtn = document.querySelector(".dropdown_filter");
+		const dropdownContain = document.querySelector(".dropdown_container");
+	  
+		function handleFilter(event) {
+		  event.preventDefault();
+		  const isOnPage = dropdownContain.classList.contains("is-on-page");
+	  
+		  if (isOnPage) {
+			this.classList.remove("active");
+			dropdownContain.classList.remove("active");
+			setTimeout(() => {
+			  dropdownContain.classList.remove("is-on-page");
+			}, 100);
+		  } else {
+			this.classList.add("active");
+			dropdownContain.classList.add("is-on-page");
+			setTimeout(() => {
+			  dropdownContain.classList.add("active");
+			}, 1);
+		  }
+		}
+	  
+		dropdownBtn.addEventListener("click", handleFilter, false);
+	  </script>
+	  
+</body>
+</html>
