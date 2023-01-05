@@ -9,7 +9,7 @@
 @layer components {
     /* tab menu */
     .tab_item.active a{
-        @apply text-secondary-500 after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-secondary-500;
+        @apply text-secondary-500 after:absolute after:-bottom-[1px] after:left-0 after:w-full after:border-b-2 after:border-secondary-500;
     }
     .tab_inner{
         @apply hidden;
