@@ -2129,6 +2129,14 @@ h1, h2, h3, h4, h5 {
   background-image: url('/images/dist/front/footer_bg.jpg');
 }
 
+.bg-\[url\(\'\.\.\/images\/dist\/front_bg\.jpg\'\)\] {
+  background-image: url('../images/dist/front_bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/dist\/front\/footer_bg\.jpg\'\)\] {
+  background-image: url('../images/dist/front/footer_bg.jpg');
+}
+
 .from-indigo-500 {
   --tw-gradient-from: #6875F5;
   --tw-gradient-to: rgb(104 117 245 / 0);
