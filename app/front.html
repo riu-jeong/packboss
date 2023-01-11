@@ -5,13 +5,13 @@
   <header
     class="fixed z-20 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
   >
-    <div class="flex-none xl:hidden">
+    <div class="flex-none basis-2/6 sm:basis-auto xl:hidden">
       <a href="#n" class="flex w-10 items-center p-2"
         ><span class="material-symbols-outlined"> menu </span></a
       >
       <!-- <a href="#n" class="flex w-10 items-center p-2"
-        ><span class="material-symbols-outlined"> close </span></a
-      > -->
+      ><span class="material-symbols-outlined"> close </span></a
+    > -->
     </div>
 
     <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
@@ -20,65 +20,129 @@
       </a>
     </div>
 
-    <div class="ml-auto flex">
-      <div class="flex hidden items-center gap-1">
-        <a
-          href="sign_in.html"
-          class="item-center flex rounded-full px-3 py-1.5 text-sm font-semibold text-gray-400 transition hover:text-gray-700"
-          >Sign In</a
-        >
-        <a
-          href="#n"
-          class="item-center flex rounded-full border border-gray-300 px-3 py-1.5 text-sm font-semibold text-gray-500 transition hover:border-gray-700 hover:text-gray-700"
-          ><span
-            class="material-symbols-outlined mr-1 flex items-center text-[16px]"
-          >
-            person_add </span
-          >Sign Up</a
-        >
-      </div>
-      <div class="relative w-10 flex-none sm:ml-auto">
-        <a
-          href="sign_up.html"
-          class="dropdown_filter"
-          id="dropdown-button"
-          aria-expanded="true"
-          aria-haspopup="true"
-        >
-          <span class="material-symbols-outlined"> account_circle </span>
-        </a>
-
-        <div
-          class="dropdown_container"
-          role="menu"
-          aria-labelledby="dropdown-button"
-          tabindex="-1"
-        >
-          <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <a
-              href="my_account.html"
-              class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-              ><span class="material-symbols-outlined mr-2 text-base">
-                settings_account_box </span
-              >My account</a
+    <div class="ml-auto flex basis-2/6 justify-end sm:basis-auto">
+      <ul class="flex">
+        <li class="relative flex items-center">
+          <div class="dropdown-container relative flex">
+            <div
+              class="dropdown-control relative flex cursor-pointer flex-wrap items-center justify-between p-1.5 px-1 transition hover:text-gray-900 sm:px-3"
             >
-            <a
-              href="#"
-              class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-1"
-              ><span class="material-symbols-outlined mr-2 text-base">
-                logout </span
-              >Sign out</a
+              <div
+                class="dropdown-value-container relative flex flex-1 flex-wrap items-center overflow-hidden"
+              >
+                <div
+                  class="dropdown-value flex items-center overflow-hidden text-sm font-semibold"
+                >
+                  EN
+                </div>
+              </div>
+              <div
+                class="dropdown-arrow-container flex shrink-0 items-center self-stretch"
+              >
+                <div aria-hidden="true" class="dropdown-arrow flex">
+                  <span class="material-symbols-outlined text-[20px]">
+                    arrow_drop_down
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="dropdown-menu absolute top-[100%] z-10 hidden w-16 rounded border bg-white shadow-sm sm:w-full"
             >
+              <span
+                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+                ><img
+                  src="../images/dist/icons/flag_usa.svg"
+                  class="mr-2 w-4"
+                  alt=""
+                />EN</span
+              >
+              <span
+                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+                ><img
+                  src="../images/dist/icons/flag_ko.svg"
+                  class="mr-2 w-4"
+                  alt=""
+                />KO</span
+              >
+              <span
+                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+                ><img
+                  src="../images/dist/icons/flag_cn.svg"
+                  class="mr-2 w-4"
+                  alt=""
+                />CN</span
+              >
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <li
+          class="relative flex items-center pl-1 after:absolute after:left-0 after:top-[50%] after:flex after:h-3 after:w-[1px] after:translate-y-[-50%] after:bg-slate-200 after:content-[''] sm:pl-2"
+        >
+          <div class="relative w-10 flex-none sm:ml-auto">
+            <a
+              href="sign_up.html"
+              class="dropdown_filter"
+              id="dropdown-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+
+            <div
+              class="dropdown_container"
+              role="menu"
+              aria-labelledby="dropdown-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a
+                  href="my_account.html"
+                  class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    settings_account_box </span
+                  >My account</a
+                >
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    logout </span
+                  >Sign out</a
+                >
+                <a
+                  href="sign_in.html"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    login </span
+                  >Sign In</a
+                >
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    person_add </span
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </header>
 
@@ -124,8 +188,8 @@
   <div
     class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
   >
-    <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl" data-aos="fade-up">
-      <h3 class="text-2xl lg:text-3xl">
+    <div class="mb-6 lg:mb-10" data-aos="fade-up">
+      <h3 class="text-xl lg:text-2xl">
         More than 500 buyers and Supplier that Packposs has collaborated with
       </h3>
     </div>
@@ -190,31 +254,15 @@
       <li class="border-r border-b">
         <img src="images/dist/partner/outreach.jpg" alt="" />
       </li>
-
-      <li class="border-r border-b">
-        <img src="images/dist/partner/airtable.jpg" alt="" />
-      </li>
-      <li class="border-r border-b">
-        <img src="images/dist/partner/airtasker.jpg" alt="" />
-      </li>
-      <li class="border-r border-b">
-        <img src="images/dist/partner/airwallex.jpg" alt="" />
-      </li>
-      <li class="border-r border-b">
-        <img src="images/dist/partner/razorpay.jpg" alt="" />
-      </li>
-      <li class="border-r border-b">
-        <img src="images/dist/partner/asana.jpg" alt="" />
-      </li>
-      <li class="border-r border-b">
-        <img src="images/dist/partner/gumroad.jpg" alt="" />
-      </li>
     </ul>
   </div>
   <!-- section03 -->
   <div
     class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
   >
+    <div class="mb-6 lg:mb-10" data-aos="fade-up">
+      <h3 class="text-xl lg:text-2xl">Who needs the Packposs?</h3>
+    </div>
     <div class="flex flex-col lg:flex-row lg:gap-20">
       <div
         class="mb-12 flex flex-col lg:mb-0 lg:items-center"
@@ -262,11 +310,8 @@
             Supplier
           </h3>
           <p data-aos="fade-up" data-aos-delay="100">
-            <strong class="block"
-              >Expand your business world wide with Packposs.</strong
-            >
-            You can compare the prices of different anufacturers and make the
-            custom packaging reasonably.
+            Don't focus on difficult marketing anymore, and meet buyer easily
+            and conveniently through packposs.
           </p>
         </div>
       </div>
@@ -277,12 +322,12 @@
     class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
   >
     <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl">
-      <h3 class="mb-3 text-2xl lg:text-3xl" data-aos="fade-up">
+      <h3 class="mb-3 text-xl lg:text-2xl" data-aos="fade-up">
         The Best Partner for Your Custom Packaging
       </h3>
       <p data-aos="fade-up" data-aos-delay="100">
-        PACKAGING POSS is a custom packaging platform with professional ream and
-        South Korea packaging suppliers. Bring your ideas and create your custom
+        PACKPOSS is a custom packaging platform with professional team and
+        worldwide packaging suppliers. Bring your ideas and create your custom
         packaging with us!
       </p>
     </div>
@@ -376,7 +421,7 @@
   <div
     class="mx-auto max-w-[1400px] border-t px-4 py-16 lg:border-t-0 lg:py-24"
   >
-    <h3 class="mb-6 text-2xl lg:text-3xl" data-aos="fade-up">
+    <h3 class="mb-6 text-xl lg:text-2xl" data-aos="fade-up">
       How to proceed a new project?
     </h3>
     <div
@@ -408,64 +453,48 @@
       </ul>
     </div>
     <div class="tab_inner active" data-aos="fade-up" data-aos-delay="200">
-      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
-        <div class="lg:basis-3/12">
-          <h4 class="text-xl lg:text-2xl">Create a item</h4>
-        </div>
-        <div class="lg:basis-9/12">
-          <p class="text-sm lg:text-base">
-            Consider the various categories and specifications and build up with
-            your own custom packaging.
-          </p>
-        </div>
+      <div class="mb-4 flex flex-col lg:mb-6">
+        <h4 class="mb-2 text-lg lg:text-xl">Create a item</h4>
+        <p class="text-sm lg:text-base">
+          Consider the various categories and specifications and build up with
+          your own custom packaging.
+        </p>
       </div>
       <div class="rounded-lg bg-gray-100 p-6">
         <img src="images/dist/front/flow_create.png" alt="" />
       </div>
     </div>
     <div class="tab_inner">
-      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
-        <div class="lg:basis-3/12">
-          <h4 class="text-xl lg:text-2xl">Request quote</h4>
-        </div>
-        <div class="lg:basis-9/12">
-          <p class="text-sm lg:text-base">
-            Select an item with sufficient specifications and request a quote
-            with quantity, delivery.
-          </p>
-        </div>
+      <div class="mb-4 flex flex-col lg:mb-6">
+        <h4 class="mb-2 text-lg lg:text-xl">Request quote</h4>
+        <p class="text-sm lg:text-base">
+          Select an item with sufficient specifications and request a quote with
+          quantity, delivery.
+        </p>
       </div>
       <div class="rounded-lg bg-gray-100 p-6">
         <img src="images/dist/front/flow_create.png" alt="" />
       </div>
     </div>
     <div class="tab_inner">
-      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
-        <div class="lg:basis-3/12">
-          <h4 class="text-xl lg:text-2xl">Register quote</h4>
-        </div>
-        <div class="lg:basis-9/12">
-          <p class="text-sm lg:text-base">
-            Take opportunities of new and diverse project by registering for a
-            quote.
-          </p>
-        </div>
+      <div class="mb-4 flex flex-col lg:mb-6">
+        <h4 class="mb-2 text-lg lg:text-xl">Register quote</h4>
+        <p class="text-sm lg:text-base">
+          Take opportunities of new and diverse project by registering for a
+          quote.
+        </p>
       </div>
       <div class="rounded-lg bg-gray-100 p-6">
         <img src="images/dist/front/flow_create.png" alt="" />
       </div>
     </div>
     <div class="tab_inner">
-      <div class="mb-4 flex flex-col items-baseline lg:mb-6 lg:flex-row">
-        <div class="lg:basis-3/12">
-          <h4 class="text-xl lg:text-2xl">Submit order</h4>
-        </div>
-        <div class="lg:basis-9/12">
-          <p class="text-sm lg:text-base">
-            Choose one of the different manufacturers that submitted your quote
-            and place an order.
-          </p>
-        </div>
+      <div class="mb-4 flex flex-col lg:mb-6">
+        <h4 class="mb-2 text-lg lg:text-xl">Submit order</h4>
+        <p class="text-sm lg:text-base">
+          Choose one of the different manufacturers that submitted your quote
+          and place an order.
+        </p>
       </div>
       <div class="rounded-lg bg-gray-100 p-6">
         <img src="images/dist/front/flow_create.png" alt="" />
@@ -475,8 +504,8 @@
   <!-- section06 -->
   <div class="mx-auto border-t py-16 lg:border-t-0 lg:py-24">
     <div class="mx-auto max-w-[1400px] px-4">
-      <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl">
-        <h3 class="mb-3 text-2xl lg:text-3xl" data-aos="fade-up">
+      <div class="mb-6 lg:mb-10">
+        <h3 class="mb-3 text-xl lg:text-2xl" data-aos="fade-up">
           Customized Folding carton box
         </h3>
         <p data-aos="fade-up" data-aos-delay="100">
@@ -508,8 +537,8 @@
   <!-- section07 -->
   <div class="mx-auto border-t py-16 lg:border-t-0 lg:py-24">
     <div class="mx-auto max-w-[1400px] px-4">
-      <div class="mb-6 max-w-lg lg:mb-10 lg:max-w-2xl">
-        <h3 class="mb-3 text-2xl lg:text-3xl" data-aos="fade-up">
+      <div class="mb-6 lg:mb-10">
+        <h3 class="mb-3 text-xl lg:text-2xl" data-aos="fade-up">
           Customized Flexible pouches
         </h3>
         <p data-aos="fade-up" data-aos-delay="100">
@@ -558,11 +587,103 @@
           >Get Started</a
         >
       </div>
-      <div class="border-t border-t-white/10 py-4">
-        <p class="text-white/70">2022 &copy; pojangposs</p>
-      </div>
     </div>
   </div>
+  <!-- section09 -->
+  <div class="bg-gray-900 pb-12 lg:pb-24">
+    <div
+      class="w-full overflow-hidden overflow-x-auto border-b border-gray-800 text-center"
+    >
+      <ul
+        class="mx-auto flex max-w-[1400px] py-4 text-sm text-gray-300 lg:justify-center"
+      >
+        <li>
+          <a
+            href="service.html"
+            class="whitespace-nowrap px-4 font-semibold hover:text-white"
+            >Company introduction</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="service.html"
+            class="whitespace-nowrap px-4 font-semibold hover:text-white"
+            >Terms of Service</a
+          >
+        </li>
+        <li>
+          <a
+            href="privacy.html"
+            class="whitespace-nowrap px-4 font-semibold hover:text-white"
+            >Privacy Policy</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="mx-auto max-w-[1400px] py-8 px-4">
+      <div class="mb-6 flex w-full flex-col lg:mb-0 lg:flex-row">
+        <div class="mb-6 flex flex-col lg:mb-0">
+          <img src="images/dist/logo/logo_white.svg" class="mb-3 w-28" alt="" />
+          <ul class="mb-2 flex divide-x divide-gray-700 text-sm text-gray-300">
+            <li class="pr-2 leading-4">RIU CO., LTD.</li>
+            <li class="pl-2 leading-4">CEO: Daegyoun Kim</li>
+          </ul>
+          <ul class="mb-2 text-xs text-gray-400">
+            <li>
+              Kolon Digital Tower I (#712), 30, Digital-ro, 32-gil, Guro-gu,
+              Seoul, Republic of Korea
+            </li>
+            <li>
+              Sales Office: 2F, 184, Pyeongdongsandan-ro, Gwangsan-gu,
+              Gwangju-si
+            </li>
+            <li>
+              Logistics Center: 1666, Yeongsan-ro , Dorim-ri , Cheonggyemyeon,
+              Muangun, Jeonnam
+            </li>
+            <li>
+              Logistics Center: 309, Wolsandaeheung-gil, Seongnae-myeon,
+              Gochang-gun, Jeonbuk
+            </li>
+          </ul>
+          <ul class="mb-2 text-xs text-gray-400">
+            <li>
+              Business registration No.: 257-81-01545 | Fax: (+82) 504-269-3179
+            </li>
+            <li>
+              Telemarketing business registration No.: No. 2017-Jeonnam
+              Mokpo-0089 | Personal Information
+            </li>
+            <li>Protection Officer: Ko Young-jae</li>
+          </ul>
+        </div>
+        <div class="flex flex-col lg:ml-auto">
+          <p class="text-xs text-gray-400 lg:py-2 lg:text-right lg:text-sm">
+            Customer center & Partnership inquiry
+          </p>
+          <a
+            href="mailto:pojangposs-help@riupack.com"
+            class="text-gray-100 lg:text-xl"
+            >pojangposs-help@riupack.com</a
+          >
+          <ul class="flex flex-col">
+            <li><a href="#n"></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-xs text-gray-400">2022 &copy; pojangposs</p>
+    </div>
+  </div>
+  <!-- scroll top button -->
+  <button
+    onclick="topFunction()"
+    id="topBtn"
+    title="Go to top"
+    class="fixed bottom-[16px] right-[16px] z-10 hidden cursor-pointer rounded-lg border bg-white p-2 shadow-lg transition-all hover:border-slate-900 hover:bg-slate-800 hover:text-white lg:bottom-[40px] lg:right-[40px] lg:p-3"
+  >
+    <span class="material-symbols-outlined flex"> arrow_upward </span>
+  </button>
 </div>
 
 <!-- Swiper JS -->
@@ -570,7 +691,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- Initialize Swiper -->
-<script></script>
+
 <script>
   var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,

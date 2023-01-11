@@ -9,7 +9,7 @@
 @layer components {
     /* tab menu */
     .tab_item.active a{
-        @apply text-secondary-500 after:absolute after:-bottom-[1px] after:left-0 after:w-full after:border-b-2 after:border-secondary-500;
+        @apply text-secondary-500 after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-secondary-500;
     }
     .tab_inner{
         @apply hidden;
@@ -38,8 +38,15 @@
     .dropdown_container.active{
         @apply block;
     }
-    /* end dropdown */
 
+    .dropdown-focus .dropdown-menu{
+        @apply block;
+    }
+    .dropdown-focus .dropdown-control{
+        @apply text-gray-900;
+    }
+    /* end dropdown */
+    
     /* input styling */
     .form-input, .form-textarea{
         @apply w-full rounded-sm shadow-sm border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 text-sm placeholder:text-slate-300 placeholder:font-normal placeholder:italic transition px-2 py-1.5;
@@ -50,6 +57,8 @@
     /* end input styling */
 
 }
+
+
 
 html,body{
     height: 100%;

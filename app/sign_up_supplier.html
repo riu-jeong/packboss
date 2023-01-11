@@ -1,11 +1,9 @@
 <!--#set var="title" value="packposs" -->
 <!--#include virtual="/parts/header.html" -->
 
-<div class="h-full bg-white">
-  <div class="bg-white md:p-12">
-    <div
-      class="mx-auto w-full rounded-lg bg-white p-4 md:max-w-md md:border md:p-6"
-    >
+<div class="flex h-full md:items-center">
+  <div class="w-full bg-white md:m-auto md:max-w-md md:bg-transparent">
+    <div class="rounded-lg bg-white p-4 pb-16 md:my-12 md:border md:p-6">
       <a href="#n" class="-m-3 inline-flex p-3 text-gray-500"
         ><span class="material-symbols-outlined"> arrow_back </span></a
       >
@@ -137,10 +135,16 @@
         </ul>
         <a
           href="#n"
-          class="flex items-center justify-center rounded bg-primary-500 p-3 font-semibold text-white"
+          class="mb-6 flex items-center justify-center rounded bg-primary-500 p-3 font-semibold text-white"
           >Get started</a
         >
+        <p class="text-sm text-gray-400">
+          By creating an account on Packposs you acknowledge that you read and
+          agree to our Terms of Service and Privacy Policy.
+        </p>
       </form>
     </div>
   </div>
 </div>
+
+<!--#include virtual="/parts/footer.html" -->
