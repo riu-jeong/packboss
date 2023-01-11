@@ -37,7 +37,7 @@
   <header
   class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
 >
-  <div class="flex-none xl:hidden">
+  <div class="flex-none basis-2/6 sm:basis-auto xl:hidden">
     <a href="#n" class="flex w-10 items-center p-2"
       ><span class="material-symbols-outlined"> menu </span></a
     >
@@ -63,65 +63,129 @@
       >Quotes</a
     >
   </div>
-  <div class="ml-auto flex">
-    <div class="flex hidden items-center gap-1">
-      <a
-        href="sign_in.html"
-        class="item-center flex rounded-full px-3 py-1.5 text-sm font-semibold text-gray-400 transition hover:text-gray-700"
-        >Sign In</a
-      >
-      <a
-        href="#n"
-        class="item-center flex rounded-full border border-gray-300 px-3 py-1.5 text-sm font-semibold text-gray-500 transition hover:border-gray-700 hover:text-gray-700"
-        ><span
-          class="material-symbols-outlined mr-1 flex items-center text-[16px]"
-        >
-          person_add </span
-        >Sign Up</a
-      >
-    </div>
-    <div class="relative w-10 flex-none sm:ml-auto">
-      <a
-        href="sign_up.html"
-        class="dropdown_filter"
-        id="dropdown-button"
-        aria-expanded="true"
-        aria-haspopup="true"
-      >
-        <span class="material-symbols-outlined"> account_circle </span>
-      </a>
-
-      <div
-        class="dropdown_container"
-        role="menu"
-        aria-labelledby="dropdown-button"
-        tabindex="-1"
-      >
-        <div class="py-1" role="none">
-          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-          <a
-            href="my_account.html"
-            class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-            role="menuitem"
-            tabindex="-1"
-            id="menu-item-0"
-            ><span class="material-symbols-outlined mr-2 text-base">
-              settings_account_box </span
-            >My account</a
+  <div class="ml-auto flex basis-2/6 justify-end sm:basis-auto">
+    <ul class="flex">
+      <li class="relative flex items-center">
+        <div class="dropdown-container relative flex">
+          <div
+            class="dropdown-control relative flex cursor-pointer flex-wrap items-center justify-between p-1.5 px-1 transition hover:text-gray-900 sm:px-3"
           >
-          <a
-            href="#"
-            class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-            role="menuitem"
-            tabindex="-1"
-            id="menu-item-1"
-            ><span class="material-symbols-outlined mr-2 text-base">
-              logout </span
-            >Sign out</a
+            <div
+              class="dropdown-value-container relative flex flex-1 flex-wrap items-center overflow-hidden"
+            >
+              <div
+                class="dropdown-value flex items-center overflow-hidden text-sm font-semibold"
+              >
+                EN
+              </div>
+            </div>
+            <div
+              class="dropdown-arrow-container flex shrink-0 items-center self-stretch"
+            >
+              <div aria-hidden="true" class="dropdown-arrow flex">
+                <span class="material-symbols-outlined text-[20px]">
+                  arrow_drop_down
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="dropdown-menu absolute top-[100%] z-10 hidden w-16 rounded border bg-white shadow-sm sm:w-full"
           >
+            <span
+              class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+              ><img
+                src="../images/dist/icons/flag_usa.svg"
+                class="mr-2 w-4"
+                alt=""
+              />EN</span
+            >
+            <span
+              class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+              ><img
+                src="../images/dist/icons/flag_ko.svg"
+                class="mr-2 w-4"
+                alt=""
+              />KO</span
+            >
+            <span
+              class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+              ><img
+                src="../images/dist/icons/flag_cn.svg"
+                class="mr-2 w-4"
+                alt=""
+              />CN</span
+            >
+          </div>
         </div>
-      </div>
-    </div>
+      </li>
+      <li
+        class="relative flex items-center pl-1 after:absolute after:left-0 after:top-[50%] after:flex after:h-3 after:w-[1px] after:translate-y-[-50%] after:bg-slate-200 after:content-[''] sm:pl-2"
+      >
+        <div class="relative w-10 flex-none sm:ml-auto">
+          <a
+            href="sign_up.html"
+            class="dropdown_filter"
+            id="dropdown-button"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            <span class="material-symbols-outlined"> account_circle </span>
+          </a>
+
+          <div
+            class="dropdown_container"
+            role="menu"
+            aria-labelledby="dropdown-button"
+            tabindex="-1"
+          >
+            <div class="py-1" role="none">
+              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+              <a
+                href="my_account.html"
+                class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  settings_account_box </span
+                >My account</a
+              >
+              <a
+                href="#"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  logout </span
+                >Sign out</a
+              >
+              <a
+                href="#"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  login </span
+                >Sign In</a
+              >
+              <a
+                href="#"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  person_add </span
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </header>
 
@@ -442,6 +506,64 @@
 		}
 	  
 		dropdownBtn.addEventListener("click", handleFilter, false);
+
+		/* Dropdown */
+		let dropdownFunction = () => {
+			const dropdownArray = document.getElementsByClassName("dropdown-container");
+			for (let i = 0; i < dropdownArray.length; i++) {
+			let dropdown = dropdownArray[i];
+			// dropdown clicked
+			dropdown.addEventListener("click", (e) => {
+				let target = e.currentTarget;
+				target.classList.toggle("dropdown-focus");
+
+				// set drowdown value to selected option velue
+				let dropdownValue = dropdown.querySelector(".dropdown-value");
+				let dropdownMenu = dropdown.querySelector(".dropdown-menu");
+				let dropdownItemArray =
+				dropdown.getElementsByClassName("dropdown-item");
+				// looping options
+				for (let i = 0; i < dropdownMenu.childElementCount; i++) {
+				let dropdownItem = dropdownItemArray[i];
+				dropdownItem.addEventListener("click", () => {
+					dropdownValue.textContent = dropdownItem.textContent;
+				});
+				}
+			});
+
+			// close if clicked outside of dropdown
+			window.addEventListener("click", function (event) {
+				if (!dropdown.contains(event.target)) {
+				dropdown.classList.remove("dropdown-focus");
+				}
+			});
+			}
+		};
+		dropdownFunction();
+
+		/* scroll top */
+		let topButton = document.getElementById("topBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+		scrollFunction();
+		};
+	
+		function scrollFunction() {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			topButton.style.display = "block";
+		} else {
+			topButton.style.display = "none";
+		}
+		}
+	
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
 	  </script>
 	  
 </body>

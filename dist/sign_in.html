@@ -33,11 +33,9 @@
 </html>
 
 
-<div class="h-full bg-white">
-  <div class="bg-white md:p-12">
-    <div
-      class="mx-auto w-full rounded-lg bg-white p-4 md:max-w-md md:border md:p-6"
-    >
+<div class="flex h-full md:items-center">
+  <div class="w-full bg-white md:m-auto md:max-w-md md:bg-transparent">
+    <div class="rounded-lg bg-white p-4 pb-16 md:my-12 md:border md:p-6">
       <div class="flex flex-col py-10 md:py-6">
         <img src="images/dist/logo/logo.svg" class="mb-3 w-28 md:w-32" alt="" />
         <h1 class="mb-1 text-2xl font-extrabold">Sign in</h1>
@@ -78,7 +76,7 @@
           >Sign in</a
         >
       </form>
-      <ul class="flex flex-col gap-1">
+      <ul class="mb-16 flex flex-col gap-1 md:mb-0">
         <li>
           <a
             href="sign_up_type.html"
@@ -97,3 +95,92 @@
     </div>
   </div>
 </div>
+
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const dropdownBtn = document.querySelector(".dropdown_filter");
+		const dropdownContain = document.querySelector(".dropdown_container");
+	  
+		function handleFilter(event) {
+		  event.preventDefault();
+		  const isOnPage = dropdownContain.classList.contains("is-on-page");
+	  
+		  if (isOnPage) {
+			this.classList.remove("active");
+			dropdownContain.classList.remove("active");
+			setTimeout(() => {
+			  dropdownContain.classList.remove("is-on-page");
+			}, 100);
+		  } else {
+			this.classList.add("active");
+			dropdownContain.classList.add("is-on-page");
+			setTimeout(() => {
+			  dropdownContain.classList.add("active");
+			}, 1);
+		  }
+		}
+	  
+		dropdownBtn.addEventListener("click", handleFilter, false);
+
+		/* Dropdown */
+		let dropdownFunction = () => {
+			const dropdownArray = document.getElementsByClassName("dropdown-container");
+			for (let i = 0; i < dropdownArray.length; i++) {
+			let dropdown = dropdownArray[i];
+			// dropdown clicked
+			dropdown.addEventListener("click", (e) => {
+				let target = e.currentTarget;
+				target.classList.toggle("dropdown-focus");
+
+				// set drowdown value to selected option velue
+				let dropdownValue = dropdown.querySelector(".dropdown-value");
+				let dropdownMenu = dropdown.querySelector(".dropdown-menu");
+				let dropdownItemArray =
+				dropdown.getElementsByClassName("dropdown-item");
+				// looping options
+				for (let i = 0; i < dropdownMenu.childElementCount; i++) {
+				let dropdownItem = dropdownItemArray[i];
+				dropdownItem.addEventListener("click", () => {
+					dropdownValue.textContent = dropdownItem.textContent;
+				});
+				}
+			});
+
+			// close if clicked outside of dropdown
+			window.addEventListener("click", function (event) {
+				if (!dropdown.contains(event.target)) {
+				dropdown.classList.remove("dropdown-focus");
+				}
+			});
+			}
+		};
+		dropdownFunction();
+
+		/* scroll top */
+		let topButton = document.getElementById("topBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+		scrollFunction();
+		};
+	
+		function scrollFunction() {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			topButton.style.display = "block";
+		} else {
+			topButton.style.display = "none";
+		}
+		}
+	
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+	  </script>
+	  
+</body>
+</html>
