@@ -2,67 +2,7 @@
 <!--#include virtual="/parts/header.html" -->
 
 <div class="h-full">
-  <header
-    class="fixed z-10 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
-  >
-    <div class="flex-none xl:hidden">
-      <a href="#n" class="flex w-10 items-center p-2"
-        ><span class="material-symbols-outlined"> menu </span></a
-      >
-      <!-- <a href="#n" class="flex w-10 items-center p-2"
-        ><span class="material-symbols-outlined"> close </span></a
-      > -->
-    </div>
-
-    <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
-      <a href="index.html" class="flex w-28 p-2 md:w-32">
-        <img src="images/dist/logo/logo.svg" alt="" />
-      </a>
-    </div>
-
-    <div class="relative w-10 flex-none sm:ml-auto">
-      <a
-        href="#n"
-        class="dropdown_filter"
-        id="dropdown-button"
-        aria-expanded="true"
-        aria-haspopup="true"
-      >
-        <span class="material-symbols-outlined"> account_circle </span>
-      </a>
-
-      <div
-        class="dropdown_container"
-        role="menu"
-        aria-labelledby="dropdown-button"
-        tabindex="-1"
-      >
-        <div class="py-1" role="none">
-          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-          <a
-            href="my_account.html"
-            class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-            role="menuitem"
-            tabindex="-1"
-            id="menu-item-0"
-            ><span class="material-symbols-outlined mr-2 text-base">
-              settings_account_box </span
-            >My account</a
-          >
-          <a
-            href="#n"
-            class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-            role="menuitem"
-            tabindex="-1"
-            id="menu-item-1"
-            ><span class="material-symbols-outlined mr-2 text-base">
-              logout </span
-            >Sign out</a
-          >
-        </div>
-      </div>
-    </div>
-  </header>
+  <!--#include virtual="/parts/header_nav.html" -->
 
   <div class="pt-14 md:pt-16">
     <!--#include virtual="/parts/aside.html" -->
@@ -89,7 +29,7 @@
       <div class="h-full lg:flex lg:w-full lg:gap-10 lg:p-6 lg:pt-0">
         <!-- supplier -->
         <div
-          class="sticky top-14 z-10 bg-gray-50 pt-4 pl-4 after:absolute after:flex after:h-4 after:w-[90%] after:bg-gradient-to-b after:from-gray-50 after:content-[''] md:top-16 lg:relative lg:top-0 lg:z-0 lg:p-0 lg:after:hidden"
+          class="sticky top-14 z-10 bg-gray-50 pt-4 pl-4 after:absolute after:flex after:h-4 after:w-[90%] after:bg-gradient-to-b after:from-gray-50 after:content-[''] md:top-16 lg:relative lg:top-0 lg:z-0 lg:basis-1/4 lg:p-0 lg:after:hidden"
         >
           <div class="mb-3 rounded-lg lg:mb-4 lg:bg-white lg:p-3 lg:shadow">
             <h3>Supplier</h3>
@@ -97,55 +37,50 @@
           <div
             class="flex overflow-x-auto pr-4 pb-6 lg:h-full lg:overflow-x-visible lg:p-0"
           >
-            <ul class="flex flex-nowrap gap-3 p-3 lg:flex-col lg:p-0">
+            <ul class="flex w-full flex-nowrap gap-3 p-3 lg:flex-col lg:p-0">
               <li
-                class="sticky top-20 rounded-md bg-white p-2 text-center shadow-lg ring-2 ring-primary-500 hover:shadow-lg lg:p-3"
+                class="sticky top-20 flex items-center rounded-md bg-white p-2 shadow-lg ring-2 ring-primary-500 hover:shadow-lg lg:p-3"
               >
-                <div
-                  class="mb-2 flex h-10 w-16 items-center justify-center lg:h-16 lg:w-24"
-                >
+                <div class="mr-4 w-16 lg:w-24">
                   <img src="images/dist/supplier01.png" alt="" />
                 </div>
-                <p class="text-xs font-semibold lg:text-sm">Samsung</p>
+                <div class="flex flex-col">
+                  <h5 class="text-xs lg:text-sm">Samsung</h5>
+                  <p class="text-xs lg:text-sm">text</p>
+                </div>
               </li>
               <li
-                class="rounded-md bg-white p-2 text-center shadow hover:shadow-lg lg:p-3"
+                class="flex items-center rounded-md bg-white p-2 shadow hover:shadow-lg lg:p-3"
               >
-                <div
-                  class="mb-2 flex h-10 w-16 items-center justify-center lg:h-16 lg:w-24"
-                >
+                <div class="mr-4 w-16 lg:w-24">
                   <img src="images/dist/supplier02.png" alt="" />
                 </div>
-                <p class="text-xs font-semibold lg:text-sm">NVIDIA</p>
+                <div class="flex flex-col">
+                  <h5 class="text-xs lg:text-sm">NVIDIA</h5>
+                  <p class="text-xs lg:text-sm">text</p>
+                </div>
               </li>
               <li
-                class="rounded-md bg-white p-2 text-center shadow hover:shadow-lg lg:p-3"
+                class="flex items-center rounded-md bg-white p-2 shadow hover:shadow-lg lg:p-3"
               >
-                <div
-                  class="mb-2 flex h-10 w-16 items-center justify-center lg:h-16 lg:w-24"
-                >
+                <div class="mr-4 w-16 lg:w-24">
                   <img src="images/dist/supplier03.png" alt="" />
                 </div>
-                <p class="text-xs font-semibold lg:text-sm">AMAZON</p>
+                <div class="flex flex-col">
+                  <h5 class="text-xs lg:text-sm">NVIDIA</h5>
+                  <p class="text-xs lg:text-sm">text</p>
+                </div>
               </li>
               <li
-                class="rounded-md bg-white p-2 text-center shadow hover:shadow-lg lg:p-3"
+                class="flex items-center rounded-md bg-white p-2 shadow hover:shadow-lg lg:p-3"
               >
-                <div
-                  class="mb-2 flex h-10 w-16 items-center justify-center bg-gray-100 lg:h-16 lg:w-24"
-                >
-                  <div
-                    class="flex h-full w-full items-center justify-center rounded bg-gray-100"
-                  >
-                    <span
-                      class="material-symbols-outlined flex justify-center text-[24px] text-gray-400 lg:text-[28px]"
-                    >
-                      image_not_supported
-                    </span>
-                  </div>
+                <div class="mr-4 w-16 lg:w-24">
+                  <img src="images/dist/supplier01.png" alt="" />
                 </div>
-
-                <p class="text-xs font-semibold lg:text-sm">Supplier</p>
+                <div class="flex flex-col">
+                  <h5 class="text-xs lg:text-sm">NVIDIA</h5>
+                  <p class="text-xs lg:text-sm">text</p>
+                </div>
               </li>
             </ul>
           </div>

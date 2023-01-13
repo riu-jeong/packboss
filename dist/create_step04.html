@@ -218,7 +218,8 @@
             aria-expanded="true"
             aria-haspopup="true"
           >
-            <span class="material-symbols-outlined"> account_circle </span>
+            <!-- <span class="material-symbols-outlined"> account_circle </span> -->
+            <span class="material-symbols-outlined"> apps </span>
           </a>
 
           <div
@@ -250,7 +251,7 @@
                 >Sign out</a
               >
               <a
-                href="#"
+                href="sign_in.html"
                 class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
                 role="menuitem"
                 tabindex="-1"
@@ -260,7 +261,7 @@
                 >Sign In</a
               >
               <a
-                href="#"
+                href="sign_up_type.html"
                 class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
                 role="menuitem"
                 tabindex="-1"
@@ -361,7 +362,7 @@
             class="flex flex-col rounded-lg bg-white px-3 py-6 shadow lg:py-12 lg:px-6"
           >
             <div class="flex flex-col gap-4 border-b py-6 pt-0">
-              <h4>Size</h4>
+              <h4 class="text-xl">Size</h4>
               <div class="mb-3 w-full self-start overflow-hidden rounded-lg">
                 <img
                   src="images/dist/package.png"
@@ -382,7 +383,7 @@
                     />
                     <label
                       for="size-inches"
-                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                     >
                       Inches
                     </label>
@@ -398,7 +399,7 @@
                     />
                     <label
                       for="size-cm"
-                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                     >
                       Cm
                     </label>
@@ -408,7 +409,7 @@
                   <div class="flex w-full flex-col">
                     <input
                       type="text"
-                      class="form-input text-center font-bold text-secondary-500"
+                      class="form-input text-center font-bold text-primary-500"
                       value="a"
                     />
                     <span class="mt-1 text-xs text-slate-500">Length</span>
@@ -417,7 +418,7 @@
                   <div class="flex w-full flex-col">
                     <input
                       type="text"
-                      class="form-input text-center font-bold text-secondary-500"
+                      class="form-input text-center font-bold text-primary-500"
                       value="a"
                     />
                     <span class="mt-1 text-xs text-slate-500">Width</span>
@@ -426,7 +427,7 @@
                   <div class="flex w-full flex-col">
                     <input
                       type="text"
-                      class="form-input text-center font-bold text-secondary-500"
+                      class="form-input text-center font-bold text-primary-500"
                       value="a"
                     />
                     <span class="mt-1 text-xs text-slate-500"
@@ -437,7 +438,7 @@
                   <div class="flex w-full flex-col">
                     <input
                       type="text"
-                      class="form-input text-center font-bold text-secondary-500"
+                      class="form-input text-center font-bold text-primary-500"
                       value="a"
                     />
                     <span class="mt-1 text-xs text-slate-500"
@@ -448,7 +449,7 @@
                   <div class="flex w-full flex-col">
                     <input
                       type="text"
-                      class="form-input text-center font-bold text-secondary-500"
+                      class="form-input text-center font-bold text-primary-500"
                       value="a"
                     />
                     <span class="mt-1 text-xs text-slate-500"
@@ -459,7 +460,7 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
-              <h4>Material</h4>
+              <h4 class="text-xl">Material</h4>
               <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
                 <div class="w-full">
                   <input
@@ -472,7 +473,7 @@
                   />
                   <label
                     for="material-sc"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     SC
                   </label>
@@ -488,7 +489,7 @@
                   />
                   <label
                     for="material-iv"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     IV
                   </label>
@@ -504,7 +505,7 @@
                   />
                   <label
                     for="material-riv"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     RIV
                   </label>
@@ -520,7 +521,7 @@
                   />
                   <label
                     for="material-ccp"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     CCP
                   </label>
@@ -536,16 +537,14 @@
                   />
                   <label
                     for="material-fbb-aliking"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     FBB-Aliking
                   </label>
                 </div>
               </div>
               <div class="flex flex-col">
-                <h5 class="mb-2 text-sm font-semibold text-gray-600">
-                  Grammage
-                </h5>
+                <h5 class="mb-2 font-semibold text-gray-600">Grammage</h5>
                 <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
                   <div class="w-full">
                     <input
@@ -558,7 +557,7 @@
                     />
                     <label
                       for="material-300g"
-                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                     >
                       300g
                     </label>
@@ -574,7 +573,7 @@
                     />
                     <label
                       for="material-350g"
-                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                     >
                       350g
                     </label>
@@ -590,7 +589,7 @@
                     />
                     <label
                       for="material-400g"
-                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                      class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                     >
                       350g
                     </label>
@@ -610,7 +609,7 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
-              <h4>Color</h4>
+              <h4 class="text-xl">Color</h4>
               <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
                 <div class="w-full">
                   <input
@@ -623,7 +622,7 @@
                   />
                   <label
                     for="color-1Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     1Color
                   </label>
@@ -639,7 +638,7 @@
                   />
                   <label
                     for="color-2Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     2Color
                   </label>
@@ -655,7 +654,7 @@
                   />
                   <label
                     for="color-3Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     3Color
                   </label>
@@ -671,7 +670,7 @@
                   />
                   <label
                     for="color-4Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     4Color
                   </label>
@@ -687,7 +686,7 @@
                   />
                   <label
                     for="color-5Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     5Color
                   </label>
@@ -703,7 +702,7 @@
                   />
                   <label
                     for="color-6Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     6Color
                   </label>
@@ -719,7 +718,7 @@
                   />
                   <label
                     for="color-7Color"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     7Color
                   </label>
@@ -735,7 +734,7 @@
                   />
                   <label
                     for="color-none"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     None
                   </label>
@@ -744,7 +743,7 @@
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
               <div class="flex items-center">
-                <h4>Coating</h4>
+                <h4 class="text-xl">Coating</h4>
                 <span class="ml-2 text-sm text-slate-400"
                   >(Duplicate selection available)</span
                 >
@@ -755,12 +754,12 @@
                     type="checkbox"
                     id="coating-varnish"
                     value="coating-varnish"
-                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                     required
                   />
                   <label
                     for="coating-varnish"
-                    class="relative inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="relative inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Varnish
                   </label>
@@ -770,12 +769,12 @@
                     type="checkbox"
                     id="coating-lamination"
                     value="coating-lamination"
-                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                     required
                   />
                   <label
                     for="coating-lamination"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Lamination
                   </label>
@@ -785,12 +784,12 @@
                     type="checkbox"
                     id="coating-matte"
                     value="coating-matte"
-                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                     required
                   />
                   <label
                     for="coating-matte"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Matte
                   </label>
@@ -800,12 +799,12 @@
                     type="checkbox"
                     id="coating-glossy"
                     value="coating-glossy"
-                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                     required
                   />
                   <label
                     for="coating-glossy"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Glossy
                   </label>
@@ -815,12 +814,12 @@
                     type="checkbox"
                     id="coating-satin"
                     value="coating-satin"
-                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-700 focus:ring-offset-0"
                     required
                   />
                   <label
                     for="coating-satin"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Satin
                   </label>
@@ -830,12 +829,12 @@
                     type="checkbox"
                     id="coating-soft-touch"
                     value="coating-soft-touch"
-                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-secondary-700 focus:ring-0 focus:ring-secondary-700 focus:ring-offset-0"
+                    class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                     required
                   />
                   <label
                     for="coating-soft-touch"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Soft touch
                   </label>
@@ -854,7 +853,7 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
-              <h4>Finish</h4>
+              <h4 class="text-xl">Finish</h4>
               <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
                 <div class="w-full">
                   <input
@@ -867,7 +866,7 @@
                   />
                   <label
                     for="finish-spot-uv"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Spot Uv
                   </label>
@@ -883,7 +882,7 @@
                   />
                   <label
                     for="finish-spot-silk"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Spot silk
                   </label>
@@ -899,7 +898,7 @@
                   />
                   <label
                     for="finish-etching"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Etching
                   </label>
@@ -915,7 +914,7 @@
                   />
                   <label
                     for="finish-embossing"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Embossing
                   </label>
@@ -931,7 +930,7 @@
                   />
                   <label
                     for="finish-debossing"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Debossing
                   </label>
@@ -947,7 +946,7 @@
                   />
                   <label
                     for="finish-foil-stamping"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-secondary-500 peer-checked:text-white"
+                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                   >
                     Foil stamping
                   </label>
@@ -966,7 +965,7 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
-              <h4>Notes</h4>
+              <h4 class="text-xl">Notes</h4>
               <textarea
                 name=""
                 id=""
@@ -976,7 +975,7 @@
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
               <div class="flex items-center">
-                <h4>Documents</h4>
+                <h4 class="text-xl">Documents</h4>
                 <span class="ml-2 text-sm text-slate-400"
                   >(Up to 10 attachments )</span
                 >
@@ -1059,7 +1058,7 @@
               </form>
             </div>
             <div class="flex flex-col gap-4 border-b py-6">
-              <h4>What do you pack?</h4>
+              <h4 class="text-xl">What do you pack?</h4>
               <input
                 type="text"
                 class="form-input px-2 py-1.5 font-semibold transition"
@@ -1067,7 +1066,7 @@
               />
             </div>
             <div class="flex flex-col gap-4 py-6">
-              <h4>Nickname</h4>
+              <h4 class="text-xl">Nickname</h4>
               <input
                 type="text"
                 class="form-input px-2 py-1.5 font-semibold transition"
