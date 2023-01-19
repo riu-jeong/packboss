@@ -284,7 +284,7 @@
           <div class="flex flex-col lg:basis-2/5">
             <!-- 제품 설명 -->
             <div
-              class="mb-3 flex flex-col bg-white px-3 py-6 shadow-sm lg:mb-6 lg:rounded-lg lg:p-0 lg:shadow-none"
+              class="mb-3 flex flex-col bg-white p-3 shadow-sm lg:mb-8 lg:rounded-lg lg:p-0 lg:shadow-none"
             >
               <div class="mb-3 flex items-center border-b pb-3">
                 <h3>Samsung Electronic</h3>
@@ -311,132 +311,314 @@
               </div>
             </div>
             <!-- 카드 리스트 -->
-            <div
-              class="mb-3 bg-white p-3 shadow-sm transition hover:shadow-lg sm:flex sm:flex-row sm:items-center lg:flex-col lg:rounded-lg lg:border lg:shadow-none lg:ring-1 lg:ring-inset lg:ring-primary-500"
-            >
-              <div
-                class="mb-3 flex flex-col sm:mb-0 sm:basis-3/5 lg:mb-3 lg:w-full lg:flex-auto"
-              >
-                <div class="mb-3 flex items-center">
-                  <input
-                    type="checkbox"
-                    class="form-checkbox mr-2 rounded-full text-green-500 focus:ring-green-300"
-                    id="item01"
-                    checked
-                  />
-                  <label for="item01" class="font-bold">#BT220729001</label>
-                </div>
-                <div class="flex">
-                  <div class="w-32 flex-none sm:w-36">
+            <ul class="lg:divide-y lg:border-y">
+              <li class="mb-3 shadow-sm lg:mb-0 lg:shadow-none">
+                <a class="flex flex-row bg-white lg:p-3" href="#n">
+                  <div
+                    class="relative flex basis-2/6 overflow-hidden lg:rounded-md"
+                  >
                     <img
                       src="images/dist/thumbs.jpg"
-                      class="w-full rounded-md"
+                      class="w-full object-cover"
                       alt=""
                     />
+                    <div
+                      class="absolute top-2 left-2 flex rounded-full bg-primary-500 p-0.5 text-white"
+                    >
+                      <span class="material-symbols-outlined text-[14px]">
+                        check
+                      </span>
+                    </div>
                   </div>
-                  <dl class="ml-4 grow text-sm">
-                    <dt class="text-xs text-slate-400">Nickname</dt>
-                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
-                    <dt class="text-xs text-slate-400">Category(Style)</dt>
-                    <dd class="text-sm font-semibold">Hotdog tray</dd>
-                  </dl>
-                </div>
-              </div>
-              <div
-                class="flex flex-col gap-3 divide-y sm:basis-2/5 sm:gap-0 sm:overflow-hidden sm:rounded-md lg:w-full lg:flex-auto"
-              >
-                <div
-                  class="flex flex-row items-center rounded-md bg-gray-50 py-3 sm:rounded-none"
-                >
-                  <dl class="grow text-center">
-                    <dt class="text-xs text-slate-400">Quantities</dt>
-                    <dd class="font-semibold">15,000</dd>
-                  </dl>
-                  <div class="flex grow-0 text-gray-400">
-                    <span class="material-symbols-outlined">
-                      arrow_forward_ios
-                    </span>
+                  <div
+                    class="flex w-full basis-4/6 flex-col p-3 lg:ml-3 lg:p-0"
+                  >
+                    <div class="mb-2">
+                      <div class="mb-2 flex items-center">
+                        <h5 class="text-sm font-bold">#BT220729001</h5>
+                      </div>
+                      <div class="grid grid-cols-2 gap-3">
+                        <dl class="text-sm">
+                          <dt class="text-xs text-slate-400">Submit request</dt>
+                          <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                        </dl>
+                        <dl class="text-sm">
+                          <dt class="text-xs text-slate-400">
+                            Category(Style)
+                          </dt>
+                          <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <table
+                      class="w-full border-collapse border-t text-center text-sm"
+                    >
+                      <colgroup>
+                        <col width="*" />
+                        <col width="*" />
+                      </colgroup>
+                      <thead>
+                        <tr class="border-b bg-gray-50 text-xs text-gray-400">
+                          <th class="px-1 py-1.5 font-normal xl:px-3">
+                            Quantities
+                          </th>
+                          <th class="px-1 py-1.5 font-normal xl:px-3">price</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y">
+                        <tr class="font-semibold">
+                          <td class="px-1 py-2 xl:px-3">3000</td>
+                          <td class="px-1 py-2 xl:px-3">$0.4</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <dl class="grow text-center">
-                    <dt class="text-xs text-slate-400">Quantities</dt>
-                    <dd class="font-semibold">15,000</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-            <div
-              class="mb-3 bg-white p-3 shadow-sm transition hover:shadow-lg sm:flex sm:flex-row sm:items-center lg:flex-col lg:rounded-lg lg:border lg:shadow-none"
-            >
-              <div
-                class="mb-3 flex flex-col sm:mb-0 sm:basis-3/5 lg:mb-3 lg:w-full lg:flex-auto"
-              >
-                <div class="mb-3 flex items-center">
-                  <input
-                    type="checkbox"
-                    class="form-checkbox mr-2 rounded-full text-green-500 focus:ring-green-300"
-                    id="item02"
-                  />
-                  <label for="item02" class="font-bold">#BT220729001</label>
-                </div>
-                <div class="flex">
-                  <div class="w-32 flex-none sm:w-36">
+                </a>
+              </li>
+              <li class="mb-3 shadow-sm lg:mb-0 lg:shadow-none">
+                <a class="flex flex-row bg-white lg:p-3" href="#n">
+                  <div
+                    class="relative flex basis-2/6 overflow-hidden lg:rounded-md"
+                  >
                     <img
                       src="images/dist/thumbs.jpg"
-                      class="w-full rounded-md"
+                      class="w-full object-cover"
                       alt=""
                     />
+                    <div
+                      class="absolute top-2 left-2 flex rounded-full bg-gray-200 p-0.5 text-white"
+                    >
+                      <span class="material-symbols-outlined text-[14px]">
+                        check
+                      </span>
+                    </div>
                   </div>
-                  <dl class="ml-4 grow text-sm">
-                    <dt class="text-xs text-slate-400">Nickname</dt>
-                    <dd class="mb-2 text-sm font-semibold">Hotdog tray</dd>
-                    <dt class="text-xs text-slate-400">Category(Style)</dt>
-                    <dd class="text-sm font-semibold">Hotdog tray</dd>
-                  </dl>
+                  <div
+                    class="flex w-full basis-4/6 flex-col p-3 lg:ml-3 lg:p-0"
+                  >
+                    <div class="mb-2">
+                      <div class="mb-2 flex items-center">
+                        <h5 class="text-sm font-bold">#BT220729001</h5>
+                      </div>
+                      <div class="grid grid-cols-2 gap-3">
+                        <dl class="text-sm">
+                          <dt class="text-xs text-slate-400">Submit request</dt>
+                          <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                        </dl>
+                        <dl class="text-sm">
+                          <dt class="text-xs text-slate-400">
+                            Category(Style)
+                          </dt>
+                          <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <table
+                      class="w-full border-collapse border-t text-center text-sm"
+                    >
+                      <colgroup>
+                        <col width="*" />
+                        <col width="*" />
+                      </colgroup>
+                      <thead>
+                        <tr class="border-b bg-gray-50 text-xs text-gray-400">
+                          <th class="px-1 py-1.5 font-normal xl:px-3">
+                            Quantities
+                          </th>
+                          <th class="px-1 py-1.5 font-normal xl:px-3">price</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y">
+                        <tr class="font-semibold">
+                          <td class="px-1 py-2 xl:px-3">3000</td>
+                          <td class="px-1 py-2 xl:px-3">$0.4</td>
+                        </tr>
+                        <tr class="font-semibold">
+                          <td class="px-1 py-2 xl:px-3">3000</td>
+                          <td class="px-1 py-2 xl:px-3">$0.4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-3 shadow-sm lg:mb-0 lg:shadow-none">
+                <a class="flex flex-row bg-white lg:p-3" href="#n">
+                  <div
+                    class="relative flex basis-2/6 overflow-hidden lg:rounded-md"
+                  >
+                    <img
+                      src="images/dist/thumbs.jpg"
+                      class="w-full object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-2 left-2 flex rounded-full bg-gray-200 p-0.5 text-white"
+                    >
+                      <span class="material-symbols-outlined text-[14px]">
+                        check
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full basis-4/6 flex-col p-3 lg:ml-3 lg:p-0"
+                  >
+                    <div class="mb-2">
+                      <div class="mb-2 flex items-center">
+                        <h5 class="text-sm font-bold">#BT220729001</h5>
+                      </div>
+                      <div class="grid grid-cols-2 gap-3">
+                        <dl class="text-sm">
+                          <dt class="text-xs text-slate-400">Submit request</dt>
+                          <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                        </dl>
+                        <dl class="text-sm">
+                          <dt class="text-xs text-slate-400">
+                            Category(Style)
+                          </dt>
+                          <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <table
+                      class="w-full border-collapse border-t text-center text-sm"
+                    >
+                      <colgroup>
+                        <col width="*" />
+                        <col width="*" />
+                      </colgroup>
+                      <thead>
+                        <tr class="border-b bg-gray-50 text-xs text-gray-400">
+                          <th class="px-1 py-1.5 font-normal xl:px-3">
+                            Quantities
+                          </th>
+                          <th class="px-1 py-1.5 font-normal xl:px-3">price</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y">
+                        <tr class="font-semibold">
+                          <td class="px-1 py-2 xl:px-3">3000</td>
+                          <td class="px-1 py-2 xl:px-3">$0.4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- <a
+              class="mb-3 overflow-hidden rounded-md border bg-white p-3 shadow-sm transition hover:shadow-lg focus:border-transparent focus:ring-2 focus:ring-gray-500/30 sm:flex sm:flex-row lg:shadow-none"
+              href="#n"
+            >
+              <div class="flex basis-2/6 overflow-hidden rounded-md">
+                <img
+                  src="images/dist/thumbs.jpg"
+                  class="w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="ml-3 flex w-full basis-4/6 flex-col">
+                <div class="mb-2">
+                  <div class="mb-2 flex items-center">
+                    <h5 class="text-sm font-bold">#BT220729001</h5>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <dl class="text-sm">
+                      <dt class="text-xs text-slate-400">Submit request</dt>
+                      <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                    </dl>
+                    <dl class="text-sm">
+                      <dt class="text-xs text-slate-400">Category(Style)</dt>
+                      <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                    </dl>
+                  </div>
                 </div>
+                <table
+                  class="w-full border-collapse border-t text-center text-sm"
+                >
+                  <colgroup>
+                    <col width="*" />
+                    <col width="*" />
+                  </colgroup>
+                  <thead>
+                    <tr class="border-b bg-gray-50 text-xs text-gray-400">
+                      <th class="px-1 py-1.5 font-normal xl:px-3">
+                        Quantities
+                      </th>
+                      <th class="px-1 py-1.5 font-normal xl:px-3">price</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y">
+                    <tr class="font-semibold">
+                      <td class="px-1 py-2 xl:px-3">3000</td>
+                      <td class="px-1 py-2 xl:px-3">$0.4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </a> -->
+
+            <!-- <a
+              class="mb-3 overflow-hidden rounded-md bg-white shadow-sm transition hover:shadow-lg focus:border-transparent focus:ring-2 focus:ring-gray-500/30 sm:flex sm:flex-row lg:shadow-none"
+              href="#n"
+            >
+              <div class="flex basis-2/6">
+                <img
+                  src="images/dist/thumbs.jpg"
+                  class="w-full object-cover"
+                  alt=""
+                />
               </div>
               <div
-                class="flex flex-col gap-3 divide-y sm:basis-2/5 sm:gap-0 sm:overflow-hidden sm:rounded-md lg:w-full lg:flex-auto"
+                class="flex w-full basis-4/6 flex-col rounded-tr-md rounded-br-md border border-l-0 p-3 pb-0"
               >
-                <div
-                  class="flex flex-row items-center rounded-md bg-gray-50 py-3 sm:rounded-none"
-                >
-                  <dl class="grow text-center">
-                    <dt class="text-xs text-slate-400">Quantities</dt>
-                    <dd class="font-semibold">15,000</dd>
-                  </dl>
-                  <div class="flex grow-0 text-gray-400">
-                    <span class="material-symbols-outlined">
-                      arrow_forward_ios
-                    </span>
+                <div class="mb-2">
+                  <div class="mb-2 flex items-center">
+                    <h5 class="text-sm font-bold">#BT220729001</h5>
                   </div>
-                  <dl class="grow text-center">
-                    <dt class="text-xs text-slate-400">Quantities</dt>
-                    <dd class="font-semibold">15,000</dd>
-                  </dl>
-                </div>
-                <div
-                  class="flex flex-row items-center rounded-md bg-gray-50 py-3 sm:rounded-none"
-                >
-                  <dl class="grow text-center">
-                    <dt class="text-xs text-slate-400">Quantities</dt>
-                    <dd class="font-semibold">15,000</dd>
-                  </dl>
-                  <div class="flex grow-0 text-gray-400">
-                    <span class="material-symbols-outlined">
-                      arrow_forward_ios
-                    </span>
+                  <div class="grid grid-cols-2 gap-3">
+                    <dl class="text-sm">
+                      <dt class="text-xs text-slate-400">Submit request</dt>
+                      <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                    </dl>
+                    <dl class="text-sm">
+                      <dt class="text-xs text-slate-400">Category(Style)</dt>
+                      <dd class="text-[13px] font-semibold">Hotdog tray</dd>
+                    </dl>
                   </div>
-                  <dl class="grow text-center">
-                    <dt class="text-xs text-slate-400">Quantities</dt>
-                    <dd class="font-semibold">15,000</dd>
-                  </dl>
                 </div>
+                <table
+                  class="w-full border-collapse border-t text-center text-sm"
+                >
+                  <colgroup>
+                    <col width="*" />
+                    <col width="*" />
+                  </colgroup>
+                  <thead>
+                    <tr class="border-b bg-gray-50 text-xs text-gray-400">
+                      <th class="px-1 py-1.5 font-normal xl:px-3">
+                        Quantities
+                      </th>
+                      <th class="px-1 py-1.5 font-normal xl:px-3">price</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y">
+                    <tr class="font-semibold">
+                      <td class="px-1 py-2 xl:px-3">3000</td>
+                      <td class="px-1 py-2 xl:px-3">$0.4</td>
+                    </tr>
+                    <tr class="font-semibold">
+                      <td class="px-1 py-2 xl:px-3">3000</td>
+                      <td class="px-1 py-2 xl:px-3">$0.4</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </div>
+            </a> -->
           </div>
           <!-- 상세값 설정 (PC) -->
           <div class="relative hidden flex-col lg:flex lg:basis-3/5">
-            <div class="top-20 rounded-md bg-white xl:sticky">
+            <div class="top-20 rounded-md bg-white">
               <div class="border-b pb-3">
                 <h3>#BT220729001</h3>
               </div>
@@ -486,7 +668,7 @@
                 </div>
                 <div class="flex justify-between">
                   <div
-                    class="w-full basis-5/12 self-start overflow-hidden rounded xl:basis-3/6"
+                    class="w-full basis-5/12 self-start overflow-hidden rounded border xl:basis-3/6"
                   >
                     <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
                   </div>
@@ -773,7 +955,7 @@
 </div>
 <!-- 상세값 설정 (Mobile) -->
 <div
-  class="fixed top-0 right-0 z-10 flex hidden h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
+  class="fixed top-0 right-0 z-30 flex hidden h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
 >
   <div class="flex w-11/12 flex-col overflow-y-auto bg-white md:max-w-lg">
     <div class="mb-10 w-full bg-white p-3">
@@ -828,7 +1010,7 @@
           </div>
         </div>
         <div class="flex flex-col">
-          <div class="mb-4 w-full overflow-hidden rounded">
+          <div class="mb-4 w-full overflow-hidden rounded border">
             <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
           </div>
           <div class="w-full">
