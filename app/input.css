@@ -20,6 +20,9 @@
     /* end tab menu */
 
     /* accordion */
+    .accordion.active{
+        @apply shadow-lg border-gray-400;
+    }
     .accordion.active .accordion-icon{
         @apply rotate-180;
     }

@@ -33,6 +33,7 @@ module.exports = {
         100: "25rem",
       },
       screens: {
+        xs: "400px",
         xl: "1200px",
       },
       gridTemplateColumns: {
