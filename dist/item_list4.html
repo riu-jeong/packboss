@@ -196,7 +196,7 @@
   <ul class="py-4">
     <li>
       <a
-        href="create.html"
+        href="create_step01.html"
         class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
       >
         <span class="material-symbols-outlined text-[20px]"> variables </span>
@@ -243,53 +243,78 @@
 </aside>
 
 
-    <div class="flex h-full flex-col xl:ml-64">
-      <div class="p-4 lg:p-6 xl:p-8">
+    <div class="flex min-h-full xl:ml-64 2xl:p-10">
+      <div
+        class="mx-auto flex w-full max-w-[1280px] flex-col lg:bg-white lg:p-6 2xl:rounded-lg 2xl:border 2xl:p-10"
+      >
         <!-- 페이지 타이틀 -->
-        <div class="relative mb-6 flex items-center justify-center xl:mb-8">
-          <h2 class="text-xl xl:text-2xl">Request for quotes</h2>
-        </div>
-        <div class="flex justify-between gap-3">
-          <select
-            name=""
-            id=""
-            class="rounded-md border-white text-sm font-semibold text-gray-900 shadow focus:shadow-lg"
-          >
-            <option value="">Show List</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-            <option value="30">30</option>
-            <option value="40">40</option>
-          </select>
-        </div>
-
-        <!-- 리스트 있을때 -->
         <div
-          class="grid grid-cols-2 gap-4 py-12 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6 2xl:grid-cols-5"
+          class="mb-3 flex flex-col bg-white shadow-sm lg:mb-8 lg:shadow-none"
         >
           <div
-            class="flex flex-col overflow-hidden rounded-lg bg-white shadow transition hover:shadow-lg"
+            class="relative flex items-center bg-white p-3 lg:mb-0 lg:border-b lg:p-0 lg:pb-6"
           >
-            <div class="relative w-full">
-              <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
+            <div class="item-center flex">
+              <h2 class="text-xl xl:text-2xl">Request for quotes</h2>
             </div>
-            <div class="p-2 md:p-3">
-              <h4 class="mb-3 text-sm">Samsung Electronic</h4>
-              <div class="mb-4 flex flex-col gap-2">
-                <dl>
-                  <dt class="text-xs text-slate-400">Nickname</dt>
-                  <dd class="text-sm font-semibold">Nickname</dd>
-                </dl>
-                <dl>
-                  <dt class="text-xs text-slate-400">Size</dt>
-                  <dd class="text-sm font-semibold">20 x 10 x 5</dd>
-                </dl>
-                <dl>
-                  <dt class="text-xs text-slate-400">Category(Style)</dt>
-                  <dd class="text-sm font-semibold">Box(Tray)</dd>
-                </dl>
+          </div>
+          <div
+            class="flex justify-between gap-3 border-t p-2 py-2 lg:border-b lg:border-t-0 lg:px-0"
+          >
+            <select
+              name=""
+              id=""
+              class="form-select rounded border-transparent text-sm font-semibold"
+            >
+              <option value="">Show List</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 리스트 없을때 -->
+        <div class="mb-3 bg-white py-16 text-center shadow-sm lg:shadow-none">
+          <span class="material-symbols-outlined text-5xl text-gray-300">
+            error
+          </span>
+          <p class="text-gray-400">데이터가 없습니다.</p>
+        </div>
+        <!-- 리스트 있을때 -->
+        <ul class="mb-6 grid grid-cols-1 gap-4 lg:gap-0 lg:divide-y">
+          <li
+            class="bg-white p-3 shadow-sm transition sm:flex lg:p-6 lg:shadow-none"
+          >
+            <div
+              class="relative mb-3 self-start overflow-hidden rounded border sm:mb-0 sm:w-44"
+            >
+              <img src="images/dist/thumbs.jpg" class="w-full object-cover" />
+            </div>
+            <div
+              class="flex grow flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div class="mb-3 flex flex-col sm:ml-6 sm:p-0 md:mb-0 lg:ml-10">
+                <div class="mb-2">
+                  <h4 class="font-bold sm:text-lg">Samsung Electronic</h4>
+                </div>
+                <div class="grid grid-cols-2 gap-2 sm:gap-x-6 sm:gap-y-1">
+                  <dl>
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="text-sm font-semibold">Nickname</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Size</dt>
+                    <dd class="text-sm font-semibold">20 x 10 x 5</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Box(Tray)</dd>
+                  </dl>
+                </div>
               </div>
-              <ul class="flex flex-col justify-center gap-3">
+              <ul class="flex flex-col justify-center gap-2 sm:ml-6">
                 <li class="w-full">
                   <label class="mb-1 block text-xs text-slate-400 after:ml-0.5">
                     Estimate 1
@@ -313,40 +338,46 @@
                     type="button"
                     class="flex items-center text-slate-400 hover:text-slate-500"
                   >
-                    <span class="material-symbols-outlined leading-[34px]">
-                      add_circle
-                    </span>
-                    <span class="material-symbols-outlined leading-[34px]">
+                    <span class="material-symbols-outlined"> add_circle </span>
+                    <span class="material-symbols-outlined">
                       do_not_disturb_on
                     </span>
                   </button>
                 </li>
               </ul>
             </div>
-          </div>
-          <div
-            class="flex flex-col overflow-hidden rounded-lg bg-white shadow transition hover:shadow-lg"
+          </li>
+          <li
+            class="bg-white p-3 shadow-sm transition sm:flex lg:p-6 lg:shadow-none"
           >
-            <div class="relative w-full">
-              <img src="images/dist/thumbs.jpg" class="w-full" alt="" />
+            <div
+              class="relative mb-3 self-start overflow-hidden rounded border sm:mb-0 sm:w-44"
+            >
+              <img src="images/dist/thumbs.jpg" class="w-full object-cover" />
             </div>
-            <div class="p-2 md:p-3">
-              <h4 class="mb-3 text-sm">Samsung Electronic</h4>
-              <div class="mb-4 flex flex-col gap-2">
-                <dl>
-                  <dt class="text-xs text-slate-400">Nickname</dt>
-                  <dd class="text-sm font-semibold">Nickname</dd>
-                </dl>
-                <dl>
-                  <dt class="text-xs text-slate-400">Size</dt>
-                  <dd class="text-sm font-semibold">20 x 10 x 5</dd>
-                </dl>
-                <dl>
-                  <dt class="text-xs text-slate-400">Category(Style)</dt>
-                  <dd class="text-sm font-semibold">Box(Tray)</dd>
-                </dl>
+            <div
+              class="flex grow flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div class="flex flex-col sm:ml-6 sm:p-0 lg:ml-10">
+                <div class="mb-2">
+                  <h4 class="font-bold sm:text-lg">Samsung Electronic</h4>
+                </div>
+                <div class="mb-3 grid grid-cols-2 gap-2 sm:gap-x-6 sm:gap-y-1">
+                  <dl>
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="text-sm font-semibold">Nickname</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Size</dt>
+                    <dd class="text-sm font-semibold">20 x 10 x 5</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Box(Tray)</dd>
+                  </dl>
+                </div>
               </div>
-              <ul class="flex flex-col justify-center gap-3">
+              <ul class="flex flex-col justify-center gap-2 sm:ml-6">
                 <li class="w-full">
                   <label class="mb-1 block text-xs text-slate-400 after:ml-0.5">
                     Estimate 1
@@ -370,131 +401,20 @@
                     type="button"
                     class="flex items-center text-slate-400 hover:text-slate-500"
                   >
-                    <span class="material-symbols-outlined leading-[34px]">
-                      add_circle
-                    </span>
-                    <span class="material-symbols-outlined leading-[34px]">
+                    <span class="material-symbols-outlined"> add_circle </span>
+                    <span class="material-symbols-outlined">
                       do_not_disturb_on
                     </span>
                   </button>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div class="mb-12 flex items-center justify-between border-t py-4">
-          <div class="flex flex-1 justify-between sm:hidden">
-            <a
-              href="#"
-              class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-              >Previous</a
-            >
-            <a
-              href="#"
-              class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-              >Next</a
-            >
-          </div>
-          <div
-            class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between"
-          >
-            <div>
-              <p class="text-sm text-gray-700">
-                Showing
-                <span class="font-medium">1</span>
-                to
-                <span class="font-medium">10</span>
-                of
-                <span class="font-medium">97</span>
-                results
-              </p>
-            </div>
-            <div>
-              <nav
-                class="isolate inline-flex -space-x-px rounded-md shadow-sm"
-                aria-label="Pagination"
-              >
-                <a
-                  href="#"
-                  class="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-                >
-                  <span class="sr-only">Previous</span>
-                  <!-- Heroicon name: mini/chevron-left -->
-                  <svg
-                    class="h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-                <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" -->
-                <a
-                  href="#"
-                  aria-current="page"
-                  class="relative z-10 inline-flex items-center border border-indigo-500 bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-600 focus:z-20"
-                  >1</a
-                >
-                <a
-                  href="#"
-                  class="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-                  >2</a
-                >
-                <a
-                  href="#"
-                  class="relative hidden items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 md:inline-flex"
-                  >3</a
-                >
-                <span
-                  class="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700"
-                  >...</span
-                >
-                <a
-                  href="#"
-                  class="relative hidden items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 md:inline-flex"
-                  >8</a
-                >
-                <a
-                  href="#"
-                  class="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-                  >9</a
-                >
-                <a
-                  href="#"
-                  class="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-                  >10</a
-                >
-                <a
-                  href="#"
-                  class="relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-                >
-                  <span class="sr-only">Next</span>
-                  <!-- Heroicon name: mini/chevron-right -->
-                  <svg
-                    class="h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="mb-12 rounded-lg border bg-white px-2 py-4 md:p-4">
+          </li>
+        </ul>
+
+        <div
+          class="mb-12 bg-white px-2 py-4 shadow-sm md:p-4 lg:rounded-md lg:border lg:shadow-none"
+        >
           <label class="block">
             <span
               class="mb-1 flex text-sm text-slate-500 after:ml-0.5 after:text-red-500 after:content-['*']"
@@ -515,22 +435,20 @@
             </div>
           </label>
         </div>
-      </div>
-      <div class="sticky bottom-0 mt-auto text-center">
-        <div
-          class="flex bg-white md:items-center md:p-4 md:shadow-[0_-10px_15px_-10px_rgba(0,0,0,0.1)] xl:px-6"
-        >
-          <a
-            href="#n"
-            class="pointer-events-none flex w-full items-center justify-center bg-slate-400 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
-            >Submit Request</a
-          >
-
-          <!-- <a
-              href="#n"
+        <div class="sticky bottom-0 mt-auto text-center">
+          <div class="flex border-t bg-white md:items-center md:py-3 xl:py-6">
+            <a
+              href="quotes.html"
               class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
-              >Request Quotes</a
-            > -->
+              >Submit Request</a
+            >
+
+            <!-- <a
+                href="#n"
+                class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+                >Request Quotes</a
+              > -->
+          </div>
         </div>
       </div>
     </div>

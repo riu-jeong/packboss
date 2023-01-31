@@ -67,145 +67,207 @@
         </div>
 
         <div
-          class="mb-16 flex flex-col gap-4 bg-white p-4 shadow-sm lg:p-0 lg:shadow-none"
+          class="mb-16 flex flex-col divide-y bg-white p-4 shadow-sm lg:p-0 lg:shadow-none"
         >
-          <div class="flex flex-col gap-4">
-            <h4 class="text-xl">Material</h4>
+          <div class="flex flex-col gap-4 pb-6">
+            <div class="flex items-center">
+              <h4 class="text-xl">Coating</h4>
+            </div>
             <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:flex-row">
               <div class="w-full">
                 <input
                   type="radio"
-                  id="material-sc"
-                  name="sp-material"
-                  value="material-sc"
+                  id="coating-varnish"
+                  name="sp-varnish"
+                  value="coating-varnish"
                   class="peer hidden"
                   required
                   checked
                 />
                 <label
-                  for="material-sc"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                  for="coating-varnish"
+                  class="relative inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                 >
-                  SC
+                  Varnish
                 </label>
               </div>
               <div class="w-full">
                 <input
                   type="radio"
-                  id="material-iv"
-                  name="sp-material"
-                  value="material-iv"
+                  id="coating-lamination"
+                  name="sp-varnish"
+                  value="coating-lamination"
                   class="peer hidden"
                   required
                 />
                 <label
-                  for="material-iv"
+                  for="coating-lamination"
                   class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                 >
-                  IV
-                </label>
-              </div>
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-riv"
-                  name="sp-material"
-                  value="material-riv"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-riv"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  RIV
-                </label>
-              </div>
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-ccp"
-                  name="sp-material"
-                  value="material-ccp"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-ccp"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  CCP
-                </label>
-              </div>
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-fbb-aliking"
-                  name="sp-material"
-                  value="material-fbb-aliking"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-fbb-aliking"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  FBB-Aliking
+                  Lamination
                 </label>
               </div>
             </div>
-            <div class="flex flex-col">
-              <h5 class="mb-2 font-semibold text-gray-600">Grammage</h5>
-              <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:flex-row">
-                <div class="w-full">
-                  <input
-                    type="radio"
-                    id="material-300g"
-                    name="sp-material-grammage"
-                    value="material-300g"
-                    class="peer hidden"
-                    required
-                    checked
-                  />
-                  <label
-                    for="material-300g"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                  >
-                    300g
-                  </label>
-                </div>
-                <div class="w-full">
-                  <input
-                    type="radio"
-                    id="material-350g"
-                    name="sp-material-grammage"
-                    value="material-350g"
-                    class="peer hidden"
-                    required
-                  />
-                  <label
-                    for="material-350g"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                  >
-                    350g
-                  </label>
-                </div>
-                <div class="w-full">
-                  <input
-                    type="radio"
-                    id="material-400g"
-                    name="sp-material-grammage"
-                    value="material-400g"
-                    class="peer hidden"
-                    required
-                  />
-                  <label
-                    for="material-400g"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                  >
-                    350g
-                  </label>
-                </div>
+            <div class="flex items-center">
+              <span
+                class="material-symbols-outlined mr-1 self-start text-[20px]"
+              >
+                report
+              </span>
+              <p class="flex text-sm">
+                White on the front, gray on the back, single-sided printing
+                available, affordable
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <h4 class="text-xl">Finish</h4>
+            <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:flex-row">
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="finish-matte"
+                  name="sp-finish"
+                  value="finish-matte"
+                  class="peer hidden"
+                  required
+                  checked
+                />
+                <label
+                  for="finish-matte"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Matte
+                </label>
+              </div>
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="finish-glossy"
+                  name="sp-finish"
+                  value="finish-glossy"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="finish-glossy"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Glossy
+                </label>
+              </div>
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="finish-satin"
+                  name="sp-finish"
+                  value="finish-satin"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="finish-satin"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Satin
+                </label>
+              </div>
+              <div class="w-full">
+                <input
+                  type="radio"
+                  id="finish-soft-touch"
+                  name="sp-finish"
+                  value="finish-soft-touch"
+                  class="peer hidden"
+                  required
+                />
+                <label
+                  for="finish-soft-touch"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Soft touch
+                </label>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <span
+                class="material-symbols-outlined mr-1 self-start text-[20px]"
+              >
+                report
+              </span>
+              <p class="flex text-sm">
+                White on the front, gray on the back, single-sided printing
+                available, affordable
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <div class="flex items-center">
+              <h4 class="text-xl">Extras</h4>
+              <span class="ml-2 text-sm text-slate-400"
+                >(Duplicate selection available)</span
+              >
+            </div>
+            <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:flex-row">
+              <div class="relative w-full">
+                <input
+                  type="checkbox"
+                  id="extras-spot-uv"
+                  value="extras-spot-uv"
+                  class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                  required
+                />
+                <label
+                  for="extras-spot-uv"
+                  class="relative inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Spot UV
+                </label>
+              </div>
+              <div class="relative w-full">
+                <input
+                  type="checkbox"
+                  id="extras-embossing"
+                  value="extras-embossing"
+                  class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                  required
+                />
+                <label
+                  for="extras-embossing"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Embossing
+                </label>
+              </div>
+              <div class="relative w-full">
+                <input
+                  type="checkbox"
+                  id="extras-debossing"
+                  value="extras-debossing"
+                  class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                  required
+                />
+                <label
+                  for="extras-debossing"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Debossing
+                </label>
+              </div>
+              <div class="relative w-full">
+                <input
+                  type="checkbox"
+                  id="extras-foil-stamping"
+                  value="extras-foil-stamping"
+                  class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                  required
+                />
+                <label
+                  for="extras-foil-stamping"
+                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                >
+                  Foil stamping
+                </label>
               </div>
             </div>
             <div class="flex items-center">
@@ -225,7 +287,7 @@
         <div class="sticky bottom-0 z-20 mt-auto text-center">
           <div class="flex border-t bg-white md:items-center md:py-3 xl:py-6">
             <a
-              href="create_step03.html"
+              href="create_step05.html"
               class="flex w-full items-center justify-center bg-gray-500 p-4 font-bold text-white focus:bg-primary-600 md:w-auto md:rounded-full md:py-2 md:px-10"
               ><span class="material-symbols-outlined mr-2 text-sm">
                 arrow_back_ios_new </span
@@ -233,7 +295,7 @@
             >
 
             <a
-              href="create_step05.html"
+              href="create_step07.html"
               class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
               >Next<span class="material-symbols-outlined ml-2 text-sm">
                 arrow_forward_ios

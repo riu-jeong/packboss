@@ -307,154 +307,83 @@
           class="mb-16 flex flex-col gap-4 bg-white p-4 shadow-sm lg:p-0 lg:shadow-none"
         >
           <div class="flex flex-col gap-4">
-            <h4 class="text-xl">Material</h4>
-            <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:flex-row">
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-sc"
-                  name="sp-material"
-                  value="material-sc"
-                  class="peer hidden"
-                  required
-                  checked
-                />
-                <label
-                  for="material-sc"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+            <h4 class="text-xl">Print Color</h4>
+            <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+              <div class="w-full flex-none sm:w-52">
+                <select
+                  name=""
+                  id=""
+                  class="form-select w-full rounded border-2 border-primary-500 text-sm font-bold text-primary-500 lg:text-base"
                 >
-                  SC
-                </label>
+                  <option value="1 Color">1 Color</option>
+                  <option value="2 Color">2 Color</option>
+                  <option value="3 Color">3 Color</option>
+                  <option value="4 Color">4 Color</option>
+                  <option value="5 Color">5 Color</option>
+                  <option value="6 Color">6 Color</option>
+                  <option value="7 Color">7 Color</option>
+                  <option value="None">None</option>
+                </select>
               </div>
               <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-iv"
-                  name="sp-material"
-                  value="material-iv"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-iv"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  IV
-                </label>
-              </div>
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-riv"
-                  name="sp-material"
-                  value="material-riv"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-riv"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  RIV
-                </label>
-              </div>
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-ccp"
-                  name="sp-material"
-                  value="material-ccp"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-ccp"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  CCP
-                </label>
-              </div>
-              <div class="w-full">
-                <input
-                  type="radio"
-                  id="material-fbb-aliking"
-                  name="sp-material"
-                  value="material-fbb-aliking"
-                  class="peer hidden"
-                  required
-                />
-                <label
-                  for="material-fbb-aliking"
-                  class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                >
-                  FBB-Aliking
-                </label>
-              </div>
-            </div>
-            <div class="flex flex-col">
-              <h5 class="mb-2 font-semibold text-gray-600">Grammage</h5>
-              <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:flex-row">
-                <div class="w-full">
-                  <input
-                    type="radio"
-                    id="material-300g"
-                    name="sp-material-grammage"
-                    value="material-300g"
-                    class="peer hidden"
-                    required
-                    checked
-                  />
-                  <label
-                    for="material-300g"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                  >
-                    300g
-                  </label>
+                <p class="mb-4 text-sm lg:mb-6 lg:text-base">
+                  인쇄도수란 디자인 결과물이 몇 가지 색으로 표현되는지를
+                  뜻합니다.<br />
+                  인쇄 색상이 1색인 경우 1도 인쇄, 2색인 경우 2도 인쇄, 4색인
+                  경우 4도 인쇄라고 표현할 수 있습니다.
+                </p>
+                <div class="mb-4 flex gap-3 lg:mb-6 lg:gap-10">
+                  <figure class="w-full">
+                    <img
+                      src="images/dist/colors_one.jpg"
+                      class="rounded"
+                      alt=""
+                    />
+                    <figcaption
+                      class="py-2 text-center text-xs font-semibold lg:text-sm"
+                    >
+                      1도 인쇄 (흑백)
+                    </figcaption>
+                  </figure>
+                  <figure class="w-full">
+                    <img
+                      src="images/dist/colors_two.jpg"
+                      class="rounded"
+                      alt=""
+                    />
+                    <figcaption
+                      class="py-2 text-center text-xs font-semibold lg:text-sm"
+                    >
+                      2도 인쇄 (별색과 검정색)
+                    </figcaption>
+                  </figure>
+                  <figure class="w-full">
+                    <img
+                      src="images/dist/colors_four.jpg"
+                      class="rounded"
+                      alt=""
+                    />
+                    <figcaption
+                      class="py-2 text-center text-xs font-semibold lg:text-sm"
+                    >
+                      4도 인쇄 (CMYK 4가지 색)
+                    </figcaption>
+                  </figure>
                 </div>
-                <div class="w-full">
-                  <input
-                    type="radio"
-                    id="material-350g"
-                    name="sp-material-grammage"
-                    value="material-350g"
-                    class="peer hidden"
-                    required
-                  />
-                  <label
-                    for="material-350g"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                  >
-                    350g
-                  </label>
-                </div>
-                <div class="w-full">
-                  <input
-                    type="radio"
-                    id="material-400g"
-                    name="sp-material-grammage"
-                    value="material-400g"
-                    class="peer hidden"
-                    required
-                  />
-                  <label
-                    for="material-400g"
-                    class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-                  >
-                    350g
-                  </label>
+                <div class="rounded bg-slate-100 p-3 text-xs lg:p-4 lg:text-sm">
+                  <p class="mb-2 font-semibold">
+                    보통 기본 4도 인쇄로 진행되며,<br />
+                    CMYK(Cyan 청록색, Magenta 자주색, Yellow 노란색, Black
+                    검은색)의 네 가지 색의 조합으로 표현됩니다.<br />
+                    CMYK 네 가지 색으로만 표현할 수 없는 컬러 표현을 위해서 별색
+                    잉크(금색, 은색, 형광색 등)를 사용할 수 있습니다.<br />
+                  </p>
+                  <p class="text-slate-500">
+                    &#42; 오프셋 인쇄는 인쇄판(CTP)과 고무 롤러를 사용하여
+                    종이에 간접적으로 인쇄하는 방식입니다.
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="flex items-center">
-              <span
-                class="material-symbols-outlined mr-1 self-start text-[20px]"
-              >
-                report
-              </span>
-              <p class="flex text-sm">
-                White on the front, gray on the back, single-sided printing
-                available, affordable
-              </p>
             </div>
           </div>
         </div>
@@ -462,7 +391,7 @@
         <div class="sticky bottom-0 z-20 mt-auto text-center">
           <div class="flex border-t bg-white md:items-center md:py-3 xl:py-6">
             <a
-              href="create_step03.html"
+              href="create_step04.html"
               class="flex w-full items-center justify-center bg-gray-500 p-4 font-bold text-white focus:bg-primary-600 md:w-auto md:rounded-full md:py-2 md:px-10"
               ><span class="material-symbols-outlined mr-2 text-sm">
                 arrow_back_ios_new </span
@@ -470,7 +399,7 @@
             >
 
             <a
-              href="create_step05.html"
+              href="create_step06.html"
               class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
               >Next<span class="material-symbols-outlined ml-2 text-sm">
                 arrow_forward_ios

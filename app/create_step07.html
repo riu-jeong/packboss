@@ -1,0 +1,202 @@
+<!--#set var="title" value="packposs" -->
+<!--#include virtual="/parts/header.html" -->
+
+<!--#include virtual="/parts/footer.html" -->
+<div class="h-full">
+  <!--#include virtual="/parts/header_nav.html" -->
+  <div class="h-full pt-14 md:pt-16">
+    <!--#include virtual="/parts/aside.html" -->
+    <div class="flex min-h-full xl:ml-64 2xl:p-10">
+      <div
+        class="mx-auto flex w-full max-w-[1280px] flex-col lg:bg-white lg:p-6 2xl:rounded-lg 2xl:border 2xl:p-10"
+      >
+        <!-- 페이지 타이틀 -->
+        <div
+          class="mb-3 flex flex-col bg-white shadow-sm lg:mb-8 lg:shadow-none"
+        >
+          <div
+            class="relative flex items-center bg-white p-3 lg:mb-0 lg:border-b lg:p-0 lg:pb-6"
+          >
+            <div class="item-center flex">
+              <h2 class="text-xl xl:text-2xl">Create an item</h2>
+            </div>
+          </div>
+          <div
+            class="flex justify-between gap-3 border-t lg:border-b lg:border-t-0"
+          >
+            <ol class="flex w-full divide-x">
+              <li
+                class="relative flex w-full basis-3/6 before:absolute before:right-[-8px] before:top-[50%] before:z-[1] before:h-0 before:w-0 before:translate-y-[-50%] before:border-l-[8px] before:border-t-[8px] before:border-b-[8px] before:border-white before:border-t-transparent before:border-b-transparent before:content-[''] after:absolute after:top-[50%] after:right-[-10px] after:h-0 after:w-0 after:translate-y-[-50%] after:border-l-[10px] after:border-t-[10px] after:border-b-[10px] after:border-t-transparent after:border-b-transparent after:content-['']"
+              >
+                <div
+                  class="relative flex w-full items-center px-4 py-2 lg:px-8 lg:py-4"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-full border-transparent bg-gray-200 text-white lg:h-10 lg:w-10"
+                  >
+                    <span class="material-symbols-outlined"> done </span>
+                  </div>
+
+                  <div class="ml-3 lg:ml-4">
+                    <span class="text-xs text-gray-500 lg:text-sm">Step1</span>
+                    <h5 class="text-sm text-gray-500 lg:text-base">Style</h5>
+                  </div>
+                </div>
+              </li>
+
+              <li class="relative flex w-full basis-3/6 items-center">
+                <div
+                  class="relative flex w-full items-center px-4 py-2 lg:px-8 lg:py-4"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-full border-2 border-primary-500 text-primary-500 lg:h-10 lg:w-10"
+                  >
+                    <span class="material-symbols-outlined lg:text-2xl">
+                      done
+                    </span>
+                  </div>
+                  <div class="ml-3 lg:ml-4">
+                    <span class="text-xs text-gray-500 lg:text-sm">Step2</span>
+                    <h5 class="text-sm text-primary-500 lg:text-base">
+                      Specification
+                    </h5>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div
+          class="mb-16 flex flex-col gap-4 divide-y bg-white p-4 shadow-sm lg:p-0 lg:shadow-none"
+        >
+          <div class="flex flex-col gap-4 pb-6">
+            <h4 class="text-xl">Notes</h4>
+            <textarea
+              name=""
+              id=""
+              class="form-textarea h-28 resize-none transition"
+              placeholder="placeholder"
+            ></textarea>
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <div class="flex items-center">
+              <h4 class="text-xl">Documents</h4>
+              <span class="ml-2 text-sm text-slate-400"
+                >(Up to 10 attachments )</span
+              >
+            </div>
+            <form>
+              <label
+                class="relative mb-3 inline-flex cursor-pointer rounded-md bg-blue-500 px-3 py-2 text-sm text-white"
+                for="att-file"
+                ><span class="material-symbols-outlined mr-1 text-[20px]">
+                  upload
+                </span>
+                Upload file
+                <input class="sr-only" id="att-file" type="file" />
+              </label>
+              <div
+                class="flex flex-wrap gap-2 rounded-lg border-2 border-dashed border-slate-200 bg-white p-2 md:gap-3 md:p-3"
+              >
+                <div
+                  class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+                >
+                  <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                    >file_description01.xml</span
+                  >
+                  <button type="button" class="">
+                    <span
+                      class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+                >
+                  <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                    >file_description01.xml</span
+                  >
+                  <button type="button" class="">
+                    <span
+                      class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+                >
+                  <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                    >file_description01.xml</span
+                  >
+                  <button type="button" class="">
+                    <span
+                      class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="flex items-center rounded border bg-white pl-2 text-xs text-slate-400"
+                >
+                  <span class="max-w-[100px] truncate lg:max-w-[200px]"
+                    >file_description01.xml</span
+                  >
+                  <button type="button" class="">
+                    <span
+                      class="material-symbols-outlined ml-2 flex border-l bg-slate-50 px-1 text-sm hover:bg-slate-100"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+                <p class="block w-full p-3 text-center text-sm text-slate-300">
+                  There is no attached file.
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <h4 class="text-xl">What do you pack?</h4>
+            <input
+              type="text"
+              class="form-input px-2 py-1.5 font-semibold transition"
+              placeholder="placeholder"
+            />
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <h4 class="text-xl">Nickname</h4>
+            <input
+              type="text"
+              class="form-input px-2 py-1.5 font-semibold transition"
+              placeholder="placeholder"
+            />
+          </div>
+        </div>
+
+        <div class="sticky bottom-0 z-20 mt-auto text-center">
+          <div class="flex border-t bg-white md:items-center md:py-3 xl:py-6">
+            <a
+              href="create_step06.html"
+              class="flex w-full items-center justify-center bg-gray-500 p-4 font-bold text-white focus:bg-primary-600 md:w-auto md:rounded-full md:py-2 md:px-10"
+              ><span class="material-symbols-outlined mr-2 text-sm">
+                arrow_back_ios_new </span
+              >Back</a
+            >
+
+            <a
+              href="item_list.html"
+              class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+              >Create</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

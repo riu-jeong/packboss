@@ -196,7 +196,7 @@
   <ul class="py-4">
     <li>
       <a
-        href="create.html"
+        href="create_step01.html"
         class="flex items-center rounded-md p-2 text-gray-600 transition hover:text-secondary-500 focus:bg-gray-100 focus:text-secondary-500"
       >
         <span class="material-symbols-outlined text-[20px]"> variables </span>
@@ -356,9 +356,9 @@
 
 <!-- View Details -->
 <div
-  class="fixed top-0 right-0 z-10 flex h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
+  class="fixed top-0 right-0 z-30 flex h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
 >
-  <a href="#n" class="mt-1 flex self-start p-2 text-white"
+  <a href="item_list.html" class="mt-1 flex self-start p-2 text-white"
     ><span class="material-symbols-outlined"> close </span></a
   >
   <div
@@ -368,8 +368,8 @@
       <div class="mb-6 flex items-center border-b pb-3">
         <h3>Edit specification</h3>
       </div>
-      <div class="flex flex-col pb-16 lg:px-6">
-        <div class="flex flex-col gap-4 border-b py-6 pt-0">
+      <div class="flex flex-col divide-y pb-16 lg:px-6">
+        <div class="flex flex-col gap-4 py-6 pt-0">
           <h4 class="text-xl">Size</h4>
           <div class="mb-3 w-full self-start overflow-hidden rounded-lg">
             <img
@@ -388,6 +388,7 @@
                   value="size-inches"
                   class="peer hidden"
                   required
+                  checked
                 />
                 <label
                   for="size-inches"
@@ -461,7 +462,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
+        <div class="flex flex-col gap-4 py-6">
           <h4 class="text-xl">Material</h4>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
             <div class="w-full">
@@ -593,7 +594,7 @@
                   for="material-400g"
                   class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
                 >
-                  350g
+                  400g
                 </label>
               </div>
             </div>
@@ -608,7 +609,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
+        <div class="flex flex-col gap-4 py-6">
           <h4 class="text-xl">Color</h4>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
             <div class="w-full">
@@ -741,21 +742,20 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
+        <div class="flex flex-col gap-4 py-6">
           <div class="flex items-center">
             <h4 class="text-xl">Coating</h4>
-            <span class="ml-2 text-sm text-slate-400"
-              >(Duplicate selection available)</span
-            >
           </div>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-            <div class="relative w-full">
+            <div class="w-full">
               <input
-                type="checkbox"
+                type="radio"
                 id="coating-varnish"
+                name="sp-varnish"
                 value="coating-varnish"
-                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                class="peer hidden"
                 required
+                checked
               />
               <label
                 for="coating-varnish"
@@ -764,12 +764,13 @@
                 Varnish
               </label>
             </div>
-            <div class="relative w-full">
+            <div class="w-full">
               <input
-                type="checkbox"
+                type="radio"
                 id="coating-lamination"
+                name="sp-varnish"
                 value="coating-lamination"
-                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                class="peer hidden"
                 required
               />
               <label
@@ -779,61 +780,80 @@
                 Lamination
               </label>
             </div>
-            <div class="relative w-full">
+          </div>
+          <div class="flex items-center">
+            <span class="material-symbols-outlined mr-1 self-start text-[20px]">
+              report
+            </span>
+            <p class="flex text-sm">
+              White on the front, gray on the back, single-sided printing
+              available, affordable
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 py-6">
+          <h4 class="text-xl">Finish</h4>
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
+            <div class="w-full">
               <input
-                type="checkbox"
-                id="coating-matte"
-                value="coating-matte"
-                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                type="radio"
+                id="finish-matte"
+                name="sp-finish"
+                value="finish-matte"
+                class="peer hidden"
                 required
+                checked
               />
               <label
-                for="coating-matte"
+                for="finish-matte"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Matte
               </label>
             </div>
-            <div class="relative w-full">
+            <div class="w-full">
               <input
-                type="checkbox"
-                id="coating-glossy"
-                value="coating-glossy"
-                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                type="radio"
+                id="finish-glossy"
+                name="sp-finish"
+                value="finish-glossy"
+                class="peer hidden"
                 required
               />
               <label
-                for="coating-glossy"
+                for="finish-glossy"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Glossy
               </label>
             </div>
-            <div class="relative w-full">
+            <div class="w-full">
               <input
-                type="checkbox"
-                id="coating-satin"
-                value="coating-satin"
-                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                type="radio"
+                id="finish-satin"
+                name="sp-finish"
+                value="finish-satin"
+                class="peer hidden"
                 required
               />
               <label
-                for="coating-satin"
+                for="finish-satin"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Satin
               </label>
             </div>
-            <div class="relative w-full">
+            <div class="w-full">
               <input
-                type="checkbox"
-                id="coating-soft-touch"
-                value="coating-soft-touch"
-                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
+                type="radio"
+                id="finish-soft-touch"
+                name="sp-finish"
+                value="finish-soft-touch"
+                class="peer hidden"
                 required
               />
               <label
-                for="coating-soft-touch"
+                for="finish-soft-touch"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Soft touch
@@ -850,100 +870,70 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
-          <h4 class="text-xl">Finish</h4>
+
+        <div class="flex flex-col gap-4 py-6">
+          <div class="flex items-center">
+            <h4 class="text-xl">Extras</h4>
+            <span class="ml-2 text-sm text-slate-400"
+              >(Duplicate selection available)</span
+            >
+          </div>
           <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:flex-row">
-            <div class="w-full">
+            <div class="relative w-full">
               <input
-                type="radio"
-                id="finish-spot-uv"
-                name="sp-finish"
-                value="finish-spot-uv"
-                class="peer hidden"
+                type="checkbox"
+                id="extras-spot-uv"
+                value="extras-spot-uv"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                 required
               />
               <label
-                for="finish-spot-uv"
-                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
+                for="extras-spot-uv"
+                class="relative inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
-                Spot Uv
+                Spot UV
               </label>
             </div>
-            <div class="w-full">
+            <div class="relative w-full">
               <input
-                type="radio"
-                id="finish-spot-silk"
-                name="sp-finish"
-                value="finish-spot-silk"
-                class="peer hidden"
+                type="checkbox"
+                id="extras-embossing"
+                value="extras-embossing"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                 required
               />
               <label
-                for="finish-spot-silk"
-                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-              >
-                Spot silk
-              </label>
-            </div>
-            <div class="w-full">
-              <input
-                type="radio"
-                id="finish-etching"
-                name="sp-finish"
-                value="finish-etching"
-                class="peer hidden"
-                required
-              />
-              <label
-                for="finish-etching"
-                class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
-              >
-                Etching
-              </label>
-            </div>
-            <div class="w-full">
-              <input
-                type="radio"
-                id="finish-embossing"
-                name="sp-finish"
-                value="finish-embossing"
-                class="peer hidden"
-                required
-              />
-              <label
-                for="finish-embossing"
+                for="extras-embossing"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Embossing
               </label>
             </div>
-            <div class="w-full">
+            <div class="relative w-full">
               <input
-                type="radio"
-                id="finish-debossing"
-                name="sp-finish"
-                value="finish-debossing"
-                class="peer hidden"
+                type="checkbox"
+                id="extras-debossing"
+                value="extras-debossing"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                 required
               />
               <label
-                for="finish-debossing"
+                for="extras-debossing"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Debossing
               </label>
             </div>
-            <div class="w-full">
+            <div class="relative w-full">
               <input
-                type="radio"
-                id="finish-foil-stamping"
-                name="sp-finish"
-                value="finish-foil-stamping"
-                class="peer hidden"
+                type="checkbox"
+                id="extras-foil-stamping"
+                value="extras-foil-stamping"
+                class="peer absolute top-1/2 left-2 z-10 translate-y-[-50%] rounded-full border-transparent text-primary-400 focus:ring-0 focus:ring-primary-400 focus:ring-offset-0"
                 required
               />
               <label
-                for="finish-foil-stamping"
+                for="extras-foil-stamping"
                 class="inline-flex w-full cursor-pointer items-center justify-center rounded border-gray-200 bg-gray-100 py-1.5 px-3 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white"
               >
                 Foil stamping
@@ -960,7 +950,8 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
+
+        <div class="flex flex-col gap-4 py-6">
           <h4 class="text-xl">Notes</h4>
           <textarea
             name=""
@@ -969,7 +960,7 @@
             placeholder="placeholder"
           ></textarea>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
+        <div class="flex flex-col gap-4 py-6">
           <div class="flex items-center">
             <h4 class="text-xl">Documents</h4>
             <span class="ml-2 text-sm text-slate-400"
@@ -1051,7 +1042,7 @@
             </div>
           </form>
         </div>
-        <div class="flex flex-col gap-4 border-b py-6">
+        <div class="flex flex-col gap-4 py-6">
           <h4 class="text-xl">What do you pack?</h4>
           <input
             type="text"
@@ -1069,15 +1060,15 @@
         </div>
       </div>
       <div
-        class="sticky bottom-0 mt-auto flex justify-between bg-white py-3 shadow-[0_-10px_15px_-10px_rgba(0,0,0,0.1)]"
+        class="sticky bottom-0 z-10 mt-auto flex justify-between border-t bg-white py-3"
       >
         <a
-          href="#n"
+          href="item_list2.html"
           class="rounded-full border bg-white py-1.5 px-3 text-sm font-semibold text-gray-500"
           >Cancel</a
         >
         <a
-          href="#n"
+          href="item_list2.html"
           class="rounded-full bg-primary-500 py-1.5 px-3 text-sm font-semibold text-white"
           >Update</a
         >
