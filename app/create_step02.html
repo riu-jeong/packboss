@@ -16,12 +16,28 @@
           <div
             class="relative flex items-center bg-white p-3 lg:mb-0 lg:border-b lg:p-0 lg:pb-6"
           >
-            <div class="item-center flex">
+            <div class="flex w-full items-center justify-between">
               <h2 class="text-xl xl:text-2xl">Create an item</h2>
+              <ol class="hidden gap-4 sm:flex">
+                <li class="flex items-center">
+                  <span
+                    class="flex h-5 w-5 items-center justify-center rounded-full border border-primary-500 bg-primary-500 text-sm text-white"
+                    >1</span
+                  >
+                  <p class="ml-2 font-semibold text-primary-500">Style</p>
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex h-5 w-5 items-center justify-center rounded-full border border-gray-300 text-sm text-gray-400"
+                    >2</span
+                  >
+                  <p class="ml-2 font-semibold text-gray-400">Specification</p>
+                </li>
+              </ol>
             </div>
           </div>
           <div
-            class="flex justify-between gap-3 border-t lg:border-b lg:border-t-0"
+            class="flex justify-between gap-3 border-t sm:hidden lg:border-b lg:border-t-0"
           >
             <ol class="flex w-full divide-x">
               <li

@@ -253,34 +253,35 @@
           <div
             class="relative flex items-center bg-white p-3 lg:mb-0 lg:border-b lg:p-0 lg:pb-6"
           >
-            <div class="item-center flex">
+            <div class="flex w-full items-center justify-between">
               <h2 class="text-xl xl:text-2xl">Create an item</h2>
+              <ol class="hidden gap-4 sm:flex">
+                <li class="flex items-center">
+                  <span
+                    class="flex h-5 w-5 items-center justify-center rounded-full border border-gray-300 text-sm text-gray-400"
+                    >1</span
+                  >
+                  <p class="ml-2 font-semibold text-gray-400">Style</p>
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex h-5 w-5 items-center justify-center rounded-full border border-primary-500 bg-primary-500 text-sm text-white"
+                    >2</span
+                  >
+                  <p class="ml-2 font-semibold text-primary-500">
+                    Specification
+                  </p>
+                </li>
+              </ol>
             </div>
           </div>
           <div
-            class="flex justify-between gap-3 border-t lg:border-b lg:border-t-0"
+            class="flex justify-between gap-3 border-t sm:hidden lg:border-b lg:border-t-0"
           >
             <ol class="flex w-full divide-x">
               <li
                 class="relative flex w-full basis-3/6 before:absolute before:right-[-8px] before:top-[50%] before:z-[1] before:h-0 before:w-0 before:translate-y-[-50%] before:border-l-[8px] before:border-t-[8px] before:border-b-[8px] before:border-white before:border-t-transparent before:border-b-transparent before:content-[''] after:absolute after:top-[50%] after:right-[-10px] after:h-0 after:w-0 after:translate-y-[-50%] after:border-l-[10px] after:border-t-[10px] after:border-b-[10px] after:border-t-transparent after:border-b-transparent after:content-['']"
               >
-                <div
-                  class="relative flex w-full items-center px-4 py-2 lg:px-8 lg:py-4"
-                >
-                  <div
-                    class="flex items-center justify-center rounded-full border-transparent bg-gray-200 text-white lg:h-10 lg:w-10"
-                  >
-                    <span class="material-symbols-outlined"> done </span>
-                  </div>
-
-                  <div class="ml-3 lg:ml-4">
-                    <span class="text-xs text-gray-500 lg:text-sm">Step1</span>
-                    <h5 class="text-sm text-gray-500 lg:text-base">Style</h5>
-                  </div>
-                </div>
-              </li>
-
-              <li class="relative flex w-full basis-3/6 items-center">
                 <div
                   class="relative flex w-full items-center px-4 py-2 lg:px-8 lg:py-4"
                 >
@@ -292,8 +293,24 @@
                     </span>
                   </div>
                   <div class="ml-3 lg:ml-4">
+                    <span class="text-xs text-gray-500 lg:text-sm">Step1</span>
+                    <h5 class="text-sm text-primary-500 lg:text-base">Style</h5>
+                  </div>
+                </div>
+              </li>
+
+              <li class="relative flex w-full basis-3/6 items-center">
+                <div
+                  class="relative flex w-full items-center px-4 py-2 lg:px-8 lg:py-4"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-full border text-slate-300 lg:h-10 lg:w-10"
+                  >
+                    <span class="material-symbols-outlined"> done </span>
+                  </div>
+                  <div class="ml-3 lg:ml-4">
                     <span class="text-xs text-gray-500 lg:text-sm">Step2</span>
-                    <h5 class="text-sm text-primary-500 lg:text-base">
+                    <h5 class="text-sm text-gray-500 lg:text-base">
                       Specification
                     </h5>
                   </div>
