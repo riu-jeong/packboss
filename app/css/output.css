@@ -1580,6 +1580,10 @@ h1, h2, h3, h4, h5 {
   margin-top: 0.5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -2465,6 +2469,11 @@ h1, h2, h3, h4, h5 {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .pt-14 {
@@ -4279,6 +4288,11 @@ html,body{
 
   .lg\:text-\[28px\] {
     font-size: 28px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:shadow-none {

@@ -35,152 +35,164 @@
 
 <div class="bg-white">
   <header
-    class="fixed z-20 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
-  >
-    <div class="flex-none xl:hidden">
-      <a href="#n" class="flex w-10 items-center p-2"
-        ><span class="material-symbols-outlined"> menu </span></a
+  class="fixed z-20 flex h-14 w-full items-center border-b bg-white px-2 md:h-16 xl:px-6"
+>
+  <div class="flex-none basis-2/6 sm:basis-auto xl:hidden">
+    <a href="#n" class="flex w-10 items-center p-2"
+      ><span class="material-symbols-outlined"> menu </span></a
+    >
+    <!-- <a href="#n" class="flex w-10 items-center p-2"
+      ><span class="material-symbols-outlined"> close </span></a
+    > -->
+  </div>
+
+  <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
+    <a href="index.html" class="flex w-28 p-2 md:w-32">
+      <img src="images/dist/logo/logo.svg" alt="" />
+    </a>
+  </div>
+  <div class="ml-6 hidden gap-3 sm:flex sm:items-center">
+    <a
+      href="index.html"
+      class="rounded-full bg-secondary-500 px-3 py-1 text-sm font-medium text-white transition hover:bg-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
+      >Opportunities</a
+    >
+    <a
+      href="quotes.html"
+      class="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-700 transition hover:text-secondary-600 focus:ring focus:ring-secondary-300 md:text-base"
+      >Quotes</a
+    >
+  </div>
+  <div class="ml-auto flex basis-2/6 justify-end sm:basis-auto">
+    <ul class="flex">
+      <li class="relative flex items-center">
+        <div class="dropdown-container relative flex">
+          <div
+            class="dropdown-control relative flex cursor-pointer flex-wrap items-center justify-between p-1.5 px-1 transition hover:text-gray-900 sm:px-3"
+          >
+            <div
+              class="dropdown-value-container relative flex flex-1 flex-wrap items-center overflow-hidden"
+            >
+              <div
+                class="dropdown-value flex items-center overflow-hidden text-sm font-semibold"
+              >
+                EN
+              </div>
+            </div>
+            <div
+              class="dropdown-arrow-container flex shrink-0 items-center self-stretch"
+            >
+              <div aria-hidden="true" class="dropdown-arrow flex">
+                <span class="material-symbols-outlined text-[20px]">
+                  arrow_drop_down
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="dropdown-menu absolute top-[100%] z-10 hidden w-16 rounded border bg-white shadow-sm sm:w-full"
+          >
+            <span
+              class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+              ><img
+                src="../images/dist/icons/flag_usa.svg"
+                class="mr-2 w-4"
+                alt=""
+              />EN</span
+            >
+            <span
+              class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+              ><img
+                src="../images/dist/icons/flag_ko.svg"
+                class="mr-2 w-4"
+                alt=""
+              />KO</span
+            >
+            <span
+              class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+              ><img
+                src="../images/dist/icons/flag_cn.svg"
+                class="mr-2 w-4"
+                alt=""
+              />CN</span
+            >
+          </div>
+        </div>
+      </li>
+      <li
+        class="relative flex items-center pl-1 after:absolute after:left-0 after:top-[50%] after:flex after:h-3 after:w-[1px] after:translate-y-[-50%] after:bg-slate-200 after:content-[''] sm:pl-2"
       >
-      <!-- <a href="#n" class="flex w-10 items-center p-2"
-        ><span class="material-symbols-outlined"> close </span></a
-      > -->
-    </div>
+        <div class="relative w-10 flex-none sm:ml-auto">
+          <a
+            href="sign_up.html"
+            class="dropdown_filter"
+            id="dropdown-button"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            <!-- <span class="material-symbols-outlined"> account_circle </span> -->
+            <span class="material-symbols-outlined"> apps </span>
+          </a>
 
-    <div class="flex grow justify-center sm:ml-4 sm:grow-0 xl:ml-0">
-      <a href="index.html" class="flex w-28 p-2 md:w-32">
-        <img src="images/dist/logo/logo.svg" alt="" />
-      </a>
-    </div>
-
-    <div class="ml-auto flex basis-2/6 justify-end sm:basis-auto">
-      <ul class="flex">
-        <li class="relative flex items-center">
-          <div class="dropdown-container relative flex">
-            <div
-              class="dropdown-control relative flex cursor-pointer flex-wrap items-center justify-between p-1.5 px-1 transition hover:text-gray-900 sm:px-3"
-            >
-              <div
-                class="dropdown-value-container relative flex flex-1 flex-wrap items-center overflow-hidden"
+          <div
+            class="dropdown_container"
+            role="menu"
+            aria-labelledby="dropdown-button"
+            tabindex="-1"
+          >
+            <div class="py-1" role="none">
+              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+              <a
+                href="my_account.html"
+                class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  settings_account_box </span
+                >My account</a
               >
-                <div
-                  class="dropdown-value flex items-center overflow-hidden text-sm font-semibold"
-                >
-                  EN
-                </div>
-              </div>
-              <div
-                class="dropdown-arrow-container flex shrink-0 items-center self-stretch"
+              <a
+                href="#"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  logout </span
+                >Sign out</a
               >
-                <div aria-hidden="true" class="dropdown-arrow flex">
-                  <span class="material-symbols-outlined text-[20px]">
-                    arrow_drop_down
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="dropdown-menu absolute top-[100%] z-10 hidden w-16 rounded border bg-white shadow-sm sm:w-full"
-            >
-              <span
-                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
-                ><img
-                  src="../images/dist/icons/flag_usa.svg"
-                  class="mr-2 w-4"
-                  alt=""
-                />EN</span
+              <a
+                href="sign_in.html"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  login </span
+                >Sign In</a
               >
-              <span
-                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
-                ><img
-                  src="../images/dist/icons/flag_ko.svg"
-                  class="mr-2 w-4"
-                  alt=""
-                />KO</span
-              >
-              <span
-                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
-                ><img
-                  src="../images/dist/icons/flag_cn.svg"
-                  class="mr-2 w-4"
-                  alt=""
-                />CN</span
+              <a
+                href="sign_up_type.html"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><span class="material-symbols-outlined mr-2 text-base">
+                  person_add </span
+                >Sign Up</a
               >
             </div>
           </div>
-        </li>
-        <li
-          class="relative flex items-center pl-1 after:absolute after:left-0 after:top-[50%] after:flex after:h-3 after:w-[1px] after:translate-y-[-50%] after:bg-slate-200 after:content-[''] sm:pl-2"
-        >
-          <div class="relative w-10 flex-none sm:ml-auto">
-            <a
-              href="sign_up.html"
-              class="dropdown_filter"
-              id="dropdown-button"
-              aria-expanded="true"
-              aria-haspopup="true"
-            >
-              <!-- <span class="material-symbols-outlined"> account_circle </span> -->
-              <span class="material-symbols-outlined"> apps </span>
-            </a>
-  
-            <div
-              class="dropdown_container"
-              role="menu"
-              aria-labelledby="dropdown-button"
-              tabindex="-1"
-            >
-              <div class="py-1" role="none">
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                <a
-                  href="my_account.html"
-                  class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  ><span class="material-symbols-outlined mr-2 text-base">
-                    settings_account_box </span
-                  >My account</a
-                >
-                <a
-                  href="#"
-                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  ><span class="material-symbols-outlined mr-2 text-base">
-                    logout </span
-                  >Sign out</a
-                >
-                <a
-                  href="sign_in.html"
-                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  ><span class="material-symbols-outlined mr-2 text-base">
-                    login </span
-                  >Sign In</a
-                >
-                <a
-                  href="sign_up_type.html"
-                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  ><span class="material-symbols-outlined mr-2 text-base">
-                    person_add </span
-                  >Sign Up</a
-                >
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </header>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
 
-  <div class="mx-auto max-w-[960px] border-t px-4 py-16 lg:py-36">
-    <h2 class="mb-12 text-center text-4xl">Terms &amp; Service</h2>
+
+  <div class="mx-auto max-w-[960px] border-t px-4 py-24 lg:py-36">
+    <h2 class="mb-12 text-center text-3xl lg:text-4xl">Terms &amp; Service</h2>
     <div
       class="mb-4 overflow-hidden overflow-x-auto border-t border-b border-t-black lg:mb-8"
     >
@@ -211,7 +223,7 @@
       </select>
 
       <div class="mb-8 flex flex-col gap-2">
-        <h3 class="mb-4 text-3xl">Chapter 1 Service Use</h3>
+        <h3 class="mb-4 lg:text-3xl text-2xl">Chapter 1 Service Use</h3>
         <div class="mb-4">
           <h4 class="mb-2 text-lg">Article 1 (Purpose)</h4>
           <p>
