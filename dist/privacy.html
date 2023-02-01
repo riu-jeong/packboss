@@ -52,65 +52,130 @@
       </a>
     </div>
 
-    <div class="ml-auto flex">
-      <div class="flex hidden items-center gap-1">
-        <a
-          href="sign_in.html"
-          class="item-center flex rounded-full px-3 py-1.5 text-sm font-semibold text-gray-400 transition hover:text-gray-700"
-          >Sign In</a
-        >
-        <a
-          href="#n"
-          class="item-center flex rounded-full border border-gray-300 px-3 py-1.5 text-sm font-semibold text-gray-500 transition hover:border-gray-700 hover:text-gray-700"
-          ><span
-            class="material-symbols-outlined mr-1 flex items-center text-[16px]"
-          >
-            person_add </span
-          >Sign Up</a
-        >
-      </div>
-      <div class="relative w-10 flex-none sm:ml-auto">
-        <a
-          href="sign_up.html"
-          class="dropdown_filter"
-          id="dropdown-button"
-          aria-expanded="true"
-          aria-haspopup="true"
-        >
-          <span class="material-symbols-outlined"> account_circle </span>
-        </a>
-
-        <div
-          class="dropdown_container"
-          role="menu"
-          aria-labelledby="dropdown-button"
-          tabindex="-1"
-        >
-          <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <a
-              href="my_account.html"
-              class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-              ><span class="material-symbols-outlined mr-2 text-base">
-                settings_account_box </span
-              >My account</a
+    <div class="ml-auto flex basis-2/6 justify-end sm:basis-auto">
+      <ul class="flex">
+        <li class="relative flex items-center">
+          <div class="dropdown-container relative flex">
+            <div
+              class="dropdown-control relative flex cursor-pointer flex-wrap items-center justify-between p-1.5 px-1 transition hover:text-gray-900 sm:px-3"
             >
-            <a
-              href="#n"
-              class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-1"
-              ><span class="material-symbols-outlined mr-2 text-base">
-                logout </span
-              >Sign out</a
+              <div
+                class="dropdown-value-container relative flex flex-1 flex-wrap items-center overflow-hidden"
+              >
+                <div
+                  class="dropdown-value flex items-center overflow-hidden text-sm font-semibold"
+                >
+                  EN
+                </div>
+              </div>
+              <div
+                class="dropdown-arrow-container flex shrink-0 items-center self-stretch"
+              >
+                <div aria-hidden="true" class="dropdown-arrow flex">
+                  <span class="material-symbols-outlined text-[20px]">
+                    arrow_drop_down
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="dropdown-menu absolute top-[100%] z-10 hidden w-16 rounded border bg-white shadow-sm sm:w-full"
             >
+              <span
+                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+                ><img
+                  src="../images/dist/icons/flag_usa.svg"
+                  class="mr-2 w-4"
+                  alt=""
+                />EN</span
+              >
+              <span
+                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+                ><img
+                  src="../images/dist/icons/flag_ko.svg"
+                  class="mr-2 w-4"
+                  alt=""
+                />KO</span
+              >
+              <span
+                class="dropdown-item flex w-full cursor-pointer items-center px-2 py-1 text-sm font-semibold hover:bg-gray-100"
+                ><img
+                  src="../images/dist/icons/flag_cn.svg"
+                  class="mr-2 w-4"
+                  alt=""
+                />CN</span
+              >
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <li
+          class="relative flex items-center pl-1 after:absolute after:left-0 after:top-[50%] after:flex after:h-3 after:w-[1px] after:translate-y-[-50%] after:bg-slate-200 after:content-[''] sm:pl-2"
+        >
+          <div class="relative w-10 flex-none sm:ml-auto">
+            <a
+              href="sign_up.html"
+              class="dropdown_filter"
+              id="dropdown-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              <!-- <span class="material-symbols-outlined"> account_circle </span> -->
+              <span class="material-symbols-outlined"> apps </span>
+            </a>
+
+            <div
+              class="dropdown_container"
+              role="menu"
+              aria-labelledby="dropdown-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a
+                  href="my_account.html"
+                  class="item-center flex px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    settings_account_box </span
+                  >My account</a
+                >
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    logout </span
+                  >Sign out</a
+                >
+                <a
+                  href="sign_in.html"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    login </span
+                  >Sign In</a
+                >
+                <a
+                  href="sign_up_type.html"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 active:bg-gray-100 active:text-gray-900"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  ><span class="material-symbols-outlined mr-2 text-base">
+                    person_add </span
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </header>
 
@@ -540,7 +605,7 @@
       >
         <li>
           <a
-            href="service.html"
+            href="#n"
             class="whitespace-nowrap px-4 font-semibold hover:text-white"
             >Company introduction</a
           >
