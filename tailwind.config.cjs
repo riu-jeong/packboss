@@ -46,6 +46,5 @@ module.exports = {
     require("@tailwindcss/forms")({
       strategy: "base",
     }),
-    require("flowbite/plugin"),
   ],
 };
