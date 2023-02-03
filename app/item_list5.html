@@ -1,0 +1,387 @@
+<!--#set var="title" value="packposs" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="h-full">
+  <!--#include virtual="/parts/header_nav.html" -->
+  <div class="h-full pt-14 md:pt-16">
+    <!--#include virtual="/parts/aside.html" -->
+
+    <div class="flex min-h-full xl:ml-64 2xl:p-10">
+      <div
+        class="mx-auto flex w-full max-w-[1280px] flex-col lg:bg-white lg:p-6 2xl:rounded-lg 2xl:border 2xl:p-10"
+      >
+        <!-- 페이지 타이틀 -->
+        <div
+          class="mb-3 flex flex-col bg-white shadow-sm lg:mb-8 lg:shadow-none"
+        >
+          <div
+            class="relative flex items-center bg-white p-3 lg:mb-0 lg:border-b lg:p-0 lg:pb-6"
+          >
+            <div class="item-center flex">
+              <h2 class="text-xl xl:text-2xl">Request for quotes</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- 리스트 없을때 -->
+        <div class="mb-3 bg-white py-16 text-center shadow-sm lg:shadow-none">
+          <span class="material-symbols-outlined text-5xl text-gray-300">
+            error
+          </span>
+          <p class="text-gray-400">데이터가 없습니다.</p>
+        </div>
+        <!-- 리스트 있을때 -->
+        <ul class="mb-6 grid grid-cols-1 gap-4 lg:gap-0 lg:divide-y">
+          <li
+            class="bg-white p-3 shadow-sm transition sm:flex lg:p-6 lg:shadow-none"
+          >
+            <div
+              class="relative mb-3 self-start overflow-hidden rounded border sm:mb-0 sm:w-44"
+            >
+              <img src="images/dist/thumbs.jpg" class="w-full object-cover" />
+            </div>
+            <div
+              class="flex grow flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div class="mb-3 flex flex-col sm:ml-6 sm:p-0 md:mb-0 lg:ml-10">
+                <div class="mb-2">
+                  <h4 class="font-bold sm:text-lg">Samsung Electronic</h4>
+                </div>
+                <div class="grid grid-cols-2 gap-2 sm:gap-x-6 sm:gap-y-1">
+                  <dl>
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="text-sm font-semibold">Nickname</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Size</dt>
+                    <dd class="text-sm font-semibold">20 x 10 x 5</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Box(Tray)</dd>
+                  </dl>
+                </div>
+              </div>
+              <ul class="flex flex-col justify-center gap-2 sm:ml-6">
+                <li class="w-full">
+                  <label class="mb-1 block text-xs text-slate-400 after:ml-0.5">
+                    Estimate 1
+                  </label>
+                  <input
+                    type="number"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                  />
+                </li>
+                <li class="w-full">
+                  <label class="mb-1 block text-xs text-slate-400 after:ml-0.5">
+                    Estimate 2
+                  </label>
+                  <input
+                    type="number"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                  />
+                </li>
+                <li class="flex w-full justify-center self-end">
+                  <button
+                    type="button"
+                    class="flex items-center text-slate-400 hover:text-slate-500"
+                  >
+                    <span class="material-symbols-outlined"> add_circle </span>
+                    <span class="material-symbols-outlined">
+                      do_not_disturb_on
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="bg-white p-3 shadow-sm transition sm:flex lg:p-6 lg:shadow-none"
+          >
+            <div
+              class="relative mb-3 self-start overflow-hidden rounded border sm:mb-0 sm:w-44"
+            >
+              <img src="images/dist/thumbs.jpg" class="w-full object-cover" />
+            </div>
+            <div
+              class="flex grow flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div class="flex flex-col sm:ml-6 sm:p-0 lg:ml-10">
+                <div class="mb-2">
+                  <h4 class="font-bold sm:text-lg">Samsung Electronic</h4>
+                </div>
+                <div class="mb-3 grid grid-cols-2 gap-2 sm:gap-x-6 sm:gap-y-1">
+                  <dl>
+                    <dt class="text-xs text-slate-400">Nickname</dt>
+                    <dd class="text-sm font-semibold">Nickname</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Size</dt>
+                    <dd class="text-sm font-semibold">20 x 10 x 5</dd>
+                  </dl>
+                  <dl>
+                    <dt class="text-xs text-slate-400">Category(Style)</dt>
+                    <dd class="text-sm font-semibold">Box(Tray)</dd>
+                  </dl>
+                </div>
+              </div>
+              <ul class="flex flex-col justify-center gap-2 sm:ml-6">
+                <li class="w-full">
+                  <label class="mb-1 block text-xs text-slate-400 after:ml-0.5">
+                    Estimate 1
+                  </label>
+                  <input
+                    type="number"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                  />
+                </li>
+                <li class="w-full">
+                  <label class="mb-1 block text-xs text-slate-400 after:ml-0.5">
+                    Estimate 2
+                  </label>
+                  <input
+                    type="number"
+                    class="form-input px-2 py-1.5 font-semibold transition"
+                  />
+                </li>
+                <li class="flex w-full justify-center self-end">
+                  <button
+                    type="button"
+                    class="flex items-center text-slate-400 hover:text-slate-500"
+                  >
+                    <span class="material-symbols-outlined"> add_circle </span>
+                    <span class="material-symbols-outlined">
+                      do_not_disturb_on
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <div
+          class="mb-12 bg-white px-2 py-4 shadow-sm md:p-4 lg:rounded-md lg:border lg:shadow-none"
+        >
+          <label class="block">
+            <span
+              class="mb-1 flex text-sm text-slate-500 after:ml-0.5 after:text-red-500 after:content-['*']"
+              >Enter email to download E-Quote
+            </span>
+            <div class="relative flex flex-col">
+              <input
+                type="email"
+                class="form-input peer grow basis-4/5 invalid:border-pink-500 invalid:text-pink-600"
+                placeholder="placeholder"
+              />
+
+              <div
+                class="invisible bottom-1 block text-xs text-pink-600 peer-invalid:visible"
+              >
+                Please provide a valid email address.
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="sticky bottom-0 mt-auto text-center">
+          <div class="flex border-t bg-white md:items-center md:py-3 xl:py-6">
+            <a
+              href="quotes.html"
+              class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+              >Submit Request</a
+            >
+
+            <!-- <a
+                  href="#n"
+                  class="flex w-full items-center justify-center bg-primary-500 p-4 font-bold text-white focus:bg-primary-600 md:ml-auto md:w-auto md:rounded-full md:py-2 md:px-10"
+                  >Request Quotes</a
+                > -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- View Details -->
+<div
+  class="fixed top-0 right-0 z-30 flex h-full w-full justify-end overflow-y-auto bg-gray-900 bg-opacity-90"
+>
+  <a href="item_list.html" class="mt-1 flex self-start p-2 text-white"
+    ><span class="material-symbols-outlined"> close </span></a
+  >
+  <div
+    class="flex w-11/12 overflow-y-auto bg-white md:max-w-[70%] lg:max-w-screen-md"
+  >
+    <div class="flex w-full flex-col bg-white p-3">
+      <div class="mb-6 flex items-center border-b pb-3">
+        <h3>Your request has been registered!</h3>
+      </div>
+      <div class="mb-24 flex flex-col">
+        <p class="mb-4">
+          You can send a notification to the supplier we recommend.
+        </p>
+        <ul class="flex flex-col gap-4">
+          <li class="relative">
+            <input
+              type="checkbox"
+              id="supplier01"
+              value=""
+              class="peer absolute top-4 left-4 z-10 rounded-full border-gray-200 text-primary-500 focus:ring-0 focus:ring-primary-500 focus:ring-offset-0 sm:top-1/2 sm:translate-y-[-50%]"
+              required=""
+            />
+            <label
+              for="supplier01"
+              class="flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-gray-500 hover:bg-gray-50 hover:text-gray-600 peer-checked:border-primary-500 peer-checked:text-gray-600 sm:px-6 sm:py-4"
+            >
+              <div
+                class="flex w-full flex-wrap items-center sm:flex-nowrap sm:gap-6 sm:pl-6"
+              >
+                <div
+                  class="mb-4 flex w-full items-center justify-center border-b pb-2 sm:mb-0 sm:basis-6/12 sm:justify-start sm:border-none sm:pb-0"
+                >
+                  <img src="images/dist/supplier01.png" class="w-16" alt="" />
+                  <h5 class="ml-2 text-primary-500">Samsung</h5>
+                </div>
+                <div class="flex basis-2/4 items-center sm:basis-3/12">
+                  <img
+                    src="images/dist/icons/flag_usa.svg"
+                    class="w-4"
+                    alt=""
+                  />
+                  <p class="ml-2 text-sm">USA</p>
+                </div>
+                <div class="flex basis-2/4 justify-end text-sm sm:basis-3/12">
+                  Matched 8 times
+                </div>
+              </div>
+            </label>
+          </li>
+          <li class="relative">
+            <input
+              type="checkbox"
+              id="supplier02"
+              value=""
+              class="peer absolute top-4 left-4 z-10 rounded-full border-gray-200 text-primary-500 focus:ring-0 focus:ring-primary-500 focus:ring-offset-0 sm:top-1/2 sm:translate-y-[-50%]"
+              required=""
+            />
+            <label
+              for="supplier02"
+              class="flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-gray-500 hover:bg-gray-50 hover:text-gray-600 peer-checked:border-primary-500 peer-checked:text-gray-600 sm:px-6 sm:py-4"
+            >
+              <div
+                class="flex w-full flex-wrap items-center sm:flex-nowrap sm:gap-6 sm:pl-6"
+              >
+                <div
+                  class="mb-4 flex w-full items-center justify-center border-b pb-2 sm:mb-0 sm:basis-6/12 sm:justify-start sm:border-none sm:pb-0"
+                >
+                  <img src="images/dist/supplier02.png" class="w-16" alt="" />
+                  <h5 class="ml-2 text-primary-500">NVIDIA</h5>
+                </div>
+                <div class="flex basis-2/4 items-center sm:basis-3/12">
+                  <img src="images/dist/icons/flag_ko.svg" class="w-4" alt="" />
+                  <p class="ml-2 text-sm">Korea</p>
+                </div>
+                <div class="flex basis-2/4 justify-end text-sm sm:basis-3/12">
+                  Matched 12 times
+                </div>
+              </div>
+            </label>
+          </li>
+          <li class="relative">
+            <input
+              type="checkbox"
+              id="supplier03"
+              value=""
+              class="peer absolute top-4 left-4 z-10 rounded-full border-gray-200 text-primary-500 focus:ring-0 focus:ring-primary-500 focus:ring-offset-0 sm:top-1/2 sm:translate-y-[-50%]"
+              required=""
+            />
+            <label
+              for="supplier03"
+              class="flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-gray-500 hover:bg-gray-50 hover:text-gray-600 peer-checked:border-primary-500 peer-checked:text-gray-600 sm:px-6 sm:py-4"
+            >
+              <div
+                class="flex w-full flex-wrap items-center sm:flex-nowrap sm:gap-6 sm:pl-6"
+              >
+                <div
+                  class="mb-4 flex w-full items-center justify-center border-b pb-2 sm:mb-0 sm:basis-6/12 sm:justify-start sm:border-none sm:pb-0"
+                >
+                  <img src="images/dist/supplier03.png" class="w-16" alt="" />
+                  <h5 class="ml-2 text-primary-500">amazon</h5>
+                </div>
+                <div class="flex basis-2/4 items-center sm:basis-3/12">
+                  <img src="images/dist/icons/flag_cn.svg" class="w-4" alt="" />
+                  <p class="ml-2 text-sm">China</p>
+                </div>
+                <div class="flex basis-2/4 justify-end text-sm sm:basis-3/12">
+                  Matched 5 times
+                </div>
+              </div>
+            </label>
+          </li>
+          <li class="relative">
+            <input
+              type="checkbox"
+              id="supplier04"
+              value=""
+              class="peer absolute top-4 left-4 z-10 rounded-full border-gray-200 text-primary-500 focus:ring-0 focus:ring-primary-500 focus:ring-offset-0 sm:top-1/2 sm:translate-y-[-50%]"
+              required=""
+            />
+            <label
+              for="supplier04"
+              class="flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-gray-500 hover:bg-gray-50 hover:text-gray-600 peer-checked:border-primary-500 peer-checked:text-gray-600 sm:px-6 sm:py-4"
+            >
+              <div
+                class="flex w-full flex-wrap items-center sm:flex-nowrap sm:gap-6 sm:pl-6"
+              >
+                <div
+                  class="mb-4 flex w-full items-center justify-center border-b pb-2 sm:mb-0 sm:basis-6/12 sm:justify-start sm:border-none sm:pb-0"
+                >
+                  <span
+                    class="flex w-16 items-center justify-center rounded border bg-gray-100 p-2"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px] text-gray-400"
+                    >
+                      image_not_supported
+                    </span>
+                  </span>
+                  <h5 class="ml-2 text-primary-500">Apple</h5>
+                </div>
+                <div class="flex basis-2/4 items-center sm:basis-3/12">
+                  <img
+                    src="images/dist/icons/flag_usa.svg"
+                    class="w-4"
+                    alt=""
+                  />
+                  <p class="ml-2 text-sm">USA</p>
+                </div>
+                <div class="flex basis-2/4 justify-end text-sm sm:basis-3/12">
+                  Matched 3 times
+                </div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="sticky bottom-0 z-10 mt-auto flex justify-between border-t bg-white py-3"
+      >
+        <a
+          href="item_list2.html"
+          class="rounded-full border bg-white py-1.5 px-3 text-sm font-semibold text-gray-500"
+          >Back to list</a
+        >
+        <a
+          href="item_list2.html"
+          class="flex items-center rounded-full bg-primary-500 py-1.5 px-3 text-sm font-semibold text-white"
+        >
+          <span class="material-symbols-outlined mr-2 text-[20px]"> send </span>
+          Send notification</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
