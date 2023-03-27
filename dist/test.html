@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>packposs</title>
+    <meta name="description" content="packposs" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-700 lg:bg-gray-50"></body>
+</html>
+
+
+<div
+  class="fixed top-0 right-0 h-full w-72 translate-x-full transform bg-white shadow-lg transition-all duration-300"
+  id="slide-menu"
+>
+  <button class="absolute top-4 right-4" id="close-button">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M14.707 5.293a1 1 0 011.414 1.414L11.414 11l4.707 4.707a1 1 0 01-1.414 1.414L10 12.414l-4.707 4.707a1 1 0 01-1.414-1.414L8.586 11 3.879 6.293a1 1 0 011.414-1.414L10 9.586l4.707-4.293z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+  <!-- 슬라이드 메뉴 내용 -->
+</div>
+
+<button class="bg-gray-700 p-4 text-white" id="slide-button">
+  Open Drawer
+</button>
+<div
+  class="fixed top-0 left-0 right-0 bottom-0 hidden bg-black opacity-50"
+  id="backdrop"
+></div>
+
+<script>
+  const slideMenu = document.getElementById("slide-menu");
+  const slideButton = document.getElementById("slide-button");
+  const closeButton = document.getElementById("close-button");
+  const backdrop = document.getElementById("backdrop");
+
+  function openSlideMenu() {
+    slideMenu.classList.remove("translate-x-full");
+    backdrop.classList.remove("hidden");
+  }
+
+  function closeSlideMenu() {
+    slideMenu.classList.add("translate-x-full");
+    backdrop.classList.add("hidden");
+  }
+
+  slideButton.addEventListener("click", openSlideMenu);
+  closeButton.addEventListener("click", closeSlideMenu);
+  backdrop.addEventListener("click", closeSlideMenu);
+</script>
+
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const dropdownBtn = document.querySelector(".dropdown_filter");
+		const dropdownContain = document.querySelector(".dropdown_container");
+	  
+		function handleFilter(event) {
+		  event.preventDefault();
+		  const isOnPage = dropdownContain.classList.contains("is-on-page");
+	  
+		  if (isOnPage) {
+			this.classList.remove("active");
+			dropdownContain.classList.remove("active");
+			setTimeout(() => {
+			  dropdownContain.classList.remove("is-on-page");
+			}, 100);
+		  } else {
+			this.classList.add("active");
+			dropdownContain.classList.add("is-on-page");
+			setTimeout(() => {
+			  dropdownContain.classList.add("active");
+			}, 1);
+		  }
+		}
+	  
+		dropdownBtn.addEventListener("click", handleFilter, false);
+
+		/* Dropdown */
+		let dropdownFunction = () => {
+			const dropdownArray = document.getElementsByClassName("dropdown-container");
+			for (let i = 0; i < dropdownArray.length; i++) {
+			let dropdown = dropdownArray[i];
+			// dropdown clicked
+			dropdown.addEventListener("click", (e) => {
+				let target = e.currentTarget;
+				target.classList.toggle("dropdown-focus");
+
+				// set drowdown value to selected option velue
+				let dropdownValue = dropdown.querySelector(".dropdown-value");
+				let dropdownMenu = dropdown.querySelector(".dropdown-menu");
+				let dropdownItemArray =
+				dropdown.getElementsByClassName("dropdown-item");
+				// looping options
+				for (let i = 0; i < dropdownMenu.childElementCount; i++) {
+				let dropdownItem = dropdownItemArray[i];
+				dropdownItem.addEventListener("click", () => {
+					dropdownValue.textContent = dropdownItem.textContent;
+				});
+				}
+			});
+
+			// close if clicked outside of dropdown
+			window.addEventListener("click", function (event) {
+				if (!dropdown.contains(event.target)) {
+				dropdown.classList.remove("dropdown-focus");
+				}
+			});
+			}
+		};
+		dropdownFunction();
+
+		/* scroll top */
+		let topButton = document.getElementById("topBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+		scrollFunction();
+		};
+	
+		function scrollFunction() {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			topButton.style.display = "block";
+		} else {
+			topButton.style.display = "none";
+		}
+		}
+	
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+	  </script>
+	  
+</body>
+</html>

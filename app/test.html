@@ -1,0 +1,54 @@
+<!--#set var="title" value="packposs" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div
+  class="fixed top-0 right-0 h-full w-72 translate-x-full transform bg-white shadow-lg transition-all duration-300"
+  id="slide-menu"
+>
+  <button class="absolute top-4 right-4" id="close-button">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M14.707 5.293a1 1 0 011.414 1.414L11.414 11l4.707 4.707a1 1 0 01-1.414 1.414L10 12.414l-4.707 4.707a1 1 0 01-1.414-1.414L8.586 11 3.879 6.293a1 1 0 011.414-1.414L10 9.586l4.707-4.293z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+  <!-- 슬라이드 메뉴 내용 -->
+</div>
+
+<button class="bg-gray-700 p-4 text-white" id="slide-button">
+  Open Drawer
+</button>
+<div
+  class="fixed top-0 left-0 right-0 bottom-0 hidden bg-black opacity-50"
+  id="backdrop"
+></div>
+
+<script>
+  const slideMenu = document.getElementById("slide-menu");
+  const slideButton = document.getElementById("slide-button");
+  const closeButton = document.getElementById("close-button");
+  const backdrop = document.getElementById("backdrop");
+
+  function openSlideMenu() {
+    slideMenu.classList.remove("translate-x-full");
+    backdrop.classList.remove("hidden");
+  }
+
+  function closeSlideMenu() {
+    slideMenu.classList.add("translate-x-full");
+    backdrop.classList.add("hidden");
+  }
+
+  slideButton.addEventListener("click", openSlideMenu);
+  closeButton.addEventListener("click", closeSlideMenu);
+  backdrop.addEventListener("click", closeSlideMenu);
+</script>
+
+<!--#include virtual="/parts/footer.html" -->
